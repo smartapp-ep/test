@@ -1,0 +1,16 @@
+<!--ion-nav-view-->
+<ion-view view-title="Logout">
+  <ion-content  scroll="no" overflow-scroll="false" padding="true">
+    <!-- Login is loadede by auth0-angular -->
+	<br><br>
+	<!-- div id='authenticated' ng-show = "authenticated" -->
+	<div id='logout'>
+		<!-- need translate... -->
+		{{message}} Please click the login button below to login again
+		<button class="button" on-tap="login()">
+			<i class="icon ion-log-in"></i>
+		</button>
+		<!-- or, go directly to loginsvr ??? -->
+	</div>
+	</ion-content>
+</ion-view>

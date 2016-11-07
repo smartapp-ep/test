@@ -1,0 +1,104 @@
+	///////////////////
+	// facet details targeting at one of the for views above 
+	// latest design, this will be the only entry and exit point 
+	// i.e. not only for entry but exit too - change of view not possible in trait? 
+	// possibly one entry but multiple exist - i.e. view can be changed in trait - 
+	//		but definitely not perspective... due to data structure 
+	//		yet if difficult to impl will abandon this too (start with tabs disabled in trait)
+	//		-- due to data change required! 
+	// then both of the parent states are really just for holding the views, 
+	//		or possibly can use controller to prepare for data? contentCtrl should ... 
+	//		but then how to transit to facet - don't, directly go there... 
+	
+	//will populate on runtime that contains the same view name 'contentView'
+	//other words, use templates to dynamically target named views at parent
+	
+	//all views will be loaded, but only assign the template to one of them at run time;
+	//using other approach - only populate 1 template 
+			//yet fie & name etc remains the same for the whole report... 
+			//(does not cost too much, so can pass as parameter from different perspective/states for the same report) 
+			//in addition need to prepare facet data - report per facet;
+		//(
+			//also report content same for all reports (all report subjects / persons)
+			//ideally cache what's loaded but contents does change dynamically in view 
+			//also loading is not costly once in mem (cost resources though)
+		//)
+		//score only for dev and enter from traits state
+		
+			//(for one perspective), including 4 view changes - ideally...
+	//	due to data structure (facet contains all views), 
+	//	view changes should be dealt with in facet
+	//		so when a view change, it goes to the same facet state with dif viewName ...
+	//		no need for perspective to change 
+	
+		<!--
+	<div translate="Agreeableness"></div>
+	
+	<div class="row">
+		<div class="col" style="background-color: #00BFFF;"> default</div>
+		<div class="col" style="background-color: #C3FDB8"> rel/work </div>
+		<div class="col" style="background-color: #FFFFCC"> rel/social </div>
+	</div>
+
+	<div class="row">
+		<div class="col" style="background-color: #00BFFF;"> default</div>
+		<div class="col" style="background-color: #5EFB6E"> rel/work </div>
+		<div class="col" style="background-color: #FFDB58"> mustard </div>
+	</div>
+
+	<div class="row">
+		<div class="col" style="background-color: #00BFFF;"> default</div>
+		<div class="col" style="background-color: #5EFB6E"> rel/work </div>
+		<div class="col" style="background-color: #FFF380"> corn </div>
+	</div>		
+	
+	<div class="row">
+		<div class="col" style="background-color: #00BFFF;"> default</div>
+		<div class="col" style="background-color: #5EFB6E"> rel/work </div>
+		<div class="col" style="background-color: #FFE87C"> sunflower </div>
+	</div>	
+
+	<div class="row">
+		<div class="col" style="background-color: #00BFFF;"> default</div>
+		<div class="col" style="background-color: #5EFB6E"> rel/work </div>
+		<div class="col" style="background-color: #FFFA61"> manual 70% </div>
+	</div>	
+	-->
+	
+	<!--
+	<div>
+		<div class="row">
+		<div class="col" style="background-color: #00BFFF;"> default</div>
+		<div class="col" style="background-color: #5EFB6E"> work </div>
+		<div class="col" style="background-color: #F5F2A8"> social </div>
+		<div class="col" style="background-color: #F5CFA8"> business </div>		
+	</div>	
+	
+	<div class="row">
+		<div class="col" style="background-color: #8D38C9"> app/love</div>
+		<div class="col" style="background-color: #A1C935"> app/work </div>
+		<div class="col" style="background-color: #FBB917"> app/social </div>
+		<div class="col" style="background-color: #F94E7D"> app/business </div>			
+	</div>	
+
+	<div class="row">
+		<div class="col" style="background-color: #306EFF"> imp/love</div>
+		<div class="col" style="background-color: #00FF00"> imp/work </div>
+		<div class="col" style="background-color: #FFFF00"> imp/social </div>
+		<div class="col" style="background-color: #FB7F36"> imp/business </div>			
+	</div>
+	-->
+	
+	
+			/* ,
+		onEnter: function($stateParams) {
+			var namedView = $stateParams.viewName + 'View';
+			$view.load("nameView@app.report.perspective.views", {
+			  templateUrl: "/templates/views.html"
+			  //controller: "MyController"
+			});				
+		}
+		*/
+		
+		
+		ng-click="onTabSelected('Business')"

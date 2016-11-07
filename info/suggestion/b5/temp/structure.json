@@ -1,0 +1,140 @@
+[{
+	"traitName": "Openness",
+	"traitType": "facet",
+	"children": [{
+		"traitName": "Adventurousness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Artistic interests",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Emotionality",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Imagination",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Intellect",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Liberalism",
+		"traitType": "trait"
+	}]
+},
+{
+	"traitName": "Conscientiousness",
+	"traitType": "facet",
+	"children": [{
+		"traitName": "Achievement striving",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Cautiousness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Dutifulness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Orderliness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Self-discipline",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Self-efficacy",
+		"traitType": "trait"
+	}]
+},
+{
+	"traitName": "Extroversion",
+	"traitType": "facet",
+	"children": [{
+		"traitName": "Activity level",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Assertiveness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Cheerfulness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Excitement-seeking",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Friendliness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Gregariousness",
+		"traitType": "trait"
+	}]
+},
+{
+	"traitName": "Agreeableness",
+	"traitType": "facet",
+	"children": [{
+		"traitName": "Altruism",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Cooperation",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Modesty",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Morality",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Sympathy",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Trust",
+		"traitType": "trait"
+	}]
+},
+{
+	"traitName": "Neuroticism",
+	"traitType": "facet",
+	"children": [{
+		"traitName": "Anger",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Anxiety",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Depression",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Immoderation",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Self-consciousness",
+		"traitType": "trait"
+	},
+	{
+		"traitName": "Vulnerability",
+		"traitType": "trait"
+	}]
+}]

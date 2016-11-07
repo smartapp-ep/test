@@ -1,0 +1,95 @@
+{
+	"Agreeableness": "Agreeableness",
+	"Conscientiousness": "Conscientiousness", 
+	"Extraversion": "Extraversion", 
+	"Neuroticism": "Neuroticism",
+	"Emotional range": "Emotional range",
+	"Openness":  "Openness",
+	"Needs":  "Needs", 
+	"Values": "Values",
+
+	"trait": "trait",
+	"need": "need",
+	"value": "value",	
+	
+	"Altruism": "Altruism", 
+	"Cooperation": "Cooperation",
+	"Modesty": "Modesty",
+	"Morality": "Morality", 
+	"Sympathy": "Sympathy",
+	"Trust": "Trust",
+	
+	"Challenge": "Challenge",
+	"Closeness": "Closeness",
+	"Curiosity": "Curiosity",
+	"Excitement": "Excitement",
+	"Harmony": "Harmony",
+	"Ideal": "Ideal",
+	"Liberty": "Liberty",
+	"Love": "Love",
+	"Practicality": "Practicality",
+	"Self-expression": "Self-expression",
+	"Stability": "Stability",
+	"Structure": "Structure",
+
+	"Achievement-striving": "Achievement-striving",
+	"Cautiousness": "Cautiousness",
+	"Dutifulness": "Dutifulness",
+	"Orderliness": "Orderliness", 
+	"Self-discipline": "Self-discipline", 
+	"Self-efficacy": "Self-efficacy",
+	
+	"Conservation": "Conservation",
+	"Openness-to-change": "Openness-to-change",
+	"Hedonism": "Hedonism",
+	"Self-enhancement": "Self-enhancement",
+	"Self-transcendence": "Self-transcendence",
+	
+	"Relationship": "Relationship", 
+	"Approaching": "Approaching", 
+	"Self-Improvement": "Self-Improvement",
+	
+	"Relation": "Relation",
+	"Approach": "Approach",
+	"Improve": "Improve",
+	
+	"FacetSummary": "Facet Summary",
+	"FacetSummaryDetails": "is one of the five facets in the \"Big 5\" personality model. ",
+	"ChildrenTraits": "It consists the following",
+	
+	"Current perspective": "Current perspective",
+	"PerspectiveInstruction": "Tap each individual trait below to see details, or toggle perspective using the top right button.",
+	"PerspectiveIntroduction": "This analysis is based on the perspective of {{perspectiveDescription}}, you can change perspective from the drop down menu in the navigation bar.",
+	"PerspectiveSummaryTitle": "Analysis Summary from the perspective of ",
+	"contains the following": "contains the following",
+	"traitInstruction": "tap on each to see details from the perspective of",
+	
+	"Perspective": "Perspective",
+	"View": "View",
+	"Role": "Role",
+	
+	"Love": "Love",
+	"Work": "Work",
+	"Social": "Social",
+	
+	"partner": "partner",
+	"parent": "parent",
+	"child": "child",
+	"superior": "superior",
+	"subordinate": "subordinate",
+	"teammate": "teammate",
+	"friend": "friend",
+	
+	"Higher": "Higher",
+	"Lower": "Lower",
+	
+	"Role": "Role",
+	"RolesInstruction": "See details specific to different roles below.",
+	"ViewsInstruction": "You may change view using tabs at bottom of the page.",
+	
+	"Summary": "Summary",
+	
+	
+	"shareReportCaption": "{{name}}'s Personality",
+	"shareReportDescription": "It understands {{name}} so well!"
+}

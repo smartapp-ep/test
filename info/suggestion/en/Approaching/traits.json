@@ -1,0 +1,4218 @@
+{
+	"Openness": {
+		"traitName": "Openness",
+		"traitType": "facet",
+		"general": {
+			"high": "S/he's open to experience, maintain high curiosity intellectually, welcome new experiences. This has various implications on the best way to approach her/his and leave good impression.",
+			"medium": "S/he's in the middle between simple and complex, obvious and subtle, straightforward and ambiguous, from time to time s/he has inner conflicts. If you understand this subtle conflicts in her/him, you could quickly become her/his confidant.",
+			"low": "S/he's straightforward, prefers the plain, simplicity and clearness.  You should avoid anything that's complex, ambiguous and subtle during approach."
+		},
+		"children": [{
+			"traitName": "Adventurousness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						"high": "This trait has great implication to your career direction, and what type of job suits you. It also has implication to the style of approach that you take at work. This certainly can create conflicts to those who work with you if they have an opposite trait."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's adventurous and eager to experience new things, it increases your chance of success by having activities that's exciting and new to her/him; if you're from a completely different background, s/he'll be naturally interested in you too.",
+						"medium": "S/he's in the middle between adventurous and consistent. If s/he has a boring job then try schedule adventurous activities over the weekend; if her/his job is adventurous enough, s/he maybe exhausted by her/his work, try to have relaxing activities in quiet place so s/he can relax and  recharge.",
+						"low": "S/he's consistent, enjoy familiar routines and hate to deviate from them. Try to schedule something that s/he's familiar with and do it in place that s/he's familiar with."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Artistic interests",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he appreciates beauty and look out for creative activities. Find out which particular types of activity makes her/him tick the most then enjoy the activity with her/him.",
+						"medium": "S/he's in the middle between unconcerned with art and appreciative of art. Find out which particular types of activity makes her/him tick the most then enjoy the activity with her/him.",
+						"low": "S/he's less concerned with artistic or creative activities. You may try to avoid having these type of activities during your approach."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Emotionality",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's well aware of her/his feelings and are good at expressing them. You can expect smooth experience when it comes to communication involves emotions and feelings. If you're on the opposite trait, hopefully her/his passion can infect you too.",
+						"medium-high": "S/he's aware of her/his feelings and able to  express them. You can expect smooth experience when it comes to communication involves emotions and feelings. If you're on the opposite trait, hopefully her/his passion can infect you too.",
+						"medium": "S/he's in the middle between emotionally aware and dispassionate. S/he may appear neutral and you won't be able to find out if s/he's passionate about you or your approaching. Be patient.",
+						"medium-low": "S/he does not frequently think about her/his feelings and does not feel the need to express them. It's not too easy to tell if s/he's passionate about you or your approaching. Be patient.",
+						"low": "S/he does not frequently think about her/his feelings and does not feel the need to express them. It's not easy to tell if s/he's passionate about you or your approaching. Be patient."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Imagination",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Openness to creating an inner world of fantasy."
+		},
+		{
+			"traitName": "Intellect",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he has wild imagination, if you can trigger her/him into a wild travelling with you in mind across time and space, you two will and have loads of fun together.",
+						"medium": "S/he's in the middle between imaginative and down-to-earth, if you can trigger her/him into a wild travelling with you in mind across time and space, tap into her/his right brain where is under used, it'll be an impressive and pleasant experience to her/him.",
+						"low": "S/he prefers facts over fantasy, so avoid conversations that requires too much imaginations, this applies to humours too. In addition try to be straight forward, s/he hates ambiguity and uncertainty; also make everything as simple and plain as possible."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Liberalism",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's not afraid to challenge authority and tradition, s/he could seem wild and will do anything as long as s/he wants to do it, has little concern about tradition. Deep in her/his mind s/he welcomes changes, it's the need for change that gives her/him the courage to challenge tradition. <br><br> If you can demonstrate a similar trait you two may be in rhyme and enjoy the similarity; if you're opposite in the trait, then try changes activities during approach to feed her/his appetites for change.",
+						"medium": "S/he's in the middle between Authority-challenging and respectful of authority. If s/he has inner conflicts between the two, or has kept suppressing the former for years,  A risky approach is to try wakening her/his desire for anti-tradition and do wild things, which could give her an unforgettable experience..",
+						"low": "S/he's respectful of authority and tradition. Deep in the mind, s/he hates unnecessary changes and wants stability. So once you have make a schedule with her/him, don't change it!"
+					}
+				}]
+			}]
+		}]
+	},
+	"Conscientiousness": {
+		"traitName": "Conscientiousness",
+		"traitType": "facet",
+		"general": {
+			"high": "You tend to act in an organized and thoughtful way, there maybe little room for improvement except for a couple of traits in this facet; in addition, life is full of surprise and not everything can be planned.",
+			"medium": "You're in the middle between spontaneous and planned, there's possibly a bit of room to improve, check out each trait in this facet.",
+			"low": "You tend to act spontaneously, there's possible room for improvement for quite a few of the traits in this facet."
+		},		
+		"children": [{
+			"traitName": "Achievement striving",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's driven by high goals and is willing to take challenges. If may want to keep this in mind when hanging out with her/him, for example if s/he ask you a question, instead of giving her/him an answer, you can give some hints instead, and it's more interesting for her/him to make a intellectual guess or s/he may easily get bored.",
+						"medium": "S/he's in the middle between content and driven, you may consider to balance your schedule a bit during approaching, don't set a too tight schedule but don't leave too much time either between activities.",
+						"low": "S/he doesn't like pressure, doesn't like rushing, s/he likes to do everything relaxingly, so avoid making tight schedule during approach, make sure you plan extra time between activities."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Cautiousness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"general": {
+					"high": "S/he's highly cautious, no matter you approach her/him for friendship, relationship or selling a product, it won't be easy. But you can take her/his trait in Trust into consideration to formulate your strategy for approaching.",
+					"medium": "S/he's reasonably cautious, no matter you approach her/him for friendship, relationship or selling a product, it won't be too easy. Depends on her/his score in Trust, your approach strategy could be quite different.",
+					"low": "You maybe approaching her/him for friendship, relationship or selling a product, though s/he's generally not cautious but that does not mean it's easy to approach. depends on her/his score in Trust, you can use different strategies."				
+				},
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he prefers everything to be well planned, you should keep this in mind when planning activities during approach. {{getCombos}}",
+						"medium": "S/he's reasonably cautious, {{getCombos}}",
+						"low": "S/he enjoys impromptu fun and you should take this into consideration during approach. S/he's bold and tends to act immediately, {{getCombos}}"
+					},
+					"combos": {
+						"traits": [{
+							"facet": "Agreeableness",
+							"trait": "Trust"
+						}],
+						"info": {
+							"high": {
+								"info": {
+									"high": "Though s/he's highly cautious but scored high in Trust, so it's not too hard to develop the trust. Yet you need to be patient during your approach. Scoring high in Trust only means s/he assume your intention is genuine, s/he will still exercises caution and overturns the assumption at first signs of suspicion.",
+									"medium": "Being highly cautious, it's not easy to approach her/him. But scoring medium in Trust, s/he does believe there are some decent people out there, and that certainly can include you. Just remember s/he still keeps alert and can easily cross your name from her/his trust list at first sign of suspicion.",
+									"low": "Being cautious also score low in Trust, s/he's extremely hard to approach. It usually needs something special that proves your genuineness before s/he opens up her/himself."
+								}
+							},
+							"medium": {
+								"info": {
+									"high": "but scored high in Trust, so it shouldn't be too hard for you to build the trust.",
+									"medium": "also scored medium in Trust, s/he's  reasonable guarded, and shouldn't be too hard for your to build the trust.",
+									"low": "since scored low in Trust, s/he's well guarded you need to be very patient and very cautious to build your trust."
+								}
+							},
+							"low": {
+								"info": {
+									"high": "since scored high in Trust, s/he'll first assume you're genuine but her/his cautious nature will keep her/himself alert. Yet it's already a good starting point and as long as you're genuine there shouldn't be problem to strengthen the trust.",
+									"medium": "while scored medium in Trust, s/he has reasonable defence but is not very cautious, s/he will tend to take immediate action once s/he believe you can be trusted.",
+									"low": "even though scored low in Trust and skeptical about others, s/he tends to act immediately before spending time deliberating to make decision. You can consider to take advantage of her/his impulsive moment since given an extra moment s/he may chagne her/his mind."
+								}
+							}
+						}
+					}
+					
+				}]
+			}]
+		},
+		{
+			"traitName": "Dutifulness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he take rules and obligations seriously so even jaywalking may make her/him uncomfortable, be careful during approach and try to follow all the rules.",
+						"medium": "S/he's in the middle between carefree and dutiful, jaywalking during approach maybe okay to her/him but if you drive on red lights that'll definitely make her/him uncomfortable.",
+						"low": "S/he does want s/he wants, disregarding rules and obligations. During approach you may consider reacting to spontaneous and impromptu events instead of planned ahead schedules."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Orderliness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he has strong need to keep things organized, so any activities you plan during approach should be very well organized, keep an eye for the details.",
+						"medium": "S/he's reasonably organized but can also stand chaos to some extent. S/he will enjoy if you take care of everything when you plan activities, but doesn't mind giving you a hand to organize things too.",
+						"low": "S/he hates to spend time in organizing things, but that doesn't mean s/he doesn't need to. If you take care of everything and get things organized s/he'll enjoy it."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Self-discipline",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's persistent for something that s/he wants. There's no suggestion with regards to this trait, please study other traits to formulate your strategy for approach.",
+						"medium": "S/he's somewhere between persistent and intermittent, and can be reasonably patient, if something goes wrong with the schedule s/he maybe able to take it up with her/him.",
+						"low": "S/he has hard time sticking with tasks for a long time and is impatient - never let her/him wait during your approach, make sure things are organized well."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Self-efficacy",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's confident. If you approach her/him for romance, s/he will not doubt about her/his attractiveness. If you approach for selling a product, s/he will not doubt about her/his ability to decide whether it's a good product or not. This makes it easy for you to the approaching, though it doesn't increase the chance for success.",
+						"medium": "S/he's somewhere between self doubting and self assured, whether you approach for romance or selling a product, if you can help her/him to build up more confidence, it'll be a very good starting point.",
+						"low": "S/he's self doubting, whether you approach for romance or selling a product, if you can help her/him to build up confidence, it'll be a very good starting point. Also remember that when s/he's self doubting, s/he could doubt about her/his attractiveness in turn doubt about your true intention; If you're selling a product, s/he may double about her/his ability to different good products from bad, in both cases s/he may choose to stay away. In these situations it'll be helpful to invite her/his friends as her/his company."
+					}
+				}]
+			}]
+		}]
+	},
+	"Extraversion": {
+		"traitName": "Extraversion",
+		"traitType": "facet",
+		"general": {
+			"high": "S/he enjoys, or even needs interaction with the external world, you could take advantage of this to approach her/him.",
+			"medium": "S/he has a balanced level of interaction with the external world, you have a better chance when s/he's in the interaction mode.",
+			"low": "S/he needs less simulation from external world, but there are still various ways to approach her/him."
+		},
+		"children": [{
+			"traitName": "Activity level",
+			"traitType": "trait",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "S/he usually has busy schedule of daily activities, but there'll be time when there are gaps and it'll be the perfect time to fill in that with some activities that s/he's interested; otherwise you'd need to book her/him in advance and pick some activities that s/he enjoys to invite her/him.",
+						"medium": "Her/his schedule usually is scattered with activities and with various breaks and gaps, it should be easy to fill it with some activities that s/he's interested.",
+						"low": "s/he's rather laid-back, a Sunday relaxing coffee could be something to try."
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "To leave a better first impression you'd need to gear up your pace to match her/his. After proving your ability you may want to reveal your true self and see if you can work together.",
+						"medium": "S/he works with reasonable pace but s/he may demand faster subordinate. you should try to find out what she/he demands and try to cope with it.",
+						"low": "S/he's rather laid-back, it's hard to tell whether s/he prefers fast or slow subordinates though. You should try to find out and cope with what s/he demands. But you could take your time to demonstrate yourself since s/he's patient and slow."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "To leave a better first impression you could try to gear up your pace to be in sync with hers/his. After showing you could be in rhythm, you could reveal your true trait and see if you can get along.",
+						"medium": "S/he tends to have reasonable pace and balanced schedule of activities which most people will find comfortable to cope with.",
+						"low": "S/he's rather laid-back, you should adjust your pace accordingly to get along with her/him."
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Assertiveness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "Assertive people do not hesitate to express opinions, including those of themselves, so it's relatively easier to know more about them. You can take advantage of this to find out more about them.",
+						"medium": "S/he's reasonably assertive, you can take advantage of this and let them talk about her/himself to find out more about her/himself.",
+						"low": "S/he's demure. Remember even not saying 'no' does not mean s/he agrees with you or like your suggestion. you'd need a bit of tact in communications to encourage them to speak up and express her/himself and find out what's in their mind."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Cheerfulness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's joyful, it could be a pleasant experience for people trying to approach her/him, but that does not make it easier to leave a good and deep first impression. Yet if you could manage to be in rhythm with her/his cheerful style, s/he will appreciate the similarity and forms the impression that s/he enjoys getting along with you.",
+						"medium": "S/he's reasonably cheerful, if s/he looks serious perhaps s/he's under stress. A small joke is possible to cheer her/him up and leave a good impression.",
+						"low": "S/he appears serious and do not joke much, but that does not mean s/he doesn't like humor, an appropriate joke can break the ice and leave a good impression."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Excitement-seeking",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "What makes her/him tick is elements of excitement or surprise. During approach you could take this into consideration to plan activities .",
+						"medium-high": "S/he seeks changes and excitements then would prefer quieter and calmer for a while, or s/he activities that are reasonable exciting could make her/him tick too. During approach you can take this into consideration to plan activities, or choose the right timing for the correct types of activities.",
+						"medium": "S/he seeks changes or excitements then would settle for a while, or seeks for activities that range in the middle between excitement and calm. During approach you can take this into consideration to plan activities, or choose the right timing for the correct types of activities.",
+						"medium-low": "S/he prefers quite and clam activities until gets bored then seek for activities with some excitements. During approach you can take this into consideration to plan activities, or choose the right timing for the correct types of activities.",
+						"low": "S/he prefers activities that are calm, quiet and safe. During approach you can take this into consideration to plan activities."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Friendliness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's outgoing and enjoy being with others, it's not easy to become her/his friend but to leave a good impression is a different thing. S/he feels comfortable to open up and talk, if you don't want to be just one of the audience, you'd need to understand something deeper through the surface of the conversation and if possible, make a couple of thoughtful comments that could lead her/him into contemplative thinking after the conversation.",
+						"medium": "You're in the middle between outgoing and reserved. You really need to be a both a good listener and speaker to leave a good impression during the first conversation.",
+						"low": "S/he's comfortable to be the audience in the conversation but if you're interested s/he will open up and become more talkative. Yet don't fake your interest, because if s/he feels it s/he will quickly withdraws and become reserved again."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Gregariousness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he enjoys company of others, this makes it easier to approach but to leave a good impression you need to study her other traits and have a strategy.",
+						"medium": "S/he's in the middle between sociable and independent. It is hard to tell when is the best timing and when s/he wants company of others.",
+						"low": "S/he doesn't need company of others, this may make it harder to approach her/him. You really have to come up with something that s/he's interested in. Like anything else, learn more about her/him before the attempt, get better prepared."
+					}
+				}]
+			}]
+		}]
+	},
+	"Agreeableness": {
+		"traitName": "Agreeableness",
+		"traitType": "facet",
+		"general": {
+			"high": "Since s/he values getting along with others it's relatively not hard to approach. But to leave a great first impression is not easy, depends on each individual trait in this facet, you may find a better chance if you use some of the tactics specific to the traits in this facet.",
+			"medium": "S/he may seem easy going sometimes, other times hard to approach. See below for analysis of each trait in the perspective of approaching and what could help you to leave better first impression.",
+			"low": "S/he may seem very hard to approach as most of the time s/he focuses on her/his own interest. Yet s/he still scores high in one or two of the traits in this facet, targeting at these few traits could stand a better chance to leave a good first impression."
+		},		
+		"children": [{
+			"traitName": "Altruism",
+			"traitType": "trait",
+			"views": [{
+				"viewName": "Love",
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "S/he's fulfilled when helping others, so one of the effective ways is to ask her/him for small help, while you are actually helping her/him to feel good.",
+						"medium": "S/he's neutral to helping others, so you could ask for small favor as an attempt but don't rely on this alone.",
+						"low": "S/he tends to value self interests over others, so unless the you're attractive to her/him, it's not easy to approach. Yet if you can find something that could arouse her/his interest then you've got a braking point."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's an altruist and loves to help you, s/he may easily give you a great impression for how helpful s/he is, but it may not be as easy to give her/him the same impression. If you don't find any particular good opportunity then be patient and wait for opportunities along the way.",
+						"medium": "S/he will offer you reasonable help but if you rely on her/him too much you'll give her/him bad impression.",
+						"low": "S/he may seem a bit cold but that's only because s/he believe you can take good care of yourself. If you are able to do that that'll at least meet her/his expectation."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "Please refer to Love view.",
+						"medium": "Please refer to Love view",
+						"low": "Please refer to Love view."
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "Not available.",
+						"medium-high": "Not available.",
+						"medium": "Not available.",
+						"medium-low": "Not available.",
+						"low": "Not available."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Cooperation",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			}, 
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's willing to cooperate with others, if there's a conflict between her schedule and your invitation, s/he may try to compromise if possible.",
+						"medium": "S/he's in the middle range between compromising and confronting, there's a 50% chance that s/he compromises if there's conflict between her/his schedule and your invitation, then adding your attractiveness to the equation.",
+						"low": "S/he does not easily compromise, if there's conflicts between her/his schedule and your invitation, you must reschedule unless s/he's very attracted to you."
+					}
+				}]
+			
+			}]
+		},
+		{
+			"traitName": "Modesty",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's a good listener but may not be comfortable to talk until s/he's more familiar to you. If you're approaching for the purpose of presenting a product or idea then you'll surely have lots of opportunities to talk since s/he's prefers not to be in the centre of attention.",
+						"medium": "S/he appear to be modest on one hand, while on the other proud of her/himself. S/he's a good listener as well as a good talker, put a bit of balance in the conversation will be most effective.",
+						"low": "S/he's proud of her/himself, if you can find the aspects that s/he's particularly proud of but is unnoticed by many people, s/he may feel s/he's got a confidant, this could bring you much closer to her/him."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Morality",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's uncompromising, when approaching you'd better better off by being straight forward and avoid being tricky in even very small matters.",
+						"medium": "S/he's in the middle between compromising and uncompromising, may not mind seeing you play a couple of small tricks during approaching, but that does not mean s/he'll accept anything that's below her/his moral standard.",
+						"low": "S/he may go across the line to get things done, but that doesn't mean s/he has low moral stands. Be well aware of this during your approach!"
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Sympathy",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's compassionate toward others and feel the same as others do. If you're genuine s/he'll feel the same. This increases your chance during approach. Yet if you're not genuine, s/he may feel it too! S/he may not feel it straight away but that could just be a matter of time.",
+						"medium": "S/he's in the middle between hart-hearted and compassionate. If you're genuine s/he'll feel it, though not as strong as you feel. This increases your chance during approach. Yet if you're not genuine, s/he may feel it too! S/he may not feel it straight away but that could just be a matter of time.",
+						"low": "S/he appears cold-hearted but that's only because s/he believe others should rely more on themselves, that does not mean they don't have love or they don't need love. You should show her/him your emotional independence whenever there's opportunity, but at the meant time also show them your passion towards her/him."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Trust",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he trusts people and there's no problem to start building the trust during your approach.",
+						"medium": "S/he's in the middle between trusting and skeptical, it won't be too hard to gain her/his trust if you're genuine.",
+						"low": "S/he's skeptical of others' intention, you may have a hard time to convince your true intention, be patient."
+					}
+				}]
+			}]
+		}]
+	},
+	"Neuroticism": {
+		"traitName": "Emotional range",
+		"traitType": "facet",
+		"general": {
+			"high": "Her/his emotion is sensitive to external events, this sometimes is an advantage for you to make approaching.",
+			"medium": "You're in the middle between emotional and rational, this perceived inconsistency could introduce challenges during approach.",
+			"low": "Her/his emotion is less sensitive to external events, see individual traits to see what this implies in respect to approaching her/him."
+		},
+		"children": [{
+			"traitName": "Anger",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he has a fiery temper, you could somewhat make this an advantage during approach. If s/he's angry about something else during approach, it's an opportunity to a good audience to be next to her/him and show your support, this could significantly bring you closer to her/him; <br><br> If s/he's in the good mood during approaching, just approach as usual but remember s/he could easily lose temper if things doesn't go her/his way, try to plan earlier and make things as smooth as possible.",
+						"medium": "S/he's in the middle between mild-tempered and fiery,  you'd have to play by ear and be ready for both modes. If it happens to be her/his bad mood, turn it into an advantage by being a good audience to be next to her/him and show your support, this could significantly bring you closer to her/him; ",
+						"low": "S/he has very good temper and does not get angry easily. You could even test this by making a small attempt to irritate her/him, and when you fail as expected, compliment her/his coolness - Warning! Don't do this unless you have confidence to handle, and only make small test!"
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Anxiety",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's prone to worries, if s/he happens to be worrying about something, and if during approach you could manage to address the concerns, or help her/him to easy the worries, s/he may think of you next time when s/he starts worrying about something. Over time s/he may even develop some kind of emotional reliance on you.",
+						"medium": "S/he's in the middle between self-assured and anxious. if s/he happens to be worrying about something, and if during approach you could manage to address the concerns, or help her/him to easy the worries, s/he may think of you next time when s/he starts worrying about something. Over time s/he may even develop some kind of emotional reliance on you.",
+						"low": "S/he's self-assured and remains calm in most of the situations. There's no tips in regards to this trait for approaching, please look at other traits to develop your approaching strategy."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Depression",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's sensitive to life's ups and downs. This could be an advantage to your approaching. When s/he's in a good mood, s/he's naturally happier and it's more possible for the approaching to become her/his pleasant experience; <br><br> If s/he's in a bad mood, {{getCombos}}",
+						"medium": "S/he's in the middle between content and melancholy,  This could be an advantage to your approaching. When s/he's in a good mood, s/he's naturally happier and it's more possible for the approaching to become her/his pleasant experience; <br><br> If s/he's in a bad mood, {{getCombos}}",
+						"low": "S/he's comfortable with who s/he is and does not look back at unhappy experiences. If you also appear to be positive s/he may feel the similarity, this could bring you closer to her/him."
+					},
+					"combos": {
+						"traits": [{
+							"facet": "Extraversion",
+							"trait": "Gregariousness"
+						}],
+						"info": {
+							"high": {
+								"info": {
+									"high": "since scored high in Gregariousness, s/he will enjoy your company as long as you be sensitive and react appropriately in the conversions, taking her/his mood into consideration. <br><br> If you manage to make her/him happier, next time when s/he becomes moody again there's chance that s/he may think of you again and may want to be with you again so you can help her/him to get out of the mood.",
+									"medium": "since scored medium in Gregariousness, there's good chance that s/he enjoys your company as long as you be sensitive and react appropriately in the conversions, taking her/his mood into consideration. <br><br> If you manage to make her/him happier, next time when s/he becomes moody again there's chance that s/he may think of you again and may want to be with you again so you can help her/him to get out of the mood.",
+									"low": "but scored low in Gregariousness, s/he may become reserved and want some private time, you may stay with her/him quietly, just let her/him know you're next to her/him and you're supportive."
+								}
+							},
+							"medium": {
+								"info": {
+									"high": "since scored high in Gregariousness, s/he will enjoy your company as long as you be sensitive and react appropriately in the conversions, taking her/his mood into consideration. <br><br> If you manage to make her/him happier, next time when s/he becomes moody again there's chance that s/he may think of you again and may want to be with you again so you can help her/him to get out of the mood.",
+									"medium": "since scored medium in Gregariousness, there's good chance that s/he enjoys your company as long as you be sensitive and react appropriately in the conversions, taking her/his mood into consideration. <br><br> If you manage to make her/him happier, next time when s/he becomes moody again there's chance that s/he may think of you again and may want to be with you again so you can help her/him to get out of the mood.",
+									"low": "but scored low in Gregariousness, s/he may become reserved and want some private time, you may stay with her/him quietly, just let her/him know you're next to her/him and you're supportive."
+								}
+							}
+						}
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Immoderation",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's hedonistic, your strategy to approach is obvious, the only thing you need to find out is what kind of hedonism makes her/him tick most.",
+						"medium": "S/he's in the middle between self-controlled and hedonistic, you could target her/his hedonism in your approach, you just need to find out what kind of hedonism makes her/him tick most.",
+						"low": "S/he's self-controlled. Please look at other traits for the approaching strategy."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Self-consciousness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's self-conscious and sensitive, so be very careful with your comments even you have genuine intention. If you have any suggestions that could help her/him for improvement, wait until  later the trust has been built, ",
+						"medium": "S/he's in the middle between self-conscious and confident, be careful with your comments even you have genuine intention. If you have any suggestions that could help her/him for improvement, wait until  later the trust has been built",
+						"low": "S/he's confident, if you have thoughtful opinion about her/him, you may express yourself."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Vulnerability",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "S/he's susceptible to stress. During approach try to arrange activities that s/he's familiar with, in locations that s/he can feel relaxed. If instead, your intention is to let her/him to experience something new and exciting, then make sure you organize it well as anything unexpected happen could cause some kind of stress. <br><br> In case anything unexpected happen, try to take all the stress and manage it all, let her/him feel that everything is under control. <br><br> Last tip: usually people score high in this trait are highly creative, and creative outlet also provides healthy release for feelings they've absorbed.",
+						"medium": "In terms of vulnerability to stress, s/he's in the middle between calm and susceptible. S/he may have taken some certain level of stress already, so try to plan something as relaxing as possible. <br><br> Another tip: usually the higher the score at this trait, the more creative s/he is, and creative outlet also provides healthy release for feelings s/he's absorbed.",
+						"low": "It's hard to get her/him stressed, but that does not mean they don't like relaxing environment and activities. Though her/his vulnerability to stress is low, s/he will still enjoy letting out the feelings s/he's absorbed."
+					}
+				}]
+			}]
+		}]
+	},
+	"Needs": {
+		"traitName": "Needs",
+		"traitType": "needs",
+		"perspective": "This analysis analyzes the needs s/he hopes to fulfill when considering a product, so the analysis is only generated from the Perspective of Approaching, and only for the Customer Role in the Business View, but the same implications apply to other Roles, Views and Perspectives. For example, the same need can equally apply to Perspective of Relationship for relationship building. <br><br> Note that this is not applicable to the Perspective of Improvement - since it makes no sense to improve a need, and it can't be changed deliberately. Yet there maybe changes over the years due to different types of experience in life, naturally as result of perception changes.",
+		"general":{
+			"high": "S/he has strong desires to fulfil most of the needs below when considering a product. this gives implications for a sales person to approach her/him, but similar strategy can also be used for the opposite sex to approach for a relationship.",
+			"medium": "S/he has some desires to fulfil most of the needs below, this gives some implications for a sales person to approach her/him, but similar strategy can also be used for the opposite sex to approach for a relationship.",
+			"low": "S/he has limited desires to fulfil most of the needs below, this gives limited implications for a sales person to approach her/him, and similar implication when the opposite sex approaches for a relationship."
+		},
+		"children": [{
+			"traitName": "Challenge",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If the product or service has an aspect to fulfil her/his desire for challenging and test her/his ability, s/he'll find it appealing and tempted to purchase it. <br><br> Tips to the sales person: If the product has no aspect to present challenge, see if the price itself is a challenge. If s/he finds it challenging to afford it, s/he may be tempted to take the challenge, even if s/he does not have the ability now, s/he may come back to you in the future. <br><br> In addition you could deliberately make it challenging to understand some of the features, s/he maybe tempted to test her/his ability to understand it, this at least grabs her/his attention and makes it an opportunity to introduce the product in details.",
+						"medium": "S/he finds some appealing in the product if it presents some challenge but not into it too much. You may need to exaggerate a bit about its challenge aspect. <br><br> If the product has no aspect to present challenge, see if the price itself is a challenge. If s/he finds it challenging to afford it, s/he may be tempted to take the challenge, again you may need to just exaggerate it a bit. <br><br> In addition you could deliberately make it challenging to understand some of the features,s/he maybe tempted to test her/his ability to understand it, this at least grabs her/his attention and makes it an opportunity to introduce the product in details.",
+						"low": "S/he's not appealed to the product's aspect that presents challenging. the sales person should explore her/his other needs."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Closeness",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "Any aspects of the product that can connect to family or home will make her/him tick.",
+						"medium": "Any aspects of the product that can connect to family or home will have some appealing to her/him.",
+						"low": "S/he's not appealed to the product's aspect that relishes family or home, the sales person should explore her/his other needs"
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Curiosity",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If the product or service has an aspect to fulfil your curiosity needs, s/he'll find it appealing and tempted to purchase it. <br><br> Tips to the sales person: If the product has no aspect arouse her/his curiosity, you could try to make it her/him curious during your introduction, by asking her/him to make a guess on one of the unusual feature, this can at least gain her/his attention and gives you opportunity to tour her/him about the product.",
+						"medium": "S/he finds the product interesting if it arouses her/his curiosity but not necessary appealed to it. <br><br> Tips to the sales person: you could try to make it her/him curious during your introduction, by asking her/him to make a guess on one of the unusual feature, this can at least gain her/his attention and gives you opportunity to tour her/him about the product.",
+						"low": "S/he doesn't have the need for curiosity, the sales person should explore her/his other needs."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Excitement",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If the marketing literal or advertisement presents a down town lifestyle, or builds up upbeat emotional environment to use the product, or it's simply fun to use it, s/he may find it appealing.",
+						"medium": "If the marketing literal or advertisement presents a down town lifestyle, or builds up upbeat emotional environment to use the product, or it's simply fun to use it, s/he may find some appealing in it.",
+						"low": "S/he's not appealed to the aspect of excitement in the product itself or its marketing literals or advertisement, the sales person should explore her/his other needs."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Harmony",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "S/he appreciates other people's viewpoints and opinion, especially if that's from her/his idol. Try to find out if one of her/his idols is using the product, if there's s/he will find it even more appealing.",
+						"medium": "You find some appealing in the product if it presents some challenge but not into it too much. Try to find out if one of her/his idols is using the product, if there's s/he will find it more appealing.",
+						"low": "You're not appealed to the product's aspect that presents challenging, the sales person should explore her/his other needs"
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Ideal",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If the product appears perfect s/he'll find it appealing even is s/he doesn't really need it at this moment. In addition if the product contributes the welfare of the community, for example by donating some of its profits, or it's environmental friend, s/he'll find it appealing too.",
+						"medium": "If the product appears perfect s/he'll find some appealing in it even is s/he doesn't really need it at this moment. In addition if the product contributes the welfare of the community, for example by donating some of its profits, or it's environmental friend, s/he'll find some additional appealing in it.",
+						"low": "S/he's not appealed to the product's idealism aspect, the sales person should explore her/his other needs"
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Liberty",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "S/he's appealed to new products or it has become of a fashion of using it. If the marketing literals or advertisement has build up an image of escaping, s/he'll find it even more appealing.",
+						"medium": "To some extent, s/he's appealed to new products or it has become of a fashion of using it. If the marketing literals or advertisement has build up an image of escaping, that'll presents some appealing to her/him as well.",
+						"low": "S/he won't find it appealing simply because it's a new product or it has become a fashion to use it. In stead s/he will evaluate other aspects of the product, the sales person should explore her/his other needs."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Love",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If the product or brand promotes social contact or social life, it'll tap into this need.",
+						"medium": "You find some appealing in the product or brand if it promotes social contact or social life.",
+						"low": "S/he's not appealed to the product's aspect of bring people together or promotes social life, the sales person should explore her/his other needs."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Practicality",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If the product helps to improve efficiency s/he'll find it particularly appealing. Generally s/he's interested in any tools that can help her/him to get jobs done either for work or household.",
+						"medium": "If the product helps to improve efficiency s/he'll find some appealing in it. Generally s/he shows some interest in any tools that can help her/him to get jobs done either for work or household.",
+						"low": "The product's aspect of improving efficiency is not appealed to her/him, the sales person should explore her/his other needs."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Self-expression",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "Any products that helps her/him to make expression of opinions or asserting or discovering her/his identify will make her/him tick. This could also includes constellation or psychophysical counselling that could help her/him to discover her/himself, or books about personality and identify.",
+						"medium": "You find some appealing in any products that helps her/him to make expression of opinions or asserting or discovering her/his identify. <br><br> This could also includes constellation or psychophysical counselling that could help her/him to discover her/himself, or books about personality and identify.",
+						"low": "S/he's not appealed to the product's aspect that promotes self expressing, the sales person should explore her/his other needs."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Stability",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "S/he prefers products that gives her/his sense of stability, products that have been tested or well accepted. S/he's reluctant to try new product or services.",
+						"medium": "S/he find some appealing in products that gives her/his sense of stability, products that have been tested or well accepted. S/he's a bit reluctant to try new product or services.",
+						"low": "S/he's not appealed to the product's stability aspect and is willing to try new products or services."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Structure",
+			"traitType": "need",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "S/he has the need for structure, will be appealed to products that helps her/him to get things organized. If the marketing literal or product menu presents or introduce the features in an unstructured way s/he may refuse to look at it.",
+						"medium": "S/he has some needs for structure, will find some appealing in products that helps her/him to get things organized. If the marketing literal or product menu presents or introduce the features in an unstructured way s/he may be reluctant to take a look at it.",
+						"low": "S/he's comfortable when things are not structured or when there's no order in them, does not find products that help her/him to get things organized appealing."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						
+					}
+				}]
+			}]
+		}]
+	},
+	"Values": {
+		"traitName": "Values",
+		"traitType": "values",
+		"children": [{
+			"traitName": "Conservation",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Respect, commitment, and acceptance of the customs and ideas that one's culture and/or religion provides."
+		},
+		{
+			"traitName": "Openness to change",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Excitement, novelty, and challenge in life."
+		},
+		{
+			"traitName": "Hedonism",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Pleasure or sensuous gratification for oneself."
+		},
+		{
+			"traitName": "Self-enhancement",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Personal success through demonstrating competence according to social standards."
+		},
+		{
+			"traitName": "Self-transcendence",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}]
+		}]
+	}	
+}

@@ -1,0 +1,50 @@
+
+	[
+		{
+			"traitName": "Agreeableness",
+			"traitType": "facet",
+			"children": [
+				{
+					"traitName": "Altruism",
+					"traitType": "trait"				
+				},
+				{
+					"traitName": "Cooperation",
+					"traitType": "trait"				
+				},
+				{
+					"traitName": "Modesty",
+					"traitType": "trait"				
+				},				
+				{
+					"traitName": "Morality",
+					"traitType": "trait"				
+				}				
+			]
+		},
+
+		{
+			"traitName": "Conscientiousness",
+			"traitType": "facet",
+			"children": [
+				{
+					"traitName": "Achievement-striving",
+					"traitType": "trait"				
+				},
+				{
+					"traitName": "Cautiousness",
+					"traitType": "trait"				
+				},
+				{
+					"traitName": "Dutifulness",
+					"traitType": "trait"				
+				},				
+				{
+					"traitName": "Orderliness",
+					"traitType": "trait"				
+				}				
+			]
+		}		
+	]
+	
+	

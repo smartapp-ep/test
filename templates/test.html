@@ -1,0 +1,147 @@
+<ion-view view-title="Test" cache-view="true">
+
+	<ion-content padding="true" class="has-header" delegate-handle="report4" on-scroll="reportScroll()" overflow-scroll="false"  scroll="yes"> <!-- has-tabs='true' --> 
+	<div>		
+	<h4> test local storage </h4>
+	<label class="item item-input">
+		<span class="input-label" >text to store</span>
+		<input type="text" ng-model="content" palceholder="placeholder?">
+	</label>
+	<button ng-click="store(content)">store</button>
+	<br>value of content: {{content}}
+	<br><br>
+	
+	<button ng-click="retrieve()">retrieve</button>
+	<label>
+		<span> content from store: </span>
+		{{retrievedContent}}
+	</label>	
+	</div>
+	
+	<br><br>
+	<div>
+	<h4> test post msg </h4>
+	<button ng-click="newWindow()"> open popup</button>
+	</div>
+	
+	<br><br>
+	<div>
+	<h4>load report</h4>
+	<button ng-click="loadReport()"> load report</button>
+	</div>	
+	
+	<br><br>
+	<div>
+	<h4>load reports</h4>
+	<label class="item item-input">
+		<span class="input-label" >New File Prefix</span>
+		<input type="text" ng-model="prefix" palceholder="prefix">
+	</label>	
+	<button ng-click="loadReports(prefix)"> load reports</button>
+	</div>
+
+	
+	<br><br>
+	<div>
+	<h4>get PI from server</h4>
+	<button ng-click ="getpi('','',null)"> get PI</button>
+	</div>
+	
+	<br><br>
+	<div>
+	<h4> popup window</h4>
+	<button ng-click = "popupWin()"> open window </button>
+	</div>
+	
+	<br><br>
+	<div>
+	<h4> inapp browser, _blank</h4>
+	<button ng-click = "popupIAB()"> open InAppBrowser </button>
+	</div>
+	
+	<div>value from popup: {{test}}</div>
+
+	<br><br>
+	<div>
+	<h4> inapp browser, _self</h4>
+	<button ng-click = "popupIAB2()"> open InAppBrowser </button>
+	</div>
+
+	<br><br>
+	<div>
+	<h4> inapp browser, _system</h4>
+	<button ng-click = "popupIAB3()"> open InAppBrowser </button>
+	</div>	
+	
+	<div>
+	<h4> state go</h4>
+	<button ng-click = "changeState()"> go to state </button>
+	</div>	
+	
+	<div>
+	<h4>error test</h4>
+	<button ng-click = "testError()"> test error </button>
+	</div>		
+
+	<div>
+	<h4>install cert</h4>
+	<button ng-click = "installCert()"> install cert </button>
+	</div>	
+	
+	
+	<div>
+	<h4>reports</h4>
+	<label class="item item-input">
+		<span class="input-label" >person's name</span>
+		<input type="text" ng-model="name" palceholder="person's name">
+	</label>
+					<select  ng-model="source">
+                        <option value='facebook' ng-selected="source=='facebook'">Facebook</option>
+                        <option value='twitter' ng-selected="source=='twitter'">Twitter</option>
+                        <option value='yammer' ng-selected="source=='yammer'">Yammer</option>
+                    </select>	
+	<button ng-click = "createReport(name, source)"> create </button>
+	<button ng-click = "showReports()"> show reports </button>
+	</div>	
+	
+	<div>
+	<h4>share</h4>
+	<button ng-click = "share('facebook')"> share </button>
+	</div>	
+
+	<div>
+	<h4>getFriends & getProfile</h4>
+	<button ng-click = "getFriends('facebook')"> getFriends & profile </button>
+	</div>		
+
+	<div>
+	<h4>getPosts</h4>
+	<button ng-click = "getPosts('facebook')"> getPosts </button>
+	</div>	
+	
+	
+	<div>
+	<h4>getDeviceInfo</h4>
+	<button ng-click = "getDeviceInfo()"> getDeviceInfo </button>
+	</div>
+
+
+	<div>
+	<h4>setServer</h4>
+	<label class="item item-input">
+		<span class="input-label" >server name</span>
+		<input type="text" ng-model="serverName" palceholder="serverName">
+	</label>
+	<button ng-click = "setServer('https://' + serverName)">set server</button>
+	</div>
+
+	<div>
+	<h4>Import Report</h4>
+	<button ng-click = "importReport('Edwin Pun_yammer')"> Import test </button>
+	</div>
+	
+	<br><br>
+		
+	</ion-content>
+
+</ion-view>

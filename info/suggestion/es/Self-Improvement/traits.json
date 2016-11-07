@@ -1,0 +1,3616 @@
+{
+	"Openness": {
+		"traitName": "Openness",
+		"traitType": "facet",
+		"children": [{
+			"traitName": "Adventurousness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Eagerness to trying new activities and experiencing new things.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Artistic-interests",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Appreciation for art and beauty, both man-made and in nature.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Emotionality",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Emotional availability; awareness of own feelings.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Imagination",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Openness to creating an inner world of fantasy.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Intellect",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Intellectual curiosity; openness to new ideas.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Liberalism",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		}],
+		"description": "Openness to experience. Higher: Intellectually curious, emotionally-aware, sensitive to beauty and willing to try new things.\\nLower: Preferring the plain, straightforward, and obvious over the complex, ambiguous, and subtle.",
+		"perspectiveDetails": {
+			"Love": "true"
+		}
+	},
+	"Conscientiousness": {
+		"traitName": "Conscientiousness",
+		"traitType": "facet",
+		"children": [{
+			"traitName": "Achievement-striving",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "The need for personal achievement and sense of direction.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Cautiousness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Tendency to think things through before acting or speaking.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Dutifulness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Sense of duty; amount of emphasis placed on fulfilling obligations.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Orderliness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Personal organization, tidiness, neatness.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Self-discipline",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Will-power; the capacity to begin tasks and follow through to completion in spite of boredom or distractions.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Self-efficacy",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Belief in one's own competence.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		}],
+		"description": "Higher: More self-disciplined, dutiful, or aiming for achievement against measures or outside expectations.\\nLower: More likely to prefer the spontaneous over the planned.",
+		"perspectiveDetails": {
+			"Love": "true"
+		}
+	},
+	"Introversion-Extroversion": {
+		"traitName": "Extroversion",
+		"traitType": "facet",
+		"children": [{
+			"traitName": "Activity level",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Assertiveness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Forcefulness of expression; pursuit of leadership and social ascendancy; desire to direct the activities of others.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Cheerfulness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Tendency to experience or express positive emotions.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Excitement-seeking",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need for environmental stimulation.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Friendliness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Gregariousness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Fondness for the company of others; sociability.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		}],
+		"perspectiveDetails": {
+			"Love": "true"
+		}
+	},
+	"Agreeableness": {
+		"traitName": "Agreeableness",
+		"traitType": "facet",
+		"children": [{
+			"traitName": "Altruism",
+			"traitType": "trait",
+			"info": {
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "You feel fulfilled by helping others and people like you in all types of relationship. As the fulfilment itself makes it rewarding, you're not looking for return from your help, even when there's significant efforts and commitments involved, and even when you're aware that people is taking advantage of this. ...what's the advise? okay to be none...",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "You are devoted to the relationship and your partner can feel that. In addition you're not asking her/him to devote the same level of efforts in return, and you do not think it needs to be the same level to be fair. Yet, you must understand your partner may not think that way. If she/he has the opposite trait, ...",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Active and genuine concern for the welfare of others.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Cooperation",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Dislike of confrontations. Responding to interpersonal conflict with a willingness to compromise.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Modesty",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Tendency to be unassuming and play down own achievements; humility.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Morality",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Sympathy",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Attitude of compassion for others; kindness.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Trust",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Level of belief in the sincerity and good intentions of others.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		}],
+		"description": "Higher: Value getting along with others. They have a more optimistic view of human nature.\\nLower: Value self interests over others. They are more skeptical of others' motives.",
+		"perspectiveDetails": {
+			"Love": "true"
+		}
+	},
+	"Neuroticism": {
+		"traitName": "Neuroticism",
+		"traitType": "facet",
+		"children": [{
+			"traitName": "Anger",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Anxiety",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Depression",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Immoderation",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Self-consciousness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Concern with rejection, embarrassment; shyness.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Vulnerability",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"viewDetails": {
+				"Love": "true"
+			}
+		}],
+		"description": "not available",
+		"perspectiveDetails": {
+			"Love": "true"
+		}
+	},
+	"Needs": {
+		"traitName": "Needs",
+		"traitType": "needs",
+		"children": [{
+			"traitName": "Challenge",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A desire to achieve, succeed, compete, or pursue experiences that test one's abilities.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Closeness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need to nurture or be nurtured; a feeling of belonging.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Curiosity",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need to pursue experiences that foster learning, exploration, and growth.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Excitement",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need to pursue experiences or lead a lifestyle that arouses enthusiasm and eagerness.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Harmony",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need to appreciate or please other people, their viewpoints, and feelings.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Ideal",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A desire to satisfy one's idea of perfection in a lifestyle or experience, oftentimes seen as pursuing a sense of community.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Liberty",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need to escape, a desire for new experiences, new things.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Love",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Social contact, whether one-to-one or one-to-many.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Practicality",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A desire for getting the job done, skill, and efficiency.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Self-expression",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A desire to discover and assert one's identity.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Stability",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need for the sensible, tried and tested, with a good track record and a known history.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Structure",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "A need for organization, planning, and things that have a clear purpose.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		}],
+		"perspectiveDetails": {
+			"Love": "true"
+		}
+	},
+	"Values": {
+		"traitName": "Values",
+		"traitType": "values",
+		"children": [{
+			"traitName": "Conservation",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Respect, commitment, and acceptance of the customs and ideas that one's culture and/or religion provides.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Openness-to-change",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Excitement, novelty, and challenge in life.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Hedonism",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Pleasure or sensuous gratification for oneself.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Self-enhancement",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Personal success through demonstrating competence according to social standards.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		},
+		{
+			"traitName": "Self-transcendence",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			}],
+			"description": "Preserving and enhancing the welfare of those with whom one is in frequent personal contact.",
+			"viewDetails": {
+				"Love": "true"
+			}
+		}],
+		"perspectiveDetails": {
+			"Love": "true"
+		}
+	}
+}

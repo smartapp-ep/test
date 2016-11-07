@@ -1,0 +1,81 @@
+<ion-view view-title="Free Credits">
+  <ion-content overflow-scroll="false" padding="true">
+    <h5>Purchase Credits</h5>
+	<!-- <div>{{relationship}}</div> -->
+	<div>
+	<h4> check credits go</h4>
+	<button ng-click = "checkCredits()"> check credits </button>
+	</div>	
+
+	<h4> get promotional credits </h4>
+	<button ng-click = "purchaseCredits(5)"> purchase credits </button>
+	</div>		
+	
+	
+	<h4> get promotional credits </h4>
+	<button ng-click = "share('prom')"> share </button>
+	</div>		
+	
+			<!-- share --> 
+            <div>
+                <details>
+                    <summary>
+                        Share this app at &nbsp; &nbsp;
+					<select  ng-model="social.place">
+                        <option value='facebook' ng-selected="social.place=='facebook'">Facebook</option>
+                        <option value='twitter' ng-selected="social.place=='twitter'">Twitter</option>
+                        <option value='yammer' ng-selected="social.place=='yammer'">Yammer</option>
+                    </select>
+                    </summary>
+                   Share this to your friends / colleagues and get promotional credits!
+                    <u>more info</u>
+                </details>
+				    
+				<!--	
+					<button class="button button-block button-stable" type="submit" href="#/app/people/{{place}}/">>Analyse</button>
+				-->	
+				
+				<button class="button button-block button-stable" type="submit" ng-click="share(social.place)">share</button>
+				
+            </div>	
+
+			<!-- precheck --> 
+            <div>
+                <details>
+                    <summary>
+                        choose a social site and precheck elibiglity or availability of promotion credits &nbsp; &nbsp;
+					<select  ng-model="social.place">
+                        <option value='facebook' ng-selected="social.place=='facebook'">Facebook</option>
+                        <option value='twitter' ng-selected="social.place=='twitter'">Twitter</option>
+                        <option value='yammer' ng-selected="social.place=='yammer'">Yammer</option>
+                    </select>
+                    </summary>
+                   Share this to your friends / colleagues and get promotional credits!
+                    <u>more info</u>
+                </details>
+				
+				<button class="button button-block button-stable" type="submit" ng-click="precheck(social.place)">precheck</button>
+				
+            </div>	
+			
+			
+			<!-- accquire --> 
+            <div>
+                <details>
+                    <summary>
+                        Get free promotional credits &nbsp; &nbsp;
+					<select  ng-model="social.place">
+                        <option value='facebook' ng-selected="social.place=='facebook'">Facebook</option>
+                        <option value='twitter' ng-selected="social.place=='twitter'">Twitter</option>
+                        <option value='yammer' ng-selected="social.place=='yammer'">Yammer</option>
+                    </select>
+                    </summary>
+                   Share this to your friends / colleagues and get free promotional credits!
+                    <u>more info</u>
+                </details>
+				
+				<button class="button button-block button-stable" type="submit" ng-click="acquire(social.place)">get promotional credits</button>
+				
+            </div>				
+  </ion-content>
+</ion-view>

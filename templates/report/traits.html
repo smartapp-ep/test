@@ -1,0 +1,47 @@
+<ion-view view-title="Report {{name}}" hide-back-button="true">
+  
+    <ion-nav-buttons side="left" class="button button-clear button-icon icon ion-navicon">
+		<button class="button button-icon icon ion-ios-arrow-left" ng-click=backToReports() style="font-size:12px">Reports</button>
+	</ion-nav-buttons>
+  
+  
+  <ion-content padding="true" overflow-scroll="false">
+  
+	<!-- test toggle (to use hard-coded score or real) -->
+	
+	<ion-toggle ng-model="languageToggle.en" toggle-class="toggle-calm" ng-check="languageToggle.en" ng-change=languageChange()>language: {{languageName}}</ion-toggle>
+	<div ng-show="language == true">true</div>
+	<div ng-show="language.en">false</div>
+
+	
+	<div class="list">
+		<label class="item item-input item-select">
+			<div class="input-label">
+				score
+			</div>
+			<select ng-model="scoreOpts.score">
+				<option value="profile" ng-select="scoreOpts.score=='profile'">profile</option>
+				<option value="high" ng-select="scoreOpts.score=='high'">high</option>
+				<option value="medium-high" ng-select="scoreOpts.score=='medium-high'">medium-high</option>
+				<option value="medium" ng-select="scoreOpts.score=='medium'">medium</option>
+				<option value="medium-low" ng-select="scoreOpts.score=='medium-low'">medium-low</option>
+				<option value="low" ng-select="scoreOpts.score=='low'">low</option>					
+			</select>
+		</label>
+	</div>
+	
+
+	
+    <ion-list>
+	  <ion-item href="#/app/summary/{{file}}">
+		{{'Summary' | translate}}
+	  </ion-item>
+	  
+		<!--ion-item ng-repeat="facet in facets" href="#/app/report/{{file}}/{{facet}}/{{score}}/perspectives/Relationship/facet"-->		
+		<ion-item ng-repeat="facet in facets" ng-click="openFacet(facet)">	  
+			{{facet | translate}}
+		</ion-item>
+    
+	</ion-list>
+  </ion-content>
+</ion-view>

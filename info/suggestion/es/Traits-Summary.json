@@ -1,0 +1,481 @@
+{
+	"Openness": {
+		"description": "Openness to experience. Higher: Intellectually curious, emotionally-aware, sensitive to beauty and willing to try new things.\\nLower: Preferring the plain, straightforward, and obvious over the complex, ambiguous, and subtle.",
+		"children": {
+			"Adventurousness": {
+				"description": "Eagerness to trying new activities and experiencing new things.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Artistic-interests": {
+				"description": "Appreciation for art and beauty, both man-made and in nature.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Emotionality": {
+				"description": "Emotional availability; awareness of own feelings.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Imagination": {
+				"description": "Openness to creating an inner world of fantasy.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Intellect": {
+				"description": "Intellectual curiosity; openness to new ideas.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Liberalism": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			}
+		}
+	},
+	"Conscientiousness": {
+		"description": "Higher: More self-disciplined, dutiful, or aiming for achievement against measures or outside expectations.\\nLower: More likely to prefer the spontaneous over the planned.",
+		"children": {
+			"Achievement-striving": {
+				"description": "The need for personal achievement and sense of direction.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Cautiousness": {
+				"description": "Tendency to think things through before acting or speaking.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Dutifulness": {
+				"description": "Sense of duty; amount of emphasis placed on fulfilling obligations.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Orderliness": {
+				"description": "Personal organization, tidiness, neatness.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Self-discipline": {
+				"description": "Will-power; the capacity to begin tasks and follow through to completion in spite of boredom or distractions.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Self-efficacy": {
+				"description": "Belief in one's own competence.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			}
+		}
+	},
+	"Extraversion": {
+		"description": {
+			"high": "Value getting along with others. You have a more optimistic view of human nature.",
+			"low": "Value self interests over others. You are more skeptical of others' motives."
+		},
+		"summary": "This facet averages its individual traits and is generally an indication of a person's tendency to seek stimulation in the company of others.",	
+		"children": {
+			"Activity level": {
+				"info": {
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Assertiveness": {
+				"description": "Forcefulness of expression; pursuit of leadership and social ascendancy; desire to direct the activities of others.",
+				"info": {
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Cheerfulness": {
+				"description": "Tendency to experience or express positive emotions.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Excitement-seeking": {
+				"description": "A need for environmental stimulation.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Friendliness": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Gregariousness": {
+				"description": "Fondness for the company of others; sociability.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			}
+		}
+	},
+	"Agreeableness": {
+		"description": {
+			"high": "Value getting along with others. You have a more optimistic view of human nature.",
+			"low": "Value self interests over others. You are more skeptical of others' motives."
+		},
+		"summary": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",		
+		"children": {
+			"Altruism": {
+				"description": "Active and genuine concern for the welfare of others.",
+				"info": {
+					"high": "Find that helping others is genuinely rewarding, that doing things for others is a form of self-fulfilment rather than self-sacrifice.",
+					"low": "More concerned with taking care of her/himself than taking time for others. Not necessarily selfish, but believing other people are capable of taking care of themselves, so only mind his or her own business. When asked, depends on other traits, the person may be actually more than willing to help."
+				}
+			},
+			"Cooperation": {
+				"description": "Dislike of confrontations. Responding to interpersonal conflict with a willingness to compromise.",
+				"info": {
+					"high": "You're easy to please and try to avoid confrontation, you add harmony to any type of relationship.",
+					"low": "You do not shy away from contradicting others, if others happen to have the same trait, you may argue with them a lot."
+				}
+			},
+			"Modesty": {
+				"description": "Tendency to be unassuming and play down own achievements; humility.",
+				"info": {
+					"high": "Uncomfortable being the center of attention, yet not necessarily lacks self-confidence or self-esteem.",
+					"low": "This person holds herself or himself in high regard and is satisfied with who s/he is."
+				}
+			},
+			"Morality": {
+				"description": "Tendency to see need for pretense or manipulation when dealing with others and are therefore whether is candid, frank, and genuine. Impact to relationship from this trait is hard to predict - there is an intricate and complex connection between morality and personal relationships.",
+				"info": {
+					"high": "This person tend to think it is wrong to take advantage of others to get ahead.",
+					"low": "Comfortable using every trick in the book to get what she/he want."
+				}
+			},
+			"Sympathy": {
+				"description": "Attitude of compassion for others; kindness.",
+				"info": {
+					"high": "This person feels what others feel and are compassionate toward them.",
+					"low": "This person thinks people should generally rely more on themselves than on others."
+				}
+			},
+			"Trust": {
+				"description": "Level of belief in the sincerity and good intentions of others.",
+				"info": {
+					"high": "This person believes the best of others and trust people easily.",
+					"low": "This person is wary of other people's intentions and do not trust easily"
+				}
+			}
+		}
+	},
+	"Neuroticism": {
+		"description": "Also referred to as Emotional Range or Natural Reactions, is the extent to which a person's emotions are sensitive to the individual's environment.",
+		"children": {
+			"Anger": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Anxiety": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Depression": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Immoderation": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Self-consciousness": {
+				"description": "Concern with rejection, embarrassment; shyness.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Vulnerability": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			}
+		}
+	},
+	"Needs": {
+		"children": {
+			"Challenge": {
+				"description": "A desire to achieve, succeed, compete, or pursue experiences that test one's abilities.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Closeness": {
+				"description": "A need to nurture or be nurtured; a feeling of belonging.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Curiosity": {
+				"description": "A need to pursue experiences that foster learning, exploration, and growth.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Excitement": {
+				"description": "A need to pursue experiences or lead a lifestyle that arouses enthusiasm and eagerness.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Harmony": {
+				"description": "A need to appreciate or please other people, their viewpoints, and feelings.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Ideal": {
+				"description": "A desire to satisfy one's idea of perfection in a lifestyle or experience, oftentimes seen as pursuing a sense of community.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Liberty": {
+				"description": "A need to escape, a desire for new experiences, new things.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Love": {
+				"description": "Social contact, whether one-to-one or one-to-many.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Practicality": {
+				"description": "A desire for getting the job done, skill, and efficiency.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Self-expression": {
+				"description": "A desire to discover and assert one's identity.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Stability": {
+				"description": "A need for the sensible, tried and tested, with a good track record and a known history.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Structure": {
+				"description": "A need for organization, planning, and things that have a clear purpose.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			}
+		}
+	},
+	"Values": {
+		"children": {
+			"Conservation": {
+				"description": "Respect, commitment, and acceptance of the customs and ideas that one's culture and/or religion provides.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Openness-to-change": {
+				"description": "Excitement, novelty, and challenge in life.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Hedonism": {
+				"description": "Pleasure or sensuous gratification for oneself.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Self-enhancement": {
+				"description": "Personal success through demonstrating competence according to social standards.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Self-transcendence": {
+				"description": "Preserving and enhancing the welfare of those with whom one is in frequent personal contact.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			}
+		}
+	}
+}

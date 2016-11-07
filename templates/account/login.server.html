@@ -1,0 +1,26 @@
+<!--ion-nav-view-->
+<ion-view view-title="Login-server">
+  <ion-content  scroll="no" overflow-scroll="false" padding="true">
+
+		<ion-list>
+			<ion-item>
+				<ion-button class="button button-icon fblogin" on-tap="login('facebook')" ng-disabled="isClientAuth('facebook') || ( isAuthAt('facebook') && isAuth() )">
+				</ion-button>
+			</ion-item>
+			<ion-item>
+				<ion-button class="button button-icon twlogin" ng-click="login('twitter')" ng-disabled="isClientAuth('twitter') || ( isAuthAt('twitter') && isAuth() )">
+				</ion-button>
+			</ion-item>
+			<ion-item>
+				<ion-button class="button button-icon ymlogin" on-tap="login('yammer')" ng-disabled="isClientAuth('yammer') || ( isAuthAt('yammer') && isAuth() )">
+				</ion-button>
+			</ion-item>
+		</ion-list>
+		
+		<!-- translate! -->
+		<div></div>
+		<div ng-show="lastSource">&nbsp; &nbsp;{{authMsg}}</div>	
+		<br>
+		<div ng-show="isAuth()" style="font-size: smaller;">Note: the social site(s) you have recently authenticated with is / are greyed out.</div>		
+	</ion-content>
+</ion-view>

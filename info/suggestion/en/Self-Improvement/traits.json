@@ -1,0 +1,4255 @@
+{
+	"Openness": {
+		"traitName": "Openness",
+		"traitType": "facet",
+		"general": {
+			"high": "You're open to experience, maintain high curiosity intellectually, welcome new experiences. This is a great trait generally.",
+			"medium": "You're in the middle between simple and complex, obvious and subtle, straightforward and ambiguous, from time to time you have inner conflicts. The key is effective internal communication that can address both needs and be clear why you want to be towards one end over the other for this time.",
+			"low": "You're straightforward, you prefer plain, simplicity, clearness. This has nothing wrong but sometimes you do want to open up a little and embrace for the new things."
+		},		
+		"children": [{
+			"traitName": "Adventurousness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						"high": "This trait has great implication to your career direction, and what type of job suits you. It also has implication to the style of approach that you take at work. This certainly can create conflicts to those who work with you if they have an opposite trait."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're adventurous and eager to experience new things, this is great and has nothing wrong with it, yet you need to learn how to compromise if this creates tension between the beloved one and you. <br><br> In addition, {{getCombos}}",
+						"medium": "You're in the middle between adventurous and consistent despite the inner conflicts you tend to manage to achieve balance between the two over time. {{getCombos}}",
+						"low": "You're consistent, enjoy familiar routines and hate to deviate from them. But sometimes it's time for change and you need to embrace for new challenges. It could be initially painful but the benefits result from change could outweigh the pain once you overcome the resistance to change, you'll also become more adaptable to changes."
+					},
+					"combos": {
+						"traits": [{
+							"facet": "Neuroticism",
+							"trait": "Immoderation"
+						}],
+						"info": {
+							"high": {
+								"info": {
+									"high": "since also scored high in Immoderation, you may want to start exercise control or hold on your adventurous desires, schedule your adventures a bit more sparingly to have a better balanced of work.",
+									"medium": "since scored medium in Immoderation, you tend to have control on your adventurous desires by  scheduling your adventures sparingly, this leads to better balanced life.",
+									"low": "but scored low in Immoderation, you tend to have control on your adventurous desires by  scheduling your adventures sparingly, this leads to better balanced life."
+								}
+							},
+							"medium": {
+								"info": {
+									"high": "but you score high in Immoderation, sometimes your adventurous desire wins over your control you have the rush to jump into an adventure immediately and leave everything behind.",
+									"medium": "since also scored medium in Immoderation, you tend to have control on your adventurous desires and only schedule your adventures sparingly, this leads to better balanced life.",
+									"low": "since scored low in Immoderation, you tend to have good control on your adventurous desires by  scheduling your adventures sparingly, this leads to better balanced life."
+								}
+							}
+						}
+					}
+					
+				}]
+			}]
+		},
+		{
+			"traitName": "Artistic interests",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You appreciate beauty and look out for creative activities. If you find our job boring and if there's possibility to take a job that's related to creativities, you may want to consider it.",
+						"medium": "You're in the middle between unconcerned with art and appreciative of art. If you're on the higher end of the score and find your job boring, you may want to reconsider your career; On contrary, if you score at the lower end and your job requires lots of creativity, you may consider change career, or spend more time for creative activities and develop more creativities.",
+						"low": "You're less concerned with artistic or creative activities, and there's nothing wrong with this, and this trait was born with you. Yet if your partner has an opposite trait, it's a good opportunity for you to start exploring arts with her/his company, find out what and why it's appealing to her/him, and see how this plays in you. Artistic has been found to be a right brain trait and helps to improve your imagination."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Emotionality",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're well aware of your feelings and are good at expressing them. This is a good trait and there's no need for improvement. {{getCombos}}",
+						"medium": "You're in the middle between emotionally aware and dispassionate. You tend to handle your feelings well and able to communicate and describe them accurately when necessary. {{getCombos}}",
+						"low": "You do not frequently think about your feelings and do not feel the need to express them. Feelings can build up over time and you need to pay more attention to them. In addition sometimes it's beneficial to express them out to others even if the feelings are not intensive."
+					},
+					"combos": {
+						"traits": [{
+							"facet": "Neuroticism",
+							"trait": "Friendliness"
+						}],
+						"info": {
+							"medium": {
+								"info": {
+									"high": "Yet you're outgoing(Friendliness) so you tend to express your feeling to others, this may not be a good thing in all time, if expressing it could cause adverse effect, and once spoken you can't reverse it. <br><br> From time to time you may want to learn to hold your feelings to yourself, learn to deal with it internally, and showing it to others only if there's no adverse effects.",
+									"medium": "Yet you scored medium in Outgoing(Friendliness), there's some tendency to express your feeling to others, this may not be a good thing in all time, if expressing it could cause adverse effect, and once spoken you can't reverse it. <br><br> From time to time you may want to learn to hold your feelings to yourself, learn to deal with it internally, and showing it to others only if there's no adverse effects.",
+									"low": "Since scored low in Outgoing(Friendliness), you tend to deal with it privately and do not express it to others. Yet there's time when you need to communicate your feelings to others to avoid misunderstanding or just to gain support, in these times you may need to be less reserved."
+								}
+							},
+							"medium": {
+								"info": {
+									"high": "Yet you're outgoing(Friendliness) so you tend to express your feeling to others even when it's not necessary, this may not be a good thing in all time, if expressing it could cause adverse effect, and once spoken you can't reverse it. <br><br> From time to time you may want to learn to hold your feelings to yourself, learn to deal with it internally, and showing it to others only if there's no adverse effects.",
+									"medium": "Yet you scored medium in Outgoing(Friendliness), there's some tendency to express your feeling to others, this may not be a good thing in all time, if expressing it could cause adverse effect, and once spoken you can't reverse it. <br><br> From time to time you may want to learn to hold your feelings to yourself, learn to deal with it internally, and showing it to others only if there's no adverse effects.",
+									"low": "Since scored low in Outgoing(Friendliness), you tend to deal with it privately and do not express it to others. Yet there's time when you need to communicate your feelings to others to avoid misunderstanding or just to gain support, in these times you may need to be less reserved."
+								}
+							}
+						}
+					}
+					
+				}]
+			}]
+		},
+		{
+			"traitName": "Imagination",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You have wild imagination, which is a valuable ability. You should encourage your right brain to continue and enhance, at the meant time, if you're not working in the creative industry, learn how to apply it at work or in life, and help your left brain to solve problems, come up with creative solutions,  develop ability of creative thinking. <br><br> There are lots of resources out there that explain how the two hemispheres of the brain work together, and the thinking process can be trained, developed and improved. <br><br> If you can find a job to make use of your imagination by no means get to it. Just remember use of imagination is not limited to creative work, it can be used in logical nature of work as well.",
+						"medium": "You're in the middle between imaginative and down-to-earth, if you've found it useless and been suppressing it , stop doing that now. <br><br> If you're not working in the creative industry, learn how to apply it at work or in life, and help your left brain to solve problems, come up with creative solutions,  develop ability of creative thinking. <br><br> There are lots of resources out there that explain how the two hemispheres of the brain work together, and the thinking process can be trained, developed and improved. <br><br> If you can find a job to make use of your imagination by no means get to it. Just remember use of imagination is not limited to creative work, it can be used in logical nature of work as well.",
+						"low": "You prefer facts over fantasy, you're pragmatical and practical, and only focus on concrete issues. In addition you're logical and rational. These are all signs that you're dominated by the left brain. Yet you probably are aware of the power of  imagination, and it's not just for creative work, it's for thinking and problem solving as well. <br><br> Since you already have strong and powerful logic and analysis ability, a little imagination could really bring you to next level. There are lots of resources out there could help you to tab into the potential of the right brain in general, as well as methods for specifically develop imaginative ability, and you'll be surprised how much difference it can make."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Intellect",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You want to go beyond the concrete facts and generalize methods or philosophies that'll help you to deal with similar situations in the future. That's why when faced with a problem, you don't just focus on the current problem, but the philosphy behind it. The additional time and efforts is an investment and is well worth. <br><br> This is a great trait but it can easily cause conflicts between your co-worker or partner especially when they're under tight deadline or other sorts of constrains need to be considered. In such cases you should really adjust your mindset and put more focus on the current problem, take a straight forward approach to get the problem fixed first before your philosophical study of the approach. <br><br> In addition, people who work or live with you will see you going around the problem instead of straight to it, if they're straight forward type of person they may have difficulty to understand your intention and wonder why you have to make it so complex. <br><br> If you don't know about this trait or don't know yourself well, it maybe not be easy for you to effectively communicate this trait in you. Now you can simply show them your PI360 report!",
+						"medium": "You're in the middle between philosophical and concrete, from time to time you may have inner conflicts since the tendency towards the two ends both exist in you. <br><br> The conflict is natural as there are merits in both type of approaches. The decision to take which approach is actually very straight forward and simple though: <br><br> If there's philosophical values and if time allows, take the first approach. For example, if it's participated there will be similar problems in the future; or even if there won't be, but there's value in deeper study of the problem which would help you to handle a completely different problem.",
+						"low": "You're pragmatic and efficient, you go straight to the problem and do not waste any time, you do not see the need for abstract ideas beyond the concrete world. <br><br> When you grow older you may start to change a little and start to appreciate the additional time for the philosophical study and approach may well worth the investment. <br><br> This really is as simple as a change in mentality but we don't easily change. Why not give it a try it and see how it goes? You can always change back to take the old concrete and straight forward approach and if you don't find the philosophical approach beneficial."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Liberalism",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're not afraid to challenge authority and traditional ideas or methods. But when you grow older this trait may diminish over numerous failure in the challenges. <br><br> Please remember, you don't need to succeed in the challenge! A failure in challenge only means you have proved that the authority is right, it doesn't mean you fail. This is a valuable trait and it's this trait that has kept the human society and science evolve and change. <br><br> Too many of us simply assume the authority is right, this valuable trait was born with you and should continue in you.",
+						"medium": "You're in the middle between Authority-challenging and respectful of authority, both tendency exist in you. Deeper in your mind, how you make the decision is actually how you are towards change. Sometimes the need for change could make you change from respectful of authority to challenging. <br><br> Some people lose the encourage when grow older and wants more stability; some have had enough stability and desires more changes instead.",
+						"low": "Are you respectful of authority and tradition?  Or you simply hate changes so you follow the tradition to maintain the sense of stability? Obviously sometimes change is great, or even essential at times, but nobody can force you to change this trait but yourself. <br><br> Some people wants even more stability when grow older, some review what they been through and realized they need some changes."
+					}
+				}]
+			}]
+		}]
+	},
+
+	"Conscientiousness": {
+		"traitName": "Conscientiousness",
+		"traitType": "facet",
+		"general": {
+			"high": "You tend to act in an organized and thoughtful way, there maybe little room for improvement except for a couple of traits in this facet; in addition, life is full of surprise and not everything can be planned.",
+			"medium": "You're in the middle between spontaneous and planned, there's possibly a bit of room to improve, check out each trait in this facet.",
+			"low": "You tend to act spontaneously, there's possible room for improvement for quite a few of the traits in this facet."
+		},
+		"children": [{
+			"traitName": "Achievement striving",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You set high goals and work hard to achieve them, continuously attempt to make improvement and make progress in all aspects of your life. This drive is valuable and usually does not diminish over age, there maybe only a couple of things you need to be aware of. <br><br> Sometimes if the drive in you is too strong, it could drive you to the wrong direction. Life is full of surprise, sometimes we simply can't get it when we want it too much. <br><br> Also be aware to keep your life more balanced if you have been working too hard for your career, spend more time for yourself, your family and the one you love. We all learn at some certain stage in our lives - these are much more important than our careers.",
+						"medium": "You're in the middle between content and driven. People scored in the middle range in this trait tend to have tendency to both ends, the improvement is not about changing yourself and gear towards either of the two ends, instead it's about knowing yourself more and discover your true desire, then adjust yourself to the best balance point where you can be fulfilled by both ends. <br><br> Some people are driven for success for the wrong reason such as vanity, when they finally realize that's not what they want or it's not worth, they've already lost too much valuable things in life. So the only improvement you may need is to resolve the inner conflicts rooted from the two tendency.",
+						"low": "You're content, you enjoy life and progress at relaxing pace, you're not ambitious in life or at work. This is your personality and there's really nothing wrong about it. Is there a price for this? Many good things require hard work, as long as you know what you're after, then just accept who you are and make your choice, don't get distracted by others success."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Cautiousness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You carefully think through alternatives and consequences before making decision, this is a great habit. Yet sometimes you should try experience the fun of being impromptu especially when out side of work, this could give both the one you love and yourself some excitement and surprise.",
+						"medium": "You're in the middle between bold and deliberate, there room for improvement. Impulsiveness is related to how our brain is programmed to work - the subconscious mind and habits, the emotions in our brain and how the right hemispherical brain works with the left side of it. A good starting point is controlling your emotions. Look out for resources and books that can help in emotion controlling.",
+						"low": "You're bold and impulsive, sometimes you regret you acted too fast didn't take the time deliberating to make the decision, but for some reasons next time you take the action again without too much thoughts. <br><br> This is related to how our brain is programmed to work - the subconscious mind and habits, the emotions in our brain and how the right hemispherical brain works with the left side of it. A good starting point is controlling your emotions. Look out for resources and books that can help in emotion controlling."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Dutifulness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You take rules and obligations seriously and are considered reliable and responsible at work, social network and in your personal life. This is great but sometimes you also need to learn to be a little more flexible especially when the rules have become less reasonable when things change quickly.",
+						"medium": "You're between dutiful and carefree, there's always the inner conflicts in you. When you grow older you need to achieve a healthier balance and become more responsible both at work and in your personal life.",
+						"low": "You do want you want, give very little regards to rules and obligations. because of this you're able to think outside of the boxes, which is great. But when you grow older it's inevitable you need to take more responsibility at work or in your personal life."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Orderliness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You have strong need to keep things organized, could not stand for chaos even for a short while. When the chaos is only temporary, you may find yourself wasting time fixing a  temporary chaos, but you may not be able to control yourself and fix another temporary chaos next time, simply because you have strong need for order. Being organized is a good trait but you just need to learn occasionally you need to bear with it. <br><br> The same applies when you need to live with someone else who score low in the trait, be it your partner or a flatmate, maybe for a short-while at least, before you decide to change partner or flat-mate.",
+						"medium": "You're reasonably organized but can also stand chaos to some certain extent. There's not much room for improvement as far as this trait is concerned.",
+						"low": "You don't like to spend time for organizing things, maybe you're lazy maybe you haven't realized that leaving things unorganized in for a long time can cause problem. It's time to spend a little time every day and start to get things organized a bit."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Self-discipline",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You can tackle and stick with tough tasks and do not give up easily before persistent difficulties. This is one of the most important factor for success, please keep it on!",
+						"medium": "You're somewhere between persistent and intermittent. You may hate yourself when you can't stick with difficult tasks for a long period of time but you simply can't do it. <br><br> Like anything else will power can be practised and trained, and gradually improved, as long as you're determined.",
+						"low": "You're intermittent, You may hate yourself when you can't stick with difficult tasks for a long period of time but you simply can't do it. <br><br> Like anything else will power can be practised and trained, and gradually improved, as long as you're determined."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Self-efficacy",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You feel you have the ability to succeed, this is a good trait especially if you also score high in Achievement striking which means you also have the drive. You only need to be careful and don't over estimate or over stretch yourself.",
+						"medium": "You're somewhere between self doubting and self assured. The best cure is to put more efforts in preparation for any tasks that you doubt about your ability, once you succeed your confidence build up. Then take more challenges which will put you in the positive cycle.",
+						"low": "You're self doubting. The best cure is to put more efforts in preparation for any tasks that you doubt about your ability, once you succeed your confidence build up. Then take more challenges which will put you in the positive cycle."
+					}
+				}]
+			}]
+		}]
+	},
+
+	"Extraversion": {
+		"traitName": "Extraversion",
+		"traitType": "facet",
+		"general": {
+			"high": "You enjoy, or even need interaction with the external world, but sometimes you need to be comfortable with isolation from world.",
+			"medium": "You have a balanced level of interaction with the external world, there's little need to make improvement.",
+			"low": "You need less simulation from external world, but sometime you may find it necessary to cope with more simulation."
+		},		
+		"children": [{
+			"traitName": "Activity level",
+			"traitType": "trait",			
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						"high": "You enjoy fast pace of life but occasionally it's good to slow down and review your internal values. When things slows down, you need to learn how to live with less or even no activities, don't jump on anything just to keep yourself busy.",
+						"medium": "You keep a reasonable pace in work and life, have reasonable schedule of daily activities, there may not be need for improvement as far as this trait is concerned.",
+						"low": "You enjoy relaxed pace of life but sometimes you do need to speed up a bit. It's good that you can make yourself adaptable and change gear when required, though not forgetting what kind of pace your personality is rooted at."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Assertiveness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "Assertiveness is a good trait in most situations, but sometimes it's not a good idea to expose your thoughts too early. For example if you ask your subordinate about their view of something, s/he may try to say something that you want to hear and you never know her/his true thoughts.",
+						"medium": "You're reasonably assertive but there's room to improve. Assertiveness can be practiced and developed overtime. You could try to take available opportunities to formulate opinion of unimportant matters and speak it up, gradually it becomes more of a subconscious process.",
+						"low": "To some extent, assertiveness can be practiced and developed overtime. You could try to take available opportunities to formulate opinion of unimportant matters and speak it up, gradually it'll become more of a subconscious process."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Cheerfulness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're cheerful, people enjoy being with you, {{getCombos}}",
+						"medium": "You're reasonably cheerful and people enjoy being with you most of the time. Yet from time to time you appear to be solemn. {{getCombos}}",
+						"low": "You're serious and do not joke much, this could create unnecessary tension in getting along with you. Maybe you could learn to relax a bit and learn how to cheer yourself up."
+					},
+					"combos": {
+						"traits": [{
+							"facet": "Neuroticism",
+							"trait": "Vulnerability"
+						}],
+						"info": {
+							"high": {
+								"info": {
+									"high": "but you score high in Vulnerability so you appear to be a different person when you're under stress. There's room for improvement in regards to ability to handle stress.",
+									"medium": "since you score medium in Vulnerability, the only time when you appear solemn maybe when you are under stress. You may want to improve your ability to handle pressure.",
+									"low": "since you also score low in Vulnerability, you manage to be joyful to get along with others even when you are under stress, there's no need for improvement with respect to this trait."
+								}
+							},
+							"medium": {
+								"info": {
+									"high": "You score high in Vulnerability so you appear to be a different person when you're under stress. There's room for improvement in regards to ability to handle stress.",
+									"medium": "Since you score medium in Vulnerability, the only time when you appear solemn maybe when you are under stress. You may want to improve your ability to handle pressure.",
+									"low": "Since you also score low in Vulnerability, you manage to be joyful to get along with others even when you are under stress. Yet there seems to be other factors making you a less joyful person from time to time."
+								}
+							},
+							"low": {
+								"info": {
+									"high": "You score high in Vulnerability maybe you can start by improving your ability to handle stress.",
+									"medium": "Since you score medium in Vulnerability, stress could contribute to the reasons that makes you a less cheerful person.  You could start by improving your ability to handle pressure.",
+									"low": "Since you score low in Vulnerability, stress should not be the reason which makes you less joyful. You need to find out what could be the root to make you so serious."
+								}
+							}							
+						}
+					}					
+				}]
+			}]
+		},
+		{
+			"traitName": "Excitement-seeking",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "What makes you tick is elements of excitement or surprise. This by itself does not warrant any necessary for improvement, but this provide indications on what type of jobs that you should pursuit for your career.",
+						"medium-high": "You seek changes and excitements then would prefer quieter and calmer for a while, or you would prefer activities that are reasonable exciting. This by itself does not warrant any necessary for improvement, but this provide indications on what type of jobs that you should pursuit for your career.",
+						"medium": "You'd seek changes or excitements then would settle for a while, or seek for activities that range in the middle between excitement and calm. This by itself does not warrant any necessary for improvement, but this provide indications on what type of jobs that you should pursuit for your career.",
+						"medium-low": "You would prefer quite and clam activities until you get bored then seek for activities with some excitements. This by itself does not warrant any necessary for improvement, but this provide indications on what type of jobs that you should pursuit for your career.",
+						"low": "You prefer activities that are calm, quiet and safe. This by itself does not warrant any necessary for improvement, but this provide indications on what type of jobs that you should pursuit for your career."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Friendliness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're out going and enjoy being with others, this is a great trait, but you'd also need to learn to get along with reserved people, learn to get used to silence when getting along with quiet people, learn to be more contemplative when you're by yourself.",
+						"medium": "You're in the middle between outgoing and reserved. The only thing you need to learn is the right balance that make yourself comfortable.",
+						"low": "There is nothing wrong being reserved, but from time to time you do need to learn to open yourself a bit more, and you'll find there are situations when it's beneficial to be a bit more outgoing. <br><br> A lot of reserved people were found influenced by outgoing people around them, especially their partners, and gradually develop a bit of outgoing in their own reserved trait."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Gregariousness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You enjoy doing things together with others, enjoy your social life, is a great team player at work. These are all great, but when you grow older and older, you may start appreciate the time when you are alone and start learning to enjoy being alone.",
+						"medium": "You're in the middle between sociable and independent. You're flexible and the only thing you need to learn is what's the best balance point across various stages in your life.",
+						"low": "You have strong desire to have time to yourself, this does not mean you aren't a team player but you do prefer to fulfil your role independently. You may want to try developing team spirit and try to enjoy others' company."
+					}
+				}]
+			}]
+		}]
+	},
+
+	"Agreeableness": {
+		"traitName": "Agreeableness",
+		"traitType": "facet",
+		"general": {
+			"high": "It's always advisable to keep an eye on people who try to take advantage of this trait in you, at the meantime, you're fulfilled by helping them, so are they helping you or you're helping them?",
+			"medium": "Your personality naturally places a good balance between helping others and minding your own business.",
+			"low": "You believe people should and are capable of taking care of themselves, but sometimes helping others are helping yourself."
+		},		
+		"children": [{
+			"traitName": "Altruism",
+			"traitType": "trait",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "You feel fulfilled by helping others and the fulfilment itself makes it rewarding, you're not looking for return from your help, even when there's significant effort and commitment involved, and even when you're aware that people are taking advantage of this. Isn't this good? why should you change? This is your trait and there maybe very little you can do about it anyway. Yet you must be aware that sometimes this can cause adverse effects.",
+					"medium": "While believing others are capable of taking care of themselves, you still lend a hand when they need help. The challenge is in when they ask help when you are in the egoism mode.",
+					"low": "You mind your own business and believe others are capable to solve their own problem at work."
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "You are devoted to the relationship and your partner can feel that. In addition you're not asking her/him to devote the same level of efforts in return, and you do not think it needs to be the same level to be fair. Yet, you must understand that your partner may not think this way. When people start to get used to it, they may take this as granted and forget that you're not obliged to devote like you have done. Things can gradually grow out of control and fall to the extreme. It's always advised to keep things in balance at the beginning, and use various subtle ways to locationally remind her/him you're doing things as a favor not an obligations.",
+						"medium": "You've kept a good balance in devoting to the relationship and your own focus, if your partner understands you well, s/he knows when you switch 'modes'. Otherwise it's better to communicate when you switch 'modes' ",
+						"low": "You believe that your partner is capable of taking care of her/himself, certainly s/he is! Yet sometimes doing things for her/him is a way of showing you love her/him and enhance your relationship."
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "Helping your child enhances the parent-child relationship but at the meant time You should resist the immediate impulse to help even when you see your child struggles. If your child is smart and also knows you well, s/he may have been taking advantage of this trait, knowingly or unknowingly; you must be aware that you could make her/him less independent over time.",
+						"medium": "You have a natural tendency to strike a balance between helping your child and letting her/him to put matter under his/her own hands, but as anything in an equilibrium, to maintain the balance means overdoing, under-doing and adjusting. This could cause confusion to the child and the key is communication.",
+						"low": "You believe everyone should be capable to take care of himself even when he's young, you probably did well during your own childhood, and this belief does not mean you don't love your child. Yet your child may not know this. It's easy to build up misunderstanding over time especially if your child is opposite on this trait. It's relatively more important to show your love during early child hood, and equally important to get your child to understand your personality. Unfortunately lots of parents do not understand their own personality let alone communication to help the child to understand."
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have been always able to maintain good relationship with your parent, but if you have close friends that take advantage of this trait in you then they may try to convince you about this. In the meant time, deep in the bottom of your heart, you simply feel happy when you are able to help, even you're well aware of their intention. In these scenarios it's better to help your parents to understand your trait, rather than defending for your friends."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				
+				"general": {
+					"high": "You are easy going and form good relationship with colleagues, customers or business partners. Sometimes they may take advantage of this."
+				},
+				
+				"extra": "Almost everyone has some aspects of egoism at work, super egoism behavior includes impression that peers or even superiors are not as good as her/himself, fear of loosing the job, making every issue a prestige issue, deliberately approaching superiors to show her/his ability etc.",
+				
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You enjoy helping subordinates and most of the time this helps to build relationship and makes you closer to them, but you also need to remind yourself to keep some distance from them and maintain your image of authority."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "all roles",
+					"info": {
+						"high": "",
+						"medium": "You score medium which means you may have certain egoism inside of you. Various possible causes were listed in the Trait Information of Altruism, it varies from lack of affection from family during childhood (for example loss of parents during childhood), insecurity feeling, overestimation of self to underestimation of others, and more. If you could work out the cause you could possibly address it. <br><br> Once it's addressed you'll find relationship and performance at work improve and peers will find communicating with you much easier.",
+						"low": "you may have egoism inside of you. In Relationship Perspective, various possible causes were listed. If you work out the cause you could possibly address it. <br><br> Once it's addressed you'll find relationship and performance at work improve and peers will find communicating with you much easier."					
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "You're genuine to help and friends all like you, but you may want to keep an eye on people that try to take advantage.",
+						"medium": "You are in the middle between altruism and egoism, you maybe surprised by how much different two people can be with all other traits equalled but one is altruist the other egoist. <br><br> For example, with equal high score of Openness, altruist is observed as genial tactful, diplomatic while egoist as shrewd, eccentric, individualistic; some people change to egoist from altruist due to negative experience in life, the point is, this does change as result of perception change, and for you there's certainly room for improvement. <br><br> Also remember, helping others could mean helping yourself too.",
+						"low": "you maybe surprised by how much different two people can be with all other traits equalled but one is altruist the other egoist. <br><br> For example, with equal high score of Openness, altruist is observed as genial tactful, diplomatic while egoist as shrewd, eccentric, individualistic; some people change to egoist from altruist due to negative experience in life, the point is, this does change as result of perception change, and for you there's certainly lots of room for improvement. <br><br> Also remember, helping others could mean helping yourself too."
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"roles": [{
+					"roleName": "sales",
+					"info": {
+						"high": "You're genuine to help others and customers will feel it. This is a great trait and will help your sales, until when you're trying to sell something that you truly don't think it's good, in which case you altruism could easily betray you and reveal your true thinking to your customer. <br><br> Yet this great trait was born with you and there maybe very little you can do with it (though some people do become egoist after some huge negative experience in life). In stead of trying to change, perhaps it's more effective to focus on products that you genuinely think would help your customers.",
+						"medium": "If you want the order very much, or if you're under tremendous pressure, you may show very little regards to whether your customer really needs it or not. In a long run, true win win relationship is the way to go. It's much better to lose an order than lose trust.",
+						"low": "You place your own interest before anything else, so will try to push and get your order with little regards to whether your customer really needs it or not. In a long run, true win win relationship is the way to go. It's much better to lose an order than lose trust."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Cooperation",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			}, 
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're easy to pleased and cooperate with others, and are popular at work or social network, this is great but sometimes you also learn to insist and get used to confrontation - you don't like it and try to avoid it, but sometimes it's really necessary, avoiding or delaying could make your situation worse over time.",
+						"medium": "You're in the middle range between compromising and confronting, you're comfortable with the balance, and if people around you are comfortable too, there's no need for change.",
+						"low": "It's good to insist your view and do not easily compromise. But this sometimes cause problem in a team or social network. Hopefully you'll learn how to compromise more. There are always two sides of the coin, different views can coexist and different types of relationship all require compromise."
+					}
+				}]
+			
+			}]
+		},
+		{
+			"traitName": "Modesty",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're modest which is good for others to feel comfortable to build close relationship with you, but you also need to learn to be in the centre of the stage when necessary, and learn when not to be over modest.",
+						"medium": "You're moderately modest, if the kind of balance is right, there maybe little room for improvement.",
+						"low": "You're proud and confident, good to grab people's attention and feel comfortable to be in the centre, which is great, but you may also want to start appreciating more about the benefits of being modest, which helps to build closer relationship and people are less guarded against modest people."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Morality",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're uncompromising which is the basis for trust and strong relationship. In the long run morality always wins. If anything happens that shakes your belief of this, insist as you're and you'll see the benefits eventually, don't get confused by the short term gain from compromising.",
+						"medium": "You're in the middle between compromising and uncompromising. Whenever you're tempted, don't just look at the short term gain from compromising, you could lose much more in a long run.",
+						"low": "You're comfortable to for tricks and manipulation. Flexibility is good, but when you grow older you may realize you don't actually need that and can still get ahead, and the advantage gained is not worth compromising."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Sympathy",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're compassionate toward others and feel the same as others do. This is great but you just need to be a bit wary of others when they want to take advantage of this. You need to learn when not to let others abuse your sympathy.",
+						"medium": "You're in the middle between hart-hearted and compassionate. You don't easily feel what others feel, or don't feel as strong as they do. <br><br> This trait was born with you and you can't change, but you can change the way you deal with others, you can take the initiatives show your care to people, this will enhance relationship everywhere in your life, at work, social network and business network.",
+						"low": "You believe others should rely more on themselves and appear hard-hearted. People do not know if necessary and asked, you'll actually lend a hand to them. <br><br> You don't easily feel what others feel, this trait was born with you and you can't change, but you can change the way you appear, you can take the initiatives show your care to people, this will enhance relationship everywhere in your life, at work, social network and business network."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Trust",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You trust people which helps you to build some of the strong relationship at workplace, social or business network, but you also need to learn to be more cautious as not everyone  can be trusted.",
+						"medium": "You're in the middle between trusting and skeptical, if that's the kind of balance that works for you, then there may not be need for improvement and you should see strong relations built with people who can be trusted at workplace, social or business network.",
+						"low": "You're skeptical of others' intention at workplace, social life or business network. There's nothing wrong to be cautious but trust is a two-way thing, if you want people to trust you, you'd need to try trusting them first. <br><br> Take your guard off a little bit while still keep alert, you may find relations flourish all over workplace, social or business network."
+					}
+				}]
+			}]
+		}]
+	},
+
+	"Neuroticism": {
+		"traitName": "Emotional range",
+		"traitType": "facet",
+		"general": {
+			"high": "Your emotion is sensitive to external events, this makes different types of relationship vulnerable and people find it challenging to get along with you. There's definitely room to improve, see individual traits in this facet.",
+			"medium": "You're in the middle between emotional and rational, there's room for improvement to be cooler and calmer, see individual traits in this facet.",
+			"low": "Your emotion is less sensitive to external events, but for some of the traits in this facet, emotional sensitiveness could be beneficial not harmful."
+		},			
+		"children": [{
+			"traitName": "Anger",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You have a fiery temper, it makes it challenging to live or work with you, you need to learn how to control your temper, but the best way to control is not suppress it, instead find the appropriate way to let it out. <br><br> For example when you're angry, hold it, deep breath, and finally find a place where you can yell it out. Gradually you'll find less and less the need for the final step, because if you're able to hold it for sufficient number of times, you've successfully control it.",
+						"medium": "You think you're in control of your anger but occasionally and bafflingly you could lose your cool and temper at something trivial. <br><br> If you are like this that means when you appear to be cool, underneath you're suppressing your emotions and they in turn build up unhealthily. Instead of suppressing it, you need to find ways let it out in as short term solution, and come up with a longer term solution - by addressing the root that cause your anger and find a way to eliminate it or improve your situation so that won't be able to haunt you down any more.",
+						"low": "It's so hard to get you angry, which by itself isn't a bad thing at all, but you'd need to understand people who have the opposite trait, you need to learn how to acknowledge their feeling even though you still appear to be calm and cool."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Anxiety",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're prone to worries. Worrying isn't a bad thing by itself unless you're controlled by it, or it's so intensive that it paralyse you. Worry is a sign that something could go wrong and somewhere could be get better prepared. <br><br> That's why we don't suggest you overcome or suppress or ignore your worries, instead deal with it positively, find out where you can do better to prepare for the worst to happen, or anything you can do to prevent it from happening. <br><br> Yet, if you have already tried your best, then it boils down to your view of winning and losing. Winning or losing has time line context, today's lose could lead to tomorrow's wining, today's winning could be consequence to trigger tomorrow's loss. <br><br> Don't take gain or loss too seriously, what matters is whether you have tried your best, don't care about what comes as a result, as that would be out of your control already, and gain or loss both have deeper meaning and consequence than what they appear on the surface.",
+						"medium": "You tend to stay calm most of the time but for something you really care about, you may become prone to worries. Worrying isn't a bad thing by itself unless you're controlled by it, or it's so intensive that it paralyse you. Worry is a sign that something could go wrong and somewhere could be get better prepared. <br><br> That's why we don't suggest you overcome or suppress or ignore your worries, instead deal with it positively, find out where you can do better to prepare for the worst to happen, or anything you can do to prevent it from happening. <br><br> Yet, if you have already tried your best, then it boils down to your view of winning and losing. Winning or losing has time line context, today's lose could lead to tomorrow's wining, today's winning could be consequence to trigger tomorrow's loss. <br><br> Don't take gain or loss too seriously, what matters is whether you have tried your best, don't care about what comes as a result, as that would be out of your control already, and gain or loss both have deeper meaning and consequence than what they appear on the surface.",
+						"low": "You're self-assured and it's not easy to get you worried. This is a great trait but at the meant time, worrying is a natural emotion reaction human has developed since thousands of years ago. A bit of worrying could prone us to be move cautious, more prepared, and try our best. <br><br> By no means we are suggesting you should negate your trait, what's being suggested is that, since your brain does not easily trigger this natural warning mechanism, you may want to consciously examine the situation and review if there's anything you may have neglected that could cause issues."
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Depression",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You feel your desires strongly, this trait has been inside you naturally and was born with you. There's not much you can do to weaken the desires but you can learn to be stronger to control the temptation, better yet, to turn the desires into positive motivation.",
+						"medium": "You're in the middle between self-controlled and hedonistic, it's okay to lose the battle to temptation occasional, but if you want to improve there's certainly room.  <br><br> There's not much you can do to weaken the desires but you can learn to be stronger to control the temptation, better yet, to turn the desires into positive motivation.",
+						"low": "You have no problem in controlling your desire, but if your partner is opposite in this trait, you need to understand the difference. This trait is inside of her/him naturally and was born with her/him. There's not much you can do to weaken the desires. <br><br> You two both need to first respect the difference then compromise. You can also help her/him to become stronger against the temptation, by formulating a longer term shared goal."
+					}				
+				}]
+			}]
+		},
+		{
+			"traitName": "Immoderation",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}]
+		},
+		{
+			"traitName": "Self-consciousness",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're self concious and sensitive, constantly think about what people maybe thinking about you. For most of the time, you perceptions are probably wrong - people are most interested in themselves, they're busy enough and probably hardly notice what you are doing. <br><br> This trait sometimes also makes you irrational against criticism, cause you to be emotional and not able to distinguish between antagonistic and genuine criticism. The long term cure is to develop confidence, ignore antagonistic criticism, value genuine ones, and use them for improvement.",
+						"medium": "You're in the middle between self-concious and confident but there's room for improvement. The long term goal is to develop more confidence, ignore antagonistic criticism, value genuine ones, and use them for improvement.",
+						"low": "You're confident and able to handle criticisms rationally and calmly. There's no need for improvement with regards to this trait."
+					}				
+				}]
+			}]
+		},
+		{
+			"traitName": "Vulnerability",
+			"traitType": "trait",
+			"AllViews": "true",
+			"views": [{
+				"viewName": "Love",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+					}
+				}]
+			},
+			{
+				"viewName": "AllViews",
+				"roles": [{
+					"roleName": "all roles",
+					"info": {
+						"high": "You're susceptible to stress. In a short run you need to understand you have different needs than those who are less vulnerable to stress -- you may need to have more time for sleep or for creative work, or travelling. Everyone is different and you need to what's most effective for you to release stress and get recharged. <br><br> On the long run, you may want to find out what are the root factors that cause the stress. For example if you care too much about gain and loss, you can change the perspective to look at it, since gain or loss usually have deeper meaning that they appear at the surface. <br><br> This involves shifting of mentality, views, values or even attitude, and is a long term change and long term battle. But the result from improvement and the permanent change is certainty worth the efforts.",
+						"medium": "In terms of vulnerability to stress, you're in the middle between calm and susceptible, and certainly there's room for improvement. <br><br> On the long run, you may want to find out what are the root factors that cause the stress. For example if you care too much about gain and loss, you can change the perspective to look at it, since gain or loss usually have deeper meaning that they appear at the surface. <br><br> This involves shifting of mentality, views, values or even attitude, and is a long term change and long term battle. But the result from improvement and the permanent change is certainty worth the efforts.",
+						"low": "It's hard to get you stressed, you've got a grate trait and you're doing good. Just remember, similar to worry, stress is also a signal for possible improvement and if handled well, can be turned into motivation."
+					}
+				}]
+			}]
+		}]
+	},
+
+	"Needs": {
+		"traitName": "Needs",
+		"traitType": "needs",
+		"children": [{
+			"traitName": "Challenge",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A desire to achieve, succeed, compete, or pursue experiences that test one's abilities."
+		},
+		{
+			"traitName": "Closeness",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A need to nurture or be nurtured; a feeling of belonging."
+		},
+		{
+			"traitName": "Curiosity",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A need to pursue experiences that foster learning, exploration, and growth."
+		},
+		{
+			"traitName": "Excitement",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A need to pursue experiences or lead a lifestyle that arouses enthusiasm and eagerness."
+		},
+		{
+			"traitName": "Harmony",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A need to appreciate or please other people, their viewpoints, and feelings."
+		},
+		{
+			"traitName": "Ideal",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A desire to satisfy one's idea of perfection in a lifestyle or experience, oftentimes seen as pursuing a sense of community."
+		},
+		{
+			"traitName": "Liberty",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A need to escape, a desire for new experiences, new things."
+		},
+		{
+			"traitName": "Love",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Social contact, whether one-to-one or one-to-many."
+		},
+		{
+			"traitName": "Practicality",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A desire for getting the job done, skill, and efficiency."
+		},
+		{
+			"traitName": "Self-expression",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A desire to discover and assert one's identity."
+		},
+		{
+			"traitName": "Stability",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A need for the sensible, tried and tested, with a good track record and a known history."
+		},
+		{
+			"traitName": "Structure",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "A need for organization, planning, and things that have a clear purpose."
+		}]
+	},
+
+	"Values": {
+		"traitName": "Values",
+		"traitType": "values",
+		"children": [{
+			"traitName": "Conservation",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Respect, commitment, and acceptance of the customs and ideas that one's culture and/or religion provides."
+		},
+		{
+			"traitName": "Openness to change",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Excitement, novelty, and challenge in life."
+		},
+		{
+			"traitName": "Hedonism",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Pleasure or sensuous gratification for oneself."
+		},
+		{
+			"traitName": "Self-enhancement",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Personal success through demonstrating competence according to social standards."
+		},
+		{
+			"traitName": "Self-transcendence",
+			"traitType": "trait",
+			"info": {
+				"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+				"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+				"high": "Value getting along with others. They have a more optimistic view of human nature.",
+				"medium": "medium , neutral",
+				"low": "Value self interests over others. They are more skeptical of others' motives."
+			},
+			"views": [{
+				"viewName": "Love",
+				"general": {
+					"high": "Generally, this person is easy going and good in all kinds of relationships, being compassionate to others makes the target a popular person in the social circle. If the person is also physically attractive s/he will be extremely welcome by the opposite sex and as the other half, you may sometimes find yourself jealousy",
+					"medium": "",
+					"low": ""
+				},
+				"roles": [{
+					"roleName": "partner",
+					"info": {
+						"high": "Your partner is easy going ... elaborate ... to form a even better relationship.",
+						"medium": "Your partner is neutral in easy going.",
+						"low": "Your partner is not easy going!"
+					}
+				},
+				{
+					"roleName": "parent",
+					"info": {
+						"high": "you have an easy going parent, not much control... do not abuse it.. more independent but easily out of control, be matured"
+					}
+				},
+				{
+					"roleName": "child",
+					"info": {
+						"high": "You have an easy going child, they get along well with their own friends and don't rely on you too much; still your company; also watch out what kind of friends they hand around."
+					}
+				}]
+			},
+			{
+				"viewName": "Work",
+				"general": {
+					"high": "This person is easy going and forms good relationship with colleagues, customers or business partners."
+				},
+				"roles": [{
+					"roleName": "superior",
+					"info": {
+						"high": "You have an easy going boss."
+					}
+				},
+				{
+					"roleName": "subordinate",
+					"info": {
+						"high": "You have an easy going subordinate."
+					}
+				},
+				{
+					"roleName": "team-mate",
+					"info": {
+						"high": "You have an easy going team mate."
+					}
+				}]
+			},
+			{
+				"viewName": "Social",
+				"roles": [{
+					"roleName": "friend",
+					"info": {
+						"high": "The target is an easy going friend"
+					}
+				}]
+			},
+			{
+				"viewName": "Business",
+				"general": {
+					"high": "She/he feels fulfilled when helping people and is generally considered a helpful person in the business network.",
+					"medium": "From time to time, there can be some inner conflicts between helping you and getting straight to business.",
+					"low": "S/he places own interest beyond anything else, good relationship is not too vital, depends on the role s/he is in, so try to focus on business."
+				},
+				"roles": [{
+					"roleName": "client",
+					"info": {
+						"high": "If your product or service matches other competitors, then telling her/him how desperately you need the order, and the reasons why this order will help your situation could help you to get the deal.",
+						"medium": "S/he may be having some inner conflicts if you did a good job in showing how helpful it'd be to have her/his order. There's always chance that S/he is tempted to place the order as helping you could fulfil her/himself too. Yet if s/he's in the egoism mood, then s/he will be very much focus on business.",
+						"low": "S/he place own interest before anything, so good relationship will not help your sales. In stead, focus on the real sales stuffs: understand what problem is he facing with, what are the paint points, how your products or service can eliminate the paint points or meets his demands, how are you doing compared to your competitors etc."
+					}
+				},
+				{
+					"roleName": "sales",
+					"info": {
+						"high": "S/he may want to get your order very much, but at the meant time, if you feel their genuineness in helping you, that means s/he  truly believe the service and product can help you; if you don't then chance is that s/he her/himself does not think the product or service can help, s/he's purely trying to make a sales.",
+						"medium": "You usually do not need to care about the relationship unless s/he is a large upstream supplier whose can significantly affect your business if the supply is not steady. <br><br> For half of the time s/he feels fulfilled when s/he's able to help you. So exaggerating a little about how important their supply will not hurt.",
+						"low": "S/he place own interest before anything, so will try to push and get your order with little regards to whether you really need the product or service.; if provider..., that need good relationship, try convincing her/him from him/her's perspective. (For example? ...)"
+					}
+				}]
+			}],
+			"description": "Preserving and enhancing the welfare of those with whom one is in frequent personal contact."
+		}]
+	}
+	
+}

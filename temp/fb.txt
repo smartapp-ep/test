@@ -1,0 +1,267 @@
+yammer (profile)
+
+  _json:
+   { type: 'user',
+     id: 1526259369,
+     network_id: 168207,
+     state: 'active',
+     guid: null,
+     job_title: '',
+     location: null,
+     significant_other: null,
+     kids_names: null,
+     interests: null,
+     summary: null,
+     expertise: null,
+     full_name: 'Edwin Pun',
+     activated_at: '2014/10/01 01:44:12 +0000',
+     auto_activated: false,
+     show_ask_for_photo: true,
+     first_name: 'Edwin',
+     last_name: 'Pun',
+     network_name: 'stonebridgesystems.com.au',
+     network_domains: [ 'stonebridgesystems.com.au' ],
+     url: 'https://www.yammer.com/api/v1/users/1526259369',
+     web_url: 'https://www.yammer.com/stonebridgesystems.com.au/users/1526259369
+',
+     name: 'edwinpun',
+     mugshot_url: 'https://mug0.assets-yammer.com/mugshot/images/48x48/no_photo.
+png',
+     mugshot_url_template: 'https://mug0.assets-yammer.com/mugshot/images/{width
+}x{height}/no_photo.png',
+     birth_date: '',
+     timezone: 'Brisbane',
+     external_urls: [],
+     admin: 'false',
+     verified_admin: 'false',
+     supervisor_admin: 'false',
+     can_broadcast: 'false',
+     department: null,
+     email: 'edwin.pun@stonebridgesystems.com.au',
+     can_create_new_network: true,
+     can_browse_external_networks: true,
+     previous_companies: [],
+     schools: [],
+     contact:
+      { im: [Object],
+        phone_numbers: [],
+        email_addresses: [Object],
+        has_fake_email: false },
+     stats: { following: 0, followers: 6, updates: 0 },
+     settings: { xdr_proxy: '' },
+     web_preferences:
+      { absolute_timestamps: false,
+        network_settings: [Object],
+        enter_does_not_submit_message: 'true',
+        preferred_my_feed: 'algo',
+        prescribed_my_feed: 'algo',
+        sticky_my_feed: false,
+        enable_chat: 'true',
+        dismissed_feed_tooltip: false,
+        dismissed_group_tooltip: false,
+        dismissed_profile_prompt: false,
+        dismissed_invite_tooltip: true,
+        dismissed_apps_tooltip: true,
+        dismissed_invite_tooltip_at: '2014/10/16 02:39:34 +0000',
+        dismissed_browser_lifecycle_banner: null,
+        make_yammer_homepage: true,
+        locale: 'en-US',
+        has_yammer_now: false,
+        has_mobile_client: true },
+     follow_general_messages: false,
+     show_invite_lightbox: false } }
+
+
+twitter:
+https://pitest-3.au-syd.mybluemix.net/
+https://pitest-3.au-syd.mybluemix.net/auth/twitter/callback2
+friends list:
+
+{ users: 
+   [ { id: 329661376,
+       id_str: '329661376',
+       name: 'Pablo Piovano',
+       screen_name: 'pabspiovano',
+       location: 'Edinburgh / Marbella',
+       description: 'Editor @ http://t.co/Im8FHuCImT. Economist/ FX trader. Preference for usd, scandies... soccer, gin&tonics and bartending! Opinions/comments are my own.',
+       url: 'http://t.co/98T40Xw2Dj',
+       entities: [Object],
+       protected: false,
+       followers_count: 747,
+       friends_count: 309,
+       listed_count: 61,
+       created_at: 'Tue Jul 05 12:45:29 +0000 2011',
+       favourites_count: 28,
+       utc_offset: 3600,
+       time_zone: 'Edinburgh',
+       geo_enabled: true,
+       verified: false,
+       statuses_count: 80254,
+       lang: 'en',
+       status: [Object],
+       contributors_enabled: false,
+       is_translator: false,
+       is_translation_enabled: true,
+       profile_background_color: 'C0DEED',
+       profile_background_image_url: 'http://abs.twimg.com/images/themes/theme1/bg.png',
+       profile_background_image_url_https: 'https://abs.twimg.com/images/themes/theme1/bg.png',
+       profile_background_tile: false,
+       profile_image_url: 'http://pbs.twimg.com/profile_images/378800000468698832/ca22c7b8dbb11fc418a769bafba2b2d5_normal.jpeg',
+       profile_image_url_https: 'https://pbs.twimg.com/profile_images/378800000468698832/ca22c7b8dbb11fc418a769bafba2b2d5_normal.jpeg',
+       profile_banner_url: 'https://pbs.twimg.com/profile_banners/329661376/1401880293',
+       profile_link_color: '0084B4',
+       profile_sidebar_border_color: 'C0DEED',
+       profile_sidebar_fill_color: 'DDEEF6',
+       profile_text_color: '333333',
+       profile_use_background_image: true,
+       has_extended_profile: false,
+       default_profile: true,
+       default_profile_image: false,
+       following: true,
+       follow_request_sent: false,
+       notifications: false,
+       muting: false,
+       blocking: false,
+       blocked_by: false },
+     { id: 51097237,
+       id_str: '51097237',
+       name: 'Joel Clark',
+       screen_name: 'joelsclark',
+       location: 'London',
+       description: 'Freelance journalist, formerly editor of FX Week, tweeting on FX and OTC derivatives industry news',
+       url: 'http://t.co/LQNduwmY0a',
+       entities: [Object],
+       protected: false,
+
+
+
+
+Graph API Reference /{user-id} /friends ... declines the user_friends permission
+
+url for cordova: https://www.facebook.com/connect/login_success.html
+for ionic serve: 
+http://localhost:8100/
+http://localhost:8100/oauthcallback.html
+
+
+<script>
+
+FB.login(function(response) {
+    Log.info('FB.login response', response);
+  }, {scope: 'user_posts'});
+
+
+    FB.api('/me/posts', 'get', null,  function(response) {
+        Log.info('Post Response', response);
+} );
+</script>
+
+
+<script>
+
+    FB.api('/me', 'get',  function(response) {
+        Log.info('Response', response);
+} );
+</script>
+
+
+
+
+FB.api('/me/posts', 'get');
+
+GET /v2.5/me HTTP/1.1
+Host: graph.facebook.com
+access_token={CAACEdEose0cBADCZBA3J7rn5Nx35VCkMUcfCWZATP8U4soc4o706fZCYWDsJTh1dZBEMUy17SruuPb9IkJ00WsNYGAgCtrK2xAtkMUHSCjcGi3RqLM48ppW692VkKX8Jc9aYjZA1wKaSbSpB7ZBCKdbnX7tqcoh001n68yf8e7DqUy40YrySSbckUyoyAnu4S74BdWlRzv8wZDZD}
+
+
+
+FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    console.log('Logged in.');
+  }
+  else {
+    FB.login();
+  }
+});
+
+
+  FB.getLoginStatus(function(response) {
+    Log.info('Login Status', response);
+    if (response.status === 'connected') {
+      basicAPIRequest();
+    }
+  });
+  
+  
+  
+  
+      {
+      "message": "I am wandering around in the city of Saigon alone, someone left this city 35 years ago, is there any trace of or smell from her that I can find?",
+      "created_time": "2012-12-05T09:12:29+0000",
+      "id": "10154891971759897_10151999601804897"
+    },
+    {
+      "message": "On one day, every path seems a dead end; on the next day, every of them seem to open n calling ...",
+      "created_time": "2012-11-06T08:44:44+0000",
+      "id": "10154891971759897_10151955262249897"
+    },
+    {
+      "message": "Some ppl u jz want to shoot their head off - Ever meet these ppl ( peak hours)? - they always in front of u  when train approaches, there were always plenty of seats, yet they always in such slow motion so seats ran out quickly, n almost with no exception -  always  speeded up in a sudden, n always grabbed the last seat at the last moment - timing so perfect, its like her whole purpose just to keep u away fr a seat!",
+      "created_time": "2012-11-06T06:48:21+0000",
+      "id": "10154891971759897_10151955189289897"
+    },
+    {
+      "message": "really miss those days when we all could focus on work, less polices less politics ... Those days have long gone ...",
+      "created_time": "2012-10-24T17:21:35+0000",
+      "id": "10154891971759897_10151934020659897"
+    },
+    {
+      "message": "Today's weather reminds me of sunny Sydney ...",
+      "created_time": "2012-10-22T06:36:08+0000",
+      "id": "10154891971759897_10151930371144897"
+    },
+    {
+      "message": "While we in the field struggle everyday to get our job done , someone in the office thinks of something to do, just to prove its worth to keep him/her employed?",
+      "created_time": "2012-10-19T05:23:10+0000",
+      "id": "10154891971759897_10151925893579897"
+    },
+    {
+      "message": "My new goal - this nicorrett should last at least half day today!",
+      "created_time": "2012-10-15T23:48:21+0000",
+      "id": "10154891971759897_10151921131784897"
+    },
+    {
+      "message": "My new goal - this nicorrett",
+      "created_time": "2012-10-15T23:47:19+0000",
+      "id": "10154891971759897_10151921130774897"
+    },
+    {
+      "message": "if it really works out, then my decision 2 mths ago was correct...today I really feel we can be back together",
+      "created_time": "2012-05-29T13:58:11+0000",
+      "id": "10154891971759897_10151646704379897"
+    },
+    {
+      "message": "Man should always value a relationship in his twenties - when he has usually nothing in life while that's her golden age in life",
+      "created_time": "2012-05-27T02:31:16+0000",
+      "id": "10154891971759897_10151640716314897"
+    },
+    {
+      "message": "since when HK started to seem so dull to me? (not to offend anyone, totally personal mood, nothing like that statement made by the sg student the other day...)",
+      "created_time": "2012-02-29T17:56:56+0000",
+      "id": "10154891971759897_10150658205684897"
+    },
+    {
+      "message": "for friends who know Pyan - he just passed away at 2:08pm oz time.... he lived a happy life of almost 17 years (2 more months would be his 17th birthday). he'll live in my memory forever .... ..... ....",
+      "created_time": "2011-10-01T08:27:24+0000",
+      "id": "10154891971759897_10150352642109897"
+    },
+    {
+      "message": "sitting alone in this empty room, thinking of the moments when we fought for 9-5, and struggled... 百感交集",
+      "created_time": "2011-09-15T05:55:18+0000",
+      "id": "10154891971759897_10150331215749897"
+    },
+    {
+      "message": "lots of ppl had let me know, that only made a stronger me",
+      "created_time": "2011-07-08T07:02:34+0000",
+      "id": "10154891971759897_10150266190819897"
+    },

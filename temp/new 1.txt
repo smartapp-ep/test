@@ -1,0 +1,2 @@
+	"Altruism, Cooperation, Modesty, Morality, Sympathy, Trust.": "Altruism, Cooperation, Modesty, Morality, Sympathy, Trust.",
+		"Altruism, Cooperation, Modesty, Morality, Sympathy, Trust.": "El altruismo, La Cooperación, La Modestia, La Moral, Simpatía, Confianza.",

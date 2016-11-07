@@ -1,0 +1,97 @@
+{
+	"Agreeableness": "Agradabilidad",
+	"Conscientiousness": "Conciencia", 
+	"Extraversion": "Extraversión", 
+	"Neuroticism": "Neuroticismo",
+	"Emotional range": "Gama emocional",
+	"Openness":  "Apertura",
+	"Needs":  "Needs", 
+	"Values": "Valores",
+	
+	"trait": "rasgo",
+	"need": "necesidad",
+	"value": "valor",
+	
+	"Altruism": "Altruismo", 
+	"Cooperation": "Cooperación",
+	"Modesty": "La modestia",
+	"Morality": "La moral",
+	"Sympathy": "Sympathy",
+	"Trust": "La confianza",
+	
+	"Challenge": "Reto",
+	"Closeness": "Cercanía",
+	"Curiosity": "Curiosidad",
+	"Excitement": "Emoción",
+	"Harmony": "Armonía",
+	"Ideal": "Ideal",
+	"Liberty": "Libertad",
+	"Love": "Amor",
+	"Practicality": "Sentido práctico",
+	"Self-expression": "La libre expresión",
+	"Stability": "Estabilidad",
+	"Structure": "Estructura",	
+
+	"Achievement-striving": "Logro-esfuerzo",
+	"Cautiousness": "Cautiousness",
+	"Dutifulness": "La cautela",
+	"Orderliness": "Orden", 
+	"Self-discipline": "Autodisciplina", 
+	"Self-efficacy": "La auto-eficacia",
+	
+	"Achievement-striving": "Logro-esfuerzo",
+	"Cautiousness": "Cautela",
+	"Dutifulness": "Sentido del deber",
+	"Orderliness": "El orden",
+	"Self-discipline": "Autodisciplina",
+	"Self-efficacy": "La auto-eficacia",	
+	
+	"Relationship": "Relación", 
+	"Approaching": "Acercamiento", 
+	"Self-Improvement": "mejora personal",
+
+	"Relation": "Relación",
+	"Approach": "Enfoque",
+	"Improve": "Mejorar",
+	
+	"FacetSummary": "Resumen de la faceta",
+	"FacetSummaryDetails": "es una de las cinco facetas de la \" Big 5\" modelo de personalidad. ", 
+	"ChildrenTraits": "Se compone de los siguientes",
+	
+	"Current perspective": "perspectiva actual",
+	"PerspectiveInstruction": "Ver detalles en cada rasgo individual a continuación, a continuación, cambiar la perspectiva desde la parte superior derecha tire hacia abajo, o cambiar de imagen de las pestañas inferiores.",
+	"PerspectiveIntroduction": "Este análisis se basa en la perspectiva de {{perspectiveDescription}}, puede cambiar la perspectiva desde el menú desplegable en la barra de navegación hacia abajo.",
+	"PerspectiveSummaryTitle": "Resumen del análisis desde la perspectiva de",
+	"contains the following": "contiene la siguiente",
+	"traitInstruction": "toque en cada uno para ver detalles desde la perspectiva de",	
+	
+	"Perspective": "Perspectiva",
+	"View": "Ver",
+	"Role": "Papel",
+	
+	"Love": "Amor",
+	"Work": "Trabajo",
+	"Social": "Social",	
+	
+	"partner": "socio",
+	"parent": "padre",
+	"child": "niño",
+	"superior": "superior",
+	"subordinate": "subordinate",
+	"teammate": "compañero de equipo",
+	"friend": "amigo",
+
+	"Higher": "Superior",
+	"Lower": "Baja",
+	
+	"Role": "Papel",
+	"RolesInstruction": "Ver detalles específicos para diferentes roles de abajo.",
+	"ViewsInstruction": "Es posible cambiar de imagen mediante pestañas en la parte inferior de la página.",
+
+	"Summary": "Resumen",
+	
+	
+	"shareReportCaption": "La personalidad de {{name}}",
+	"shareReportDescription": "Se entiende {{name}} tan bien!"	
+}
+

@@ -1,0 +1,49 @@
+<ion-view view-title="{{'Summary' | translate}}" cache-view="true">
+
+	<!--ion-content padding="true" class="has-header bgsky1" delegate-handle="report4" on-scroll="reportScroll()" overflow-scroll="false"  scroll="yes"--> <!-- has-tabs='true' --> 
+	<ion-content overflow-scroll="false"  scroll="yes">	
+	<div frost style ="position: absolute; width: 100%; padding: inherit;">
+	<div class="divsky1">
+	
+		<br><br><br><br>
+		<div style="font-size: 24px; font-weight: 900; color: #e47e12;">{{name}}</div>
+		<br><br><br>
+		<!-- summary, perhaps with most obvious traits + bar -->
+		<div ng-bind-html="summary">
+		</div>
+		
+		<br><br><br>
+		<!-- behaviors perhaps with most obvious needs / values + bar  && tooltips! -->
+
+		<div>
+			<p><b>You're likely to: </b></p>
+			<div ng-repeat="item in behaviors.likely">
+				<p><u>{{item.name}}</u></p>
+				<p>{{item.tooltip}}</p>
+				<p>Score: {{item.PCScore}}</p>
+			</div>
+			
+			<br><br>
+			
+			<p><b>You're unlikely to: </b></p>
+			<div ng-repeat="item in behaviors.unlikely">
+				<p><u>{{item.name}}</u></p>
+				<p>{{item.tooltip}}</p>
+				<p>Score: {{item.PCScore}}</p>
+			</div>
+			
+			<br><br><br>
+			
+		</div>
+		
+		<br><br>
+		<!-- best day & time -->
+		<div>
+			<p><b>Most sociable day: </b>{{report.tree.behavior.day || 'Unknown'}}</p>
+			<p><b>Most sociable time: </b>{{report.tree.behavior.time || 'Unknown'}}</p> 
+		</div>
+	
+	<div/><div>
+	</ion-content>
+
+</ion-view>

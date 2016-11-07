@@ -1,0 +1,31 @@
+     <ion-tabs class="tabs-icon-top tabs-stable">
+
+		<!--ion-tab title="Love"  icon-on="ion-ios-heart" icon-off="ion-ios-heart-outline" ng-click="onTabSelected('Love')" disabled="tabs.selectedIndex() == 0"-->
+		<!--ion-tab title="Love" icon-on="ion-ios-heart" icon-off="ion-ios-heart-outline" ui-sref="app.report.perspectives.views.view.trait({viewName: 'Love'})" disabled="tabs.selectedIndex() == 0"-->
+		<ion-tab title="Love"  icon-on="ion-ios-heart" icon-off="ion-ios-heart-outline" on-select="onTabSelected('Love')" disabled="tabs.selectedIndex() == 0">
+			<ion-nav-view name="Love" animation="slide-left-right"></ion-nav-view>
+        </ion-tab>	
+
+		<!--ion-tab title="Work" icon-on="ion-ios-paper" icon-off="ion-ios-paper-outline" ng-click="onTabSelected('Work')" disabled="tabs.selectedIndex() == 1"==>
+		<!--ion-tab title="Work" icon-on="ion-ios-paper" icon-off="ion-ios-paper-outline"  ui-sref="app.report.perspectives.views.view.trait({viewName: 'Work'})" disabled="tabs.selectedIndex() == 1"-->
+		<ion-tab title="Work" icon-on="ion-ios-paper" icon-off="ion-ios-paper-outline" on-select="onTabSelected('Work')" disabled="tabs.selectedIndex() == 1 || notabs">
+			<ion-nav-view name="Work" animation="slide-left-right"></ion-nav-view>
+        </ion-tab>
+
+		<!--ion-tab title="Social"icon-on="ion-ios-people" icon-off="ion-ios-people-outline" ng-click="onTabSelected('Social')" disabled="tabs.selectedIndex() == 2"-->
+        <!--ion-tab title="Social" icon-on="ion-ios-people" icon-off="ion-ios-people-outline" ui-sref="app.report.perspectives.views.view.trait({viewName: 'Social'})" disabled="tabs.selectedIndex() == 2"-->
+		<ion-tab title="Social"icon-on="ion-ios-people" icon-off="ion-ios-people-outline" on-select="onTabSelected('Social')" disabled="tabs.selectedIndex() == 2">
+			<ion-nav-view name="Social" animation="slide-left-right"></ion-nav-view>
+        </ion-tab>	
+
+		 <!--ion-tab title="Business" icon-on="ion-ios-world" icon-off="ion-ios-world-outline" ng-click="onTabSelected('Business')" disabled="tabs.selectedIndex() == 3"-->
+        <!--ion-tab title="Business" icon-on="ion-ios-world" icon-off="ion-ios-world-outline" ui-sref="app.report.perspectives.views.view.trait({viewName: 'Business'})" disabled="tabs.selectedIndex() == 3"-->
+		<ion-tab title="Business" icon-on="ion-ios-world" icon-off="ion-ios-world-outline"  on-select="onTabSelected('Business')" disabled="tabs.selectedIndex() == 3">
+			<ion-nav-view name="Business" animation="slide-left-right"></ion-nav-view>
+        </ion-tab>		
+
+		
+		
+    </ion-tabs>
+	<!--ui-view name='traitView'/>
+	<ion-nav-view name='traitView'-->

@@ -1,0 +1,154 @@
+<ion-view view-title="{{facet | translate}}" cache-view="true" hide-back-button="true">
+
+  		<ion-nav-buttons side="left" class="button button-clear button-icon icon ion-navicon">
+			<button class="button button-icon icon ion-ios-arrow-left" ng-click=goback() style="font-size:12px">Facets</button>
+		</ion-nav-buttons>
+  		<ion-nav-buttons side="right" class="button button-clear button-icon icon ion-navicon" >
+			<button class="button" style="font-size:12px" ng-click="changePerspective()">
+				Perspectives <i class="icon ion-android-more-vertical"></i>
+			</button>
+		</ion-nav-buttons>		
+
+		<!--ion-nav-buttons side="right" class="button button-clear button-icon icon ion-navicon">
+				<div>
+					<div style="background-color: transparent; border: none; padding: 0 0 0 0; height: 32px; width:{{isIOS() ? '86' : '80'}}px;">
+						<i class="icon ion-android-arrow-dropdown" ng-if="isIOS()"></i>
+						<select name="perspective" ng-model="perspective" ng-change="perspectiveToggle(perspective)" 
+						style=" background-color: transparent; 
+								font-size: 12px;
+								border: none;
+								margin-top: 10px;" >
+							
+							<option value="Relationship" ng-selected="perspective=='Relationship'">{{'Relation' | translate}}</option>
+							<option value="Approaching" ng-selected="perspective=='Approaching'" translate="Approach"></option>
+							<option value="Self-Improvement" ng-selected="perspective=='Self-Improvement'" translate="Improve"></option>									
+							
+						</select>
+					</div>
+				</div>
+		</ion-nav-buttons-->	
+
+		<!--ion-header bar  align-title="left" class="bar-positive" >
+				<div>
+					<div style="background-color: transparent; border: none; padding: 0 0 0 0; height: 32px; width:{{isIOS() ? '86' : '80'}}px;">
+						<i class="icon ion-android-arrow-dropdown" ng-if="isIOS()"></i>
+						<select name="perspective" ng-model="perspective" ng-change="perspectiveToggle(perspective)" 
+						style=" background-color: transparent; 
+								font-size: 12px;
+								border: none;
+								margin-top: 10px;" >
+							
+							<option value="Relationship" ng-selected="perspective=='Relationship'">{{'Relation' | translate}}</option>
+							<option value="Approaching" ng-selected="perspective=='Approaching'" translate="Approach"></option>
+							<option value="Self-Improvement" ng-selected="perspective=='Self-Improvement'" translate="Improve"></option>									
+							
+						</select>
+					</div>
+				</div>
+
+		</ion-header-bar-->
+		
+	<!--ion-content delegate-handle="facet" overflow-scroll="false" has-tabs="true"--> 
+	<!--ion-content overflow-scroll="false" class="has-header"-->		
+
+	<ion-content overflow-scroll="false">
+
+	
+	<div frost style ="position: absolute; width: 100%; padding: inherit;">
+	
+		<!--**** facet / needs / values ***-->
+		<div class="divflower1">
+			<br><br><br><br>
+			<div style="font-size: 24px; font-weight: 900; color: #e47e12;">{{name}}</div>
+			<br><br><br>		
+			
+			<div><details ng-open="perspective=='Relationship' || traits.traitType == 'needs'">
+				
+					<summary>
+						<b style="font-size: 16px;" translate="FacetSummary"></b>
+					</summary>
+					<!--p>
+						<b>{{traits.traitName | translate}}</b> <! --is one of the five facets in the "Big 5" personality model. {{traits.summary}} It consists the following traits: -- >{{'FacetSummaryDetails' | translate }}
+					</p-->
+					<p ng-bind-html="traitsSummary.summary"></p>
+					<!-- {{traitsSummary.summary}} -->
+					<p>
+						 {{'ChildrenTraits' | translate}} {{ traits.children[0].traitType | translate}}s: {{allTraits}}.<!--{{getTraits(traits.children)}}.-->
+					</p>
+					<br>
+				
+					<div class="percent-bar-and-score">
+						<div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+							{{traits.traitName | translate}}
+							<i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+
+						</div>
+				
+						<div class="percent-bar percent-bar-and-score--percent-bar">
+							<!-- <div class="percent-bar--meter" style="-webkit-transform: translate(92%); transform: translate(92%)"> -->
+							<div class="percent-bar--meter" style="-webkit-transform: translate({{getScore(traits.traitName,'pc')}}); transform: translate({{getScore(traits.traitName,'pc')}})">						
+								<div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+								<div class="percent-bar-and-score--number">
+									{{getScore(traits.traitName,'pc')}}
+								</div>
+							</div>
+						</div>
+					</div>	  
+					<br>
+					<!--div ng-bind-html="traitsSummary.description"></div-->
+					<div>
+						<p><b>{{'Higher' | translate}}</b>: {{traitsSummary.description.high}}</p>
+						<p><b>{{'Lower' | translate}}</b>: {{traitsSummary.description.low}}</p>					
+					</div>
+					<br>
+					
+			</details></div>		
+			
+
+				<!-- perspective -->
+				<div class="content"> 
+					<!-- <details ng-open="{{traits.perspectiveDetails[viewName]}}"> -->
+					<!--details ng-open="viewName=='Love'"-->
+					<details ng-open="true">
+						<summary>
+							{{'Current perspective' | translate}}: <b style="color: {{getPerspectiveColor()}};">{{perspective | translate}}</b>
+							<!-- <p ng-if="traits.perspective">{{traits.perspective}}</p> -->
+						</summary>
+						<!--p><!--This analysis is based on the perspective of {{getPerspectiveDescription()}}, you can change perspective from the drop down menu in the navigation bar.-- > {{'PerspectiveIntroduction' | translate:perspectiveDescription}}</p-->
+						<p ng-bind-html="traits.perspective"></p>
+						<br>
+						
+						<h5><!--Analysis Summary from this perspective-->{{'PerspectiveSummaryTitle' | translate}} <b style="color: {{getPerspectiveColor()}};">{{perspective | translate}}</b></h5>
+						<!--p>{{traits.general[getScore(traits.traitName)]}}</p-->
+						<p ng-bind-html="traits.general[getScore(traits.traitName)]"></p>
+					</details>
+				</div>			
+				<br><br>
+						
+				<div><b>{{traits.traitName}}</b> {{'contains the following' | translate}} {{traits.children[0].traitType | translate}}s, {{'traitInstruction' | translate }}  <b style="color: {{getPerspectiveColor()}};">{{perspective | translate}}</b>.			
+				</div>
+				<!--div>
+					{{'PerspectiveInstruction' | translate}}
+				</div-->
+			</div>
+			<br>
+			
+			<!-- traits of the facet-->
+			<ion-list>
+				<ion-item class="item-text-wrap" ng-repeat = "trait in traits.children track by $index" ng-click = "traitDetails($index)">	
+				<!--ion-item class="item-text-wrap" ng-repeat = "trait in traits.children track by $index" on-swipe-left = "traitDetails($index)"-->	
+
+							<h3>{{trait.traitName | translate}}</h3>
+						
+						<p>Trait Information: {{traitsSummary.children[trait.traitName].description}}</p>
+				</ion-item>
+			</ion-list>
+			<!--ion-nav-view name="facetlist"/-->
+
+
+
+	</div>
+	
+	</ion-content>
+
+</ion-view>

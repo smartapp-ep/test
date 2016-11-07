@@ -1,0 +1,30 @@
+<ion-view view-title="Promotion Credits">
+  <ion-content overflow-scroll="false" padding="true">
+    <!--h5>Promotion Credits</h5-->
+	<!-- <div>{{relationship}}</div> -->
+	
+	
+	
+	<h4> get promotional credits </h4>
+
+	</div>					
+			<!-- accquire --> 
+            <div>
+                <details>
+                    <summary>
+                        Get free promotional credits &nbsp; &nbsp;
+					<select  ng-model="social.place">
+                        <option value='facebook' ng-selected="social.place=='facebook'">Facebook</option>
+                        <option value='twitter' ng-selected="social.place=='twitter'">Twitter</option>
+                        <option value='yammer' ng-selected="social.place=='yammer'">Yammer</option>
+                    </select>
+                    </summary>
+                   Share this to your friends / colleagues and get free promotional credits!
+                    <u>more info</u>
+                </details>
+				
+				<button class="button button-block button-stable" type="submit" ng-click="acquire(social.place)">get promotional credits</button>
+				
+            </div>				
+  </ion-content>
+</ion-view>

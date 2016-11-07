@@ -1,0 +1,48 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Choose someone</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closePeople()">Close</button>
+    </div>
+  </ion-header-bar>
+
+  <!--
+   <ion-content>
+    <form ng-submit="doAnalyze('someone')">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Analyze</button>
+        </label>
+      </div>
+    </form>
+	-->
+	
+	<ion-content class="has-header">
+		<div class="bar bar-header item-input-inset">
+          <input type="text" placeholder=" Search" ng-model="search.name" 
+                  style="width:100%; padding-left:11px;" />
+		</div>
+    <ion-list>
+	<!--
+      <ion-item  type="item-text-wrap" href="#/getpi/twitter/userName/{{user.name}}"
+        ng-repeat="user in users | filter:search | limitTo:listlength">
+	-->
+      <ion-item type="item-text-wrap" ng-click="getProfile(place, friend)" ng-repeat="friend in friends | filter:search | limitTo:listlength">
+			<span>{{friend.name}}</span><span style="float:right"><img ng-src="{{friend.image}}"></span>
+      </ion-item>
+    </ion-list>
+     <ion-infinite-scroll ng-if="listlength<=friends.length" 
+            on-infinite="loadMore()" distance="3%">
+      </ion-infinite-scroll>
+  </ion-content>
+	
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,434 @@
+{
+	"Openness": {
+		"description": {
+			"high": "Intellectually curious, emotionally-aware, sensitive to beauty and willing to try new things.",
+			"low": "Prefer the plain, straightforward, and obvious over the complex, ambiguous, and subtle."
+		},
+		"summary": "<b>Openness</b> is one of the facets in the \"Big 5\" personality model. <br><br> This facet measures a person's openness to experience. Each trait below in this facet reflects an aspect of this tendency.",		
+		"children": {
+			"Adventurousness": {
+				"description": "Eagerness to trying new activities and experiencing new things.",
+				"info": {
+					"high": "You are eager to experience new things.",
+					"low": "You enjoy familiar routines and prefer not to deviate from them."
+				}
+			},
+			"Artistic interests": {
+				"description": "Appreciation for art and beauty, both man-made and in nature.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Emotionality": {
+				"description": "Emotional availability; awareness of own feelings.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Imagination": {
+				"description": "Openness to creating an inner world of fantasy.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Intellect": {
+				"description": "Intellectual curiosity; openness to new ideas.",
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			},
+			"Liberalism": {
+				"info": {
+					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
+					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+					"high": "Value getting along with others. They have a more optimistic view of human nature.",
+					"medium": "medium , neutral",
+					"low": "Value self interests over others. They are more skeptical of others' motives."
+				}
+			}
+		}
+	},
+	"Conscientiousness": {
+		"description": {
+			"high": "More self-disciplined, dutiful, or aiming for achievement against measures or outside expectations.",
+			"low": "More likely to prefer the spontaneous over the planned."
+		},
+		"summary": "<b>Conscientiousness</b> is one of the facets in the \"Big 5\" personality model. <br><br> This facet measures a person's tendency to act in an organized or thoughtful way. Each trait below in this facet reflects an aspect of this tendency.",
+		"children": {
+			"Achievement striving": {
+				"description": "The need for personal achievement and sense of direction.",
+				"info": {
+					"high": "Try hard to achieve excellence. Their drive to be recognized as successful keeps them on track as they work hard to accomplish their goals.",
+					"low": "Content with the level of accomplishment and do not feel the need to set ambitious goals."
+				},
+				"extra": "For people in the middle range, there are tendency towards balance but it's also the source for internal conflicts too. On one hand they wish to be more successful, on the other, they're not ambitious enough or simply lack the inner drive; for people who successfully resolve the internal conflicts they'll retain a very good balance",
+				"terms": {
+					"high": "Driven",
+					"low": "Content"
+				}				
+			},
+			"Cautiousness": {
+				"description": "Tendency to think things through before acting or speaking.",
+				"info": {
+					"high": "Disposed to think through possibilities carefully before acting.",
+					"low": "Would rather take action immediately than spend time deliberating making a decision."
+				},
+				"terms": {
+					"high": "Deliberate",
+					"low": "Bold"
+				}				
+			},
+			"Dutifulness": {
+				"description": "Sense of duty; amount of emphasis placed on fulfilling obligations.",
+				"info": {
+					"high": "Have a strong sense of duty and obligation.",
+					"low": "You do what you want, disregarding rules and obligations."
+				},
+				"terms": {
+					"high": "Dutiful",
+					"low": "Carefree"
+				}				
+			},
+			"Orderliness": {
+				"description": "Personal organization, tidiness, neatness.",
+				"info": {
+					"high": "Well-organized, tidy, and neat.",
+					"low": "doesn't spent much time for organization in your daily life."
+				},
+				"terms": {
+					"high": "Organized",
+					"low": "Unstructured"
+				}
+			},
+			"Self-discipline": {
+				"description": "Will-power; the capacity to begin tasks and follow through to completion in spite of boredom or distractions.",
+				"info": {
+					"high": "Have the self-discipline, or 'will-power', to persist at difficult or unpleasant tasks until they are completed.",
+					"low": "You have a hard time sticking with difficult tasks for a long period of time."
+				},
+				"terms": {
+					"high": "Persistent",
+					"low": "Intermittent"
+				}				
+			},
+			"Self-efficacy": {
+				"description": "Belief in one's own competence.",
+				"info": {
+					"high": "Confident in their ability to accomplish things.",
+					"low": "Frequently doubt the ability to achieve goals."
+				},
+				"terms": {
+					"high": "Self-doubting",
+					"low": "Self-assured"
+				}				
+			}
+		}
+	},
+	"Extraversion": {
+		"description": {
+			"high": "More energetic and pronounced engagement with the external world. Likes high group visibility, talking, and asserting themselves.",
+			"low": "Needs less stimulation and are more independent of their social world. It does not mean they are shy, un-friendly, or antisocial."
+		},
+		"summary": "<b>Extraversion</b> is one of the facets in the \"Big 5\" personality model. <br><br> This facet averages its individual traits and is generally an indication of a person's tendency to seek stimulation in the company of others.",	
+		"children": {
+			"Activity level": {
+				"description": "Pace of living; level of busyness.",
+				"info": {
+					"high": "You enjoy a fast-paced, busy schedule with many activities.",
+					"low": "You appreciate a relaxed pace in life."
+				}
+			},
+			"Assertiveness": {
+				"description": "Forcefulness of expression; pursuit of leadership and social ascendancy; desire to direct the activities of others.",
+				"info": {
+					"high": "You tend to speak up and take charge of situations, and you are comfortable leading groups.",
+					"low": "You prefer to listen than to talk, especially in group settings."
+				}
+			},
+			"Cheerfulness": {
+				"description": "Tendency to experience or express positive emotions.",
+				"info": {
+					"high": "You are a joyful person and share that joy with the world.",
+					"low": "You are generally serious and do not joke much."
+				}
+			},
+			"Excitement-seeking": {
+				"description": "A need for environmental stimulation.",
+				"info": {
+					"high": "You are excited by taking risks and feel bored without lots of action going on.",
+					"low": "You prefer activities that are quiet, calm, and safe."
+				}
+			},
+			"Friendliness": {
+				"description": "Interest in and friendliness towards others; socially confident.",
+				"info": {
+					"high": "You make friends easily and feel comfortable around other people.",
+					"low": "You are a private person and do not let many people in."
+				}
+			},
+			"Gregariousness": {
+				"description": "Fondness for the company of others; sociability.",
+				"info": {
+					"high": "You enjoy being in the company of others.",
+					"low": "You have a strong desire to have time to yourself."
+				}
+			}
+		}
+	},
+	"Agreeableness": {
+		"description": {
+			"high": "Value getting along with others. They have a more optimistic view of human nature.",
+			"low": "Value self interests over others. They are more skeptical of others' motives."
+		},
+		"summary": "<b>Agreeableness</b> is one of the facets in the \"Big 5\" personality model. <br><br> This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
+		"children": {
+			"Altruism": {
+				"description": "Active and genuine concern for the welfare of others.",
+				"info": {
+					"high": "Find that helping others is genuinely rewarding, that doing things for others is a form of self-fulfilment rather than self-sacrifice.",
+					"low": "More concerned with taking care of her/himself than taking time for others. Not necessarily selfish, but believing other people are capable of taking care of themselves, so only mind his or her own business. When asked, depends on other traits, the person may be actually more than willing to help."
+				},
+				"extra": "Egoism is the opposite of Altruism, could be caused by lack of affection from family during childhood, insecurity feeling, overestimation of self and underestimation of others etc. This could cause problem at home or work alike. "
+			},
+			"Cooperation": {
+				"description": "Dislike of confrontations. Responding to interpersonal conflict with a willingness to compromise.",
+				"info": {
+					"high": "Easy to please and try to avoid confrontation, she or he adds harmony in any relationship.",
+					"low": "Not shy away from contradicting with others, if people closely related also have the same trait, there maybe arguments frequently."
+				}
+			},
+			"Modesty": {
+				"description": "Tendency to be unassuming and play down own achievements; humility.",
+				"info": {
+					"high": "Uncomfortable being the center of attention, yet not necessarily lacks self-confidence or self-esteem.",
+					"low": "Holds herself or himself in high regard and is satisfied with who s/he is."
+				}
+			},
+			"Morality": {
+				"description": "Tendency to see need for pretense or manipulation when dealing with others and are therefore whether is candid, frank, and genuine. Impact to relationship from this trait is hard to predict - there is an intricate and complex connection between morality and personal relationships.",
+				"info": {
+					"high": "Tend to think it is wrong to take advantage of others to get ahead.",
+					"low": "Comfortable using every trick in the book to get what you want."
+				}
+			},
+			"Sympathy": {
+				"description": "Attitude of compassion for others; kindness.",
+				"info": {
+					"high": "This person feels what others feel and are compassionate toward them.",
+					"low": "This person thinks people should generally rely more on themselves than on others."
+				}
+			},
+			"Trust": {
+				"description": "Level of belief in the sincerity and good intentions of others.",
+				"info": {
+					"high": "This person believes the best of others and trust people easily.",
+					"low": "This person is wary of other people's intentions and do not trust easily"
+				}
+			}
+		}
+	},
+	"Neuroticism": {
+		"description": {
+			"high": "More likely to have negative emotions or get upset. It could mean they are going through a tough time.",
+			"low": "More calm and less likely to get upset. It does not mean they are positive, or happy people."
+		},
+		"summary": "<b>Neuroticism</b> is one of the facets in the \"Big 5\" personality model. <br><br> Also referred to as Emotional Range or Natural Reactions, is the extent to which a person's emotions are sensitive to the individual's environment. This facet measures a person's emotion sensitivity, each trait below in this facet reflects an aspect of this tendency.",		
+		"children": {
+			"Anger": {
+				"description": "Tendency to experience–but not necessarily express–anger or frustration.",
+				"info": {
+					"high": "You have a fiery temper, especially when things do not go your way.",
+					"low": "It takes a lot to get you angry."
+				}
+			},
+			"Anxiety": {
+				"description": "Tendency to dwell on difficulty or troubles; easily experience unease or concern.",			
+				"info": {
+					"high": "You tend to worry about things that might happen.",
+					"low": "You tend to feel calm and self-assured."
+				}
+			},
+			"Depression": {
+				"description": "Normal tendency to experience feelings of guilt, sadness, hopelessness, or loneliness.",				
+				"info": {
+					"high": "You think quite often about the things you are unhappy about.",
+					"low": "You are generally comfortable with yourself as you are."
+				}
+			},
+			"Immoderation": {
+				"description": "Tendency to act on cravings and urges rather over resisting them or delaying gratification.",				
+				"info": {
+					"high": "You feel your desires strongly and are easily tempted by them.",
+					"low": "You have control over your desires, which are not particularly intense."
+				}
+			},
+			"Self-consciousness": {
+				"description": "Concern with rejection, embarrassment; shyness.",
+				"info": {
+					"high": "You are sensitive about what others might be thinking of you.",
+					"low": "You are hard to embarrass and are self-confident most of the time."
+				}
+			},
+			"Vulnerability": {
+				"description": "Difficulty in coping with stress or pressure in difficult situations.",
+				"info": {
+					"high": "You are easily overwhelmed in stressful situations.",
+					"low": "You handle unexpected events calmly and effectively."
+				}
+			}
+		}
+	},
+	"Needs": {
+		"description": {
+			"high": "More likely to resonate with the aspect of the product that addresses one or more needs below.",
+			"low": "Find the aspect of the product that addresses one or more needs less appealing."
+		},
+		"summary": "<b>Needs</b> are an important aspect of human behavior. Research literature suggests that several types of human needs are universal and directly influence consumer behavior. The twelve categories of needs that are analyzed are desires that a person hopes to fulfill when considering a product or service.",	
+		"children": {
+			"Challenge": {
+				"description": "A desire to achieve, succeed, compete, or pursue experiences that test one's abilities.",
+				"info": {
+					"high": "Have an urge to achieve, to succeed, and to take on challenges. More likely to purchase the product or service if it presents some kind of challenge.",
+					"low": "The challenge aspect in the product or service has less influence to the purchase decision."
+				}
+			},
+			"Closeness": {
+				"description": "A need to nurture or be nurtured; a feeling of belonging.",
+				"info": {
+					"high": "Relish being connected to family and setting up a home.",
+					"low": "Have lower need for connection to family or home."
+				}
+			},
+			"Curiosity": {
+				"description": "A need to pursue experiences that foster learning, exploration, and growth.",
+				"info": {
+					"high": "Have a desire to discover, find out, and grow.",
+					"low": "Less curious about the outside world."
+				}
+			},
+			"Excitement": {
+				"description": "A need to pursue experiences or lead a lifestyle that arouses enthusiasm and eagerness.",
+				"info": {
+					"high": "Want to get out there and live life, have upbeat emotions, and want to have fun.",
+					"low": "Less desire for passion."
+				}
+			},
+			"Harmony": {
+				"description": "A need to appreciate or please other people, their viewpoints, and feelings.",
+				"info": {
+					"high": "Appreciate other people, their viewpoints, and their feelings.",
+					"low": "Less concerned about other people."
+				}
+			},
+			"Ideal": {
+				"description": "A desire to satisfy one's idea of perfection in a lifestyle or experience, oftentimes seen as pursuing a sense of community.",
+				"info": {
+					"high": "Desire perfection and a sense of community.",
+					"low": "More realistic, less need for idealism."
+				}
+			},
+			"Liberty": {
+				"description": "A need to escape, a desire for new experiences, new things.",
+				"info": {
+					"high": "Have a desire for fashion and new things, as well as the need for escape.",
+					"low": "Prefer familiarity, has less need for new things and experiences."
+				}
+			},
+			"Love": {
+				"description": "Social contact, whether one-to-one or one-to-many.",
+				"info": {
+					"high": "Enjoy social contact, whether one-to-one or one-to-many. Any brand that is involved in bringing people together taps this need.",
+					"low": "Less need for social connections."
+				}
+			},
+			"Practicality": {
+				"description": "A desire for getting the job done, skill, and efficiency.",
+				"info": {
+					"high": "Have a desire to get the job done, a desire for skill and efficiency, which can include physical expression and experience.",
+					"low": "Less desire for efficiency."
+				}
+			},
+			"Self-expression": {
+				"description": "A desire to discover and assert one's identity.",
+				"info": {
+					"high": "Enjoy discovering and asserting their own identities.",
+					"low": "Less desire for self expression and discovery of own identities."
+				}
+			},
+			"Stability": {
+				"description": "A need for the sensible, tried and tested, with a good track record and a known history.",
+				"info": {
+					"high": "Seek equivalence in the physical world. They favor the sensible, the tried and tested.",
+					"low": "Less desire for stability, willing to try new things."
+				}
+			},
+			"Structure": {
+				"description": "A need for organization, planning, and things that have a clear purpose.",
+				"info": {
+					"high": "Exhibit groundedness and a desire to hold things together. They need things to be well organized and under control.",
+					"low": "Less desire for orderliness."
+				}
+			}
+		}
+	},
+	"Values": {
+		"description": {
+			"high": "More likely to be motivated by one or more of the values below for decision making.",
+			"low": "Less likely to place high priority on one or more values below for decision making."
+		},
+		"summary": "<b>Values</b> convey what is most important to an individual. They are desirable, trans-situational goals, varying in importance, that serve as guiding principles in people's lives. <br><br> Schwartz summarizes five features that are common to all values: <br> (1) values are beliefs; <br> (2) values are a motivational construct; <br> (3) values transcend specific actions and situations; <br> (4) values guide the selection or evaluation of actions, policies, people, and events; and <br> (5) values vary by relative importance and can be ranked accordingly.",	
+		"children": {
+			"Conservation": {
+				"description": "Respect, commitment, and acceptance of the customs and ideas that one's culture and/or religion provides.",
+				"info": {
+					"high": "Emphasize self-restriction, order, and resistance to change.",
+					"low": "Less resistance to change, orderliness has lower value."
+				}
+			},
+			"Openness-to-change": {
+				"description": "Excitement, novelty, and challenge in life.",
+				"info": {
+					"high": "Emphasize independent action, thought, and feeling, as well as a readiness for new experiences.",
+					"low": "More conservative, do not value new experiences."
+				}
+			},
+			"Hedonism": {
+				"description": "Pleasure or sensuous gratification for oneself.",
+				"info": {
+					"high": "Seek pleasure and sensuous gratification for themselves.",
+					"low": "gratification and pleasure have lower value."
+				}
+			},
+			"Self-enhancement": {
+				"description": "Personal success through demonstrating competence according to social standards.",
+				"info": {
+					"high": "Seek personal success for themselves.",
+					"low": "Personal success is not a priority in values."
+				}
+			},
+			"Self-transcendence": {
+				"description": "Preserving and enhancing the welfare of those with whom one is in frequent personal contact.",
+				"info": {
+					"high": "Show concern for the welfare and interests of others.",
+					"low": "Not interested in others and less concerned for others."
+				}
+			}
+		}
+	}
+}

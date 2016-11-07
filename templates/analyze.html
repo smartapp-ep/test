@@ -1,0 +1,35 @@
+<ion-view view-title="Analyse">
+
+  <!-- ion-content overflow-scroll="true" padding="true" class="has-header" -->
+  
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+    <h5>Analyse</h5>
+
+            <div>
+                <details>
+                    <summary>
+                        Choose someone to analyse from &nbsp; &nbsp;
+					<select  ng-model="social.place">
+                        <option value='facebook' ng-selected="social.place=='facebook'">Facebook</option>
+                        <option value='twitter' ng-selected="social.place=='twitter'">Twitter</option>
+                        <option value='yammer' ng-selected="social.place=='yammer'">Yammer</option>
+                    </select>
+                    </summary>
+                    you can analyse your friend at Facebook , for example, or you can analyse yourself
+                    <u>more info</u>
+                </details>
+				    
+				<!--	
+					<button class="button button-block button-stable" type="submit" href="#/app/people/{{place}}/">>Analyse</button>
+				-->	
+				
+				<button class="button button-block button-stable" type="submit" ng-click="getFriends()">Analyse</button>
+				
+            </div>
+
+
+
+	
+	
+  </ion-content>
+</ion-view>

@@ -1,0 +1,16 @@
+
+ <!--ion-modal-view>
+    <ion-header-bar>
+		<h1 class="title">Change Perspective</h1>
+    </ion-header-bar>
+    <ion-content>
+				<ion-radio ng-model="perspective" ng-value="'Relationship'" ng-change="perspectiveChanged('Relationship')">Relationship</ion-radio>
+				<ion-radio ng-model="perspective" ng-value="'Approaching'" ng-change="perspectiveChanged('Approaching')">Approaching</ion-radio>
+				<ion-radio ng-model="perspective" ng-value="'Self-Improvement'" ng-change="perspectiveChanged('Self-Improvement')">Self Improvement</ion-radio>
+    </ion-content>
+ </ion-modal-view-->
+ 
+ 
+ 				<ion-radio ng-show="facet != 'Needs'" ng-model="perspective" ng-value="'Relationship'" ng-change="perspectiveToggle('Relationship')">Relationship</ion-radio>
+				<ion-radio ng-show="facet != 'Values'" ng-model="perspective" ng-value="'Approaching'" ng-change="perspectiveToggle('Approaching')">Approaching</ion-radio>
+				<ion-radio ng-show="facet != 'Needs' && facet != 'Values'" ng-model="perspective" ng-value="'Self-Improvement'" ng-change="perspectiveToggle('Self-Improvement')">Self Improvement</ion-radio>

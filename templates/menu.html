@@ -1,0 +1,86 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+		<ion-nav-back-button>
+		</ion-nav-back-button>
+
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+		</ion-nav-buttons>
+		
+		<!-- 	
+		<ion-nav-buttons side="right">
+			<ion-toggle ng-model="perspectives.self" ng-change="perspectiveToggle()>self</ion-toggle> 
+		</ion-nav-buttons>			
+
+
+		<ion-nav-buttons side="right">
+			<ion-toggle ng-model="perspectives.relation" ng-change="perspectiveToggle()>relation</ion-toggle>
+		</ion-nav-buttons>			
+		-->
+		
+    </ion-nav-bar>
+    
+	<ion-nav-view animation="slide-left-right" name="menuContent"></ion-nav-view>
+	<!-- ion-nav-view animation="slide-left-right"></ion-nav-view -->
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Personality Analysis</h1>
+    </ion-header-bar>
+    <ion-content>
+	
+	
+		<ion-item menu-close href="#/app/about">
+	      About 
+        </ion-item>        
+		
+		<ion-item menu-close href="#/app/format">
+          manual format
+        </ion-item>
+		
+		<ion-item menu-close href="#/app/analyze">
+          Analyze
+        </ion-item>		
+
+
+		<ion-item menu-close href="#/app/traits/">
+			Traits
+        </ion-item>
+		
+		<ion-item menu-close href="#/app/reports">
+			Open Report
+        </ion-item>
+		
+		
+		<ion-item menu-close href="#/app/test">
+			Test
+        </ion-item>		
+
+		<ion-item menu-close href="#/app/playlists">
+			Playlists
+        </ion-item>
+		
+		 <div ng-repeat="group in groups">
+          <!-- ion-item class="item-stable" -->
+		  <ion-item		  
+					ng-click="toggleGroup(group)"
+                    ng-class="{active: isGroupShown(group)}">
+              <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+            &nbsp;
+            {{group.name}}
+          </ion-item>
+          <ion-item menu-close href="#/app/{{group.href}}/{{item.href}}"
+					class="item-accordion"
+                    ng-repeat="item in group.items"
+                    ng-show="isGroupShown(group)">
+            &nbsp; &nbsp;{{item.subName}}
+          </ion-item>
+        </div>
+		
+		
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

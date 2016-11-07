@@ -1,0 +1,41 @@
+<ion-view view-title="Free Credits">
+  <ion-content overflow-scroll="true" padding="true">
+  
+  		  <ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="doRefresh()">
+		  </ion-refresher>
+		  
+    <h5>Credit Records</h5>
+
+			<div class="row row-top" style="font-weight: bold;">
+				<!--div class="col">&nbsp; &nbsp;Type</div-->
+				<div class="col col-20">&nbsp; &nbsp;Type</div>
+				<div class="col">Qty</div>
+				<div class="col col-33">&nbsp; &nbsp;Expired</div>
+				<div class="col col-33">Valid After</div>
+				<!--div class="col">Valid Before</div-->
+				<!--div class="col">Issue Date</div-->
+			</div>		
+	<ion-list>
+		<!-- ion-item ng-repeat="item in items track by $index" item="item", idx = $index ng-href="#" -->
+		<ion-item ng-repeat="item in items">
+			<div class="row" style="font-size: 13px;"> 
+				<!--div class="col">{{item.type}}</div-->
+				<div class="col col-20">{{item.src}}</div>
+				<div class="col">{{item.ava}}</div>
+				<div class="col col-33">{{extractDate(item.exp)}}</div>
+				<div class="col col-33">{{extractDate(item.nbf)}}</div>
+				<!--div class="col">{{item.nbf}}</div-->
+				<!--div class="col">{{item.iat}}</div-->
+			</div> 	  
+		</ion-item>		  
+	</ion-list>
+ 
+	<div>
+
+	<!--button ng-click = "checkCredits()"> check credits </button-->
+	</div>	
+	
+  </ion-content>
+</ion-view>

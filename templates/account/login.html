@@ -1,0 +1,16 @@
+<!--ion-nav-view-->
+<ion-view view-title="Login">
+  <ion-content  scroll="no" overflow-scroll="false" padding="true">
+	<br><br>
+	<div id='authenticated' ng-show = "true">
+		<!-- need translate... -->
+		You've logged in using {{curSource}}, login to additional social source?
+		<button class="button" on-tap="loginsvr()">
+			<i class="icon ion-log-in"></i>
+		</button>
+		<!-- or, go directly to loginsvr ??? -->
+	</div>
+  <div id="a0"><div>
+	<div ui-view="loginsvr"></div>
+	</ion-content>
+</ion-view>

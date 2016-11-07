@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html ng-app="ipa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+	<!-- meta for website copy -->
+	<meta property="og:title" content="{{ogtitle}}">
+	
+	
+    <!-- compiled css output -->
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+	<link href="lib/ionic-tinder-cards-2/ionic.tdcards2.css" rel="stylesheet">
+	<link href="lib/ionic-ion-frost/ionic.contrib.frost.css" rel="stylesheet">
+	<!-- link href="lib/ionic-ion-tinder-cards/ionic.tdcards.css" rel="stylesheet" -->
+	<link href="css/style.css" rel="stylesheet">
+
+	
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="lib/ionic.native.js"></script>
+	<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script> 
+	    <!--<script src="http://code.ionicframework.com/1.0.0-beta.1/js/ionic.bundle.js"></script> -->
+	<script src="lib/angular-translate/angular-translate.min.js"></script>
+	<script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+	<script src="lib/collide/collide.js"></script>
+	<script src="lib/ionic-tinder-cards-2/ionic.tdcards2.js"></script>	
+	<script src="lib/ionic-ion-frost/ionic.contrib.frost.js"></script>
+	<script src="lib/ionic/js/angular/angular-resource.min.js"></script>
+	<!--script src="lib/ionic-ion-tinder-cards/ionic.tdcards.js" </script-->
+	
+	<!-- Auth0 Lock -->
+	<!--script src="lib/auth0-lock/build/auth0-lock.js"></script-->
+
+	<!-- auth0-angular -->
+	<!--script src="lib/auth0-angular/build/auth0-angular.js"></script-->
+
+	<!-- angular storage -->
+	<script src="lib/a0-angular-storage/dist/angular-storage.js"></script>
+
+	<!-- angular-jwt -->
+	<script src="lib/angular-jwt/dist/angular-jwt.js"></script>
+    
+	<!-- cordova script (this will be a 404 during development) -->
+	<script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> -->
+	<!--
+	<script>document.write('<base href="' + document.location + '" />');</script>
+	-->
+	
+    <!-- your app's js -->	
+	<!--script src="js/auth0-variables.js"></script-->
+	
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/constants.js"></script>	
+	<script src="js/directives.js"></script>	
+	
+
+	<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  appId      : '184363881626173',
+			  xfbml      : true,
+			  version    : 'v2.5'
+			});
+		  };
+
+		  (function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+   </script>
+	
+	
+	<!--
+	<script src="js/personality-insights-trait-tooltips.standalone.js"></script>
+	-->
+	
+	<style>
+	/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.scroll{
+  height: 100%;
+  min-height: 100%;
+}
+
+.forms{
+  //background: gray;
+  border: thin solid black;
+  height: 100% !important;
+}
+
+/*
+.slider {
+  height: 80%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+*/
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;	
+}
+
+ion-slides {
+    width: 100%;
+    height: 50%;
+    /* height: 100%; */
+    display: block;
+}
+
+
+.yellow {
+    background-color: yellow;
+    //font-size: 50px;
+}
+
+.blue {
+    background-color: blue;
+    //font-size: 50px;
+}
+
+.pink {
+    background-color: pink;
+    //font-size: 50px;
+}
+
+.slider {
+    //height: 50% !important;
+    //width: 50% !important;
+}
+
+.box {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.content {
+	//padding: 0.5rem;
+}
+
+.behindcard {
+	//position: absolute;
+	position: relative;
+	background-color: white;
+	padding: 1rem;
+	width: 300px;
+	height: 300px;
+	top: 10px;
+	left: 2rem;
+	//color: #01A9DB
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.2;
+	border-color: #01A9DB;
+	border-style: solid;
+	border-width: thin;
+	//visibility: hidden
+	//opacity: 0
+	z-index: 100;
+}
+
+.touchmovetest {
+	//position: absolute;
+	position: relative;
+	background-color: white;
+	padding: 1rem;
+	width: 300px;
+	height: 100px;
+	top: 10px;
+	left: 2rem;
+	//color: #01A9DB
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.2;
+	border-color: #01A9DB;
+	border-style: solid;
+	border-width: thin;
+	//visibility: hidden
+	//opacity: 0
+	//z-index: 100;
+}
+
+.behindcard2 {
+	position: absolute;
+}
+
+td-card {
+	position: absolute;
+}
+
+.item-divider {
+	background-color: #00bfff;
+}
+
+.bottom-content {
+	position: relative;
+	top: 80px; 
+	//position: absolute;
+}
+
+.frost-overlay {
+  background-color: #EAF5F9; //#D1ECF5; //#00BFFF; //#222;
+  opacity: 0.9;
+}
+
+.frost-overlay-card-footer {
+  background-color: #DBEEF5; //#00BFFF; //#EAF5F9; //#D1ECF5; //#00BFFF; //#222;
+  opacity: 0.8;
+}
+
+.fblogin {
+	content: url('img/fb2.jpg');
+	width: 180px;
+}
+.twlogin {
+	content: url('img/twitter1.jpg');
+	width: 180px;
+}
+.ymlogin {
+	content: url('img/yammer.jpg');
+	width: 180px;
+}
+
+.bgflower1.scroll-content{ 
+	background: url('img/bg/flowers.jpg') no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+	margin: auto; 
+	z-index: 2; 
+}
+
+.bgsky1.scroll-content{ 
+	background: url('img/bg/sky.jpg') no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+	margin: auto; 
+	z-index: 2; 
+}
+
+.divsky1{
+ background: url('img/bg/sky.jpg') no-repeat;
+ 	background-size: cover; 
+	background-position: center; 
+	margin: auto; 
+	z-index: 2; 
+	padding:14px;
+}
+
+.divflower1{
+ background: url('img/bg/flowers.jpg') no-repeat;
+ 	background-size: cover; 
+	background-position: center; 
+	margin: auto; 
+	z-index: 2; 
+	padding:14px;
+}
+
+.divgrass1{
+ background: url('img/bg/grass.jpg') no-repeat;
+ 	background-size: cover; 
+	background-position: center; 
+	margin: auto; 
+	z-index: 2; 
+	padding:14px;
+}
+
+</style>
+
+
+
+  
+ 
+ <!--
+    <script id="tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-positive">
+
+        <ion-tab title="Home" icon="ion-home" href="#/app/tab/home">
+          <ion-nav-view name="home-tab" animation="slide-up-down"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="About" icon="ion-ios-information" href="#/app/tab/about">
+          <ion-nav-view name="about-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Contact" icon="ion-ios-world" ui-sref="app.tabs.contact">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+
+      </ion-tabs>
+    </script>
+-->
+
+
+
+	</head>
+   <!--body ng-app="ipa"-->
+   <body>
+
+ <!--
+      <div ng-if="initialLoad">
+      <p>Loading...</p>
+	</div>
+    <div ng-cloak>
+		<p>Hello {{name}}!</p>
+    </div>
+-->
+
+
+		<div ng-if="initialLoad">
+			<p>Initializing...</p>
+		</div>
+
+
+    <!--ion-nav-view ng-cloak=""-->     
+	<ion-nav-view> 
+		<!--
+		<div ng-cloak>
+		</div>
+		-->
+	</ion-nav-view>	
+
+  <script>
+  /*
+    try {
+      angular.element(document).ready(function() {
+        angular.bootstrap(document.getElementsByTagName('body'), ['ipa']);
+        console.log('started');
+      });
+    } catch(err) {
+      alert(err.message);
+    }
+	*/
+  </script>
+
+  <!-- tabs -->
+    <script id="tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-stable">
+
+        <ion-tab title="Love" icon="ion-home" href="#/app/tab/love/{{traitName}}/Love///">
+          <ion-nav-view name="love-tab" animation="slide-up-down"></ion-nav-view>
+        </ion-tab>
+
+
+		<ion-tab title="Work" icon="ion-ios-information" href="#/app/tab/work/{{traitName}}/Work/{{perspective}}/">
+          <ion-nav-view name="work-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Social" icon="ion-ios-world" href="#/app/tab/social/{{traitName}}/Social/{{perspective}}/">
+          <ion-nav-view name="social-tab"></ion-nav-view>
+        </ion-tab>	
+
+        <ion-tab title="Business" icon="ion-ios-world" href="#/app/tab/business/{{traitName}}/Business/{{perspective}}/">
+          <ion-nav-view name="business-tab"></ion-nav-view>
+        </ion-tab>		
+		
+      </ion-tabs>
+    </script>
+
+		
+  </body> 
+  
+</html>

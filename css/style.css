@@ -1,0 +1,226 @@
+/* Empty. Add your own CSS if you like */
+
+.percent-bar {
+  background-color: #ececec;
+  height: 0rem;
+  width: 100%;
+  border-bottom: 1px solid #323232;
+  position: relative; }
+  .percent-bar--meter {
+    width: 100%;
+    -webkit-transform: translate(0%);
+        -ms-transform: translate(0%);
+            transform: translate(0%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .percent-bar--ball {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    top: -0.4rem;
+    left: -0.4rem;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .percent-bar--ball_POSITIVE {
+      background-color: white;
+      border: 2px solid #00b4a0; }
+    .percent-bar--ball_NEGATIVE {
+      background-color: white;
+      border: 2px solid #5596e6; }
+    .percent-bar--ball_POSITIVE-FILL {
+      background-color: #00b4a0;
+      height: 0.8rem;
+      width: 0.8rem;
+      top: -0.4rem;
+      left: -0.4rem; }
+    .percent-bar--ball_NEGATIVE-FILL {
+      background-color: #5596e6;
+      height: 0.8rem;
+      width: 0.8rem;
+      top: -0.4rem;
+      left: -0.4rem; }
+
+.percent-bar-and-score {
+  position: relative;
+	margin-right: 1rem
+  }
+  .percent-bar-and-score--percent-bar {
+    width: 100%;
+    margin-top: 2rem;
+    display: inline-block;
+    vertical-align: middle; }
+  .percent-bar-and-score--label {
+    font-size: 0.9em; }
+  .percent-bar-and-score--toggle-icon {
+    display: inline-block;
+    font-size: 5px;
+    margin-left: 0.5em; }
+  .percent-bar-and-score--number {
+    position: absolute;
+    width: 3rem;
+    margin-top: 0rem;
+    left: -1.2rem;
+    top: -2rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #4178be; }
+  .percent-bar-and-score.toggled .percent-bar-and-score--label .icon {
+    -webkit-transform: rotateZ(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotateZ(180deg); }
+
+
+.tooltip {
+  position: absolute;
+  //postition: relative;
+  background-color: #325c80;
+  padding: 1rem;
+  width: 20rem;
+  left: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  visibility: hidden;
+  opacity: 0;
+  bottom: calc(100% + 1.5rem); }
+  .tooltip:after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    border: 1rem solid transparent;
+    top: 100%;
+    border-top-color: #325c80; }
+  .tooltip .base--a {
+    color: white; }
+    .tooltip .base--a:hover {
+      color: #e0e0e0; }
+	  
+	  
+	  
+
+//output big5 traits & sub-traits
+.output-big-5--trait-label {
+  cursor: pointer; }
+  .output-big-5--trait-label .tooltip .base--p {
+    color: white; }
+  .output-big-5--trait-label_POSITIVE .tooltip {
+    position: absolute;
+    background-color: #00b4a0;
+    padding: 1rem;
+    width: 20rem;
+    left: 0.5rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    visibility: hidden;
+    opacity: 0;
+    bottom: calc(100% + 1.5rem); }
+    .output-big-5--trait-label_POSITIVE .tooltip:after {
+      content: '';
+      position: absolute;
+      left: 9rem;
+      border: 1rem solid transparent;
+      top: 100%;
+      border-top-color: #00b4a0; }
+    .output-big-5--trait-label_POSITIVE .tooltip .base--a {
+      color: white; }
+      .output-big-5--trait-label_POSITIVE .tooltip .base--a:hover {
+        color: #e0e0e0; }
+  .output-big-5--trait-label_NEGATIVE .tooltip {
+    position: absolute;
+    background-color: #5596e6;
+    padding: 1rem;
+    width: 20rem;
+    left: -8rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    visibility: hidden;
+    opacity: 0;
+    bottom: calc(100% + 1.5rem); }
+    .output-big-5--trait-label_NEGATIVE .tooltip:after {
+      content: '';
+      position: absolute;
+      left: 9rem;
+      border: 1rem solid transparent;
+      top: 100%;
+      border-top-color: #5596e6; }
+    .output-big-5--trait-label_NEGATIVE .tooltip .base--a {
+      color: white; }
+      .output-big-5--trait-label_NEGATIVE .tooltip .base--a:hover {
+        color: #e0e0e0; }
+  .output-big-5--trait-label:hover .tooltip {
+    visibility: visible;
+    opacity: 1; }
+
+.output-big-5--sub-trait-label .tooltip .base--p {
+  color: white; }
+
+.output-big-5--sub-trait-label_POSITIVE .tooltip {
+  position: absolute;
+  background-color: #00b4a0;
+  padding: 1rem;
+  width: 20rem;
+  left: -9rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  visibility: hidden;
+  opacity: 0;
+  bottom: calc(100% + 1.5rem); }
+  .output-big-5--sub-trait-label_POSITIVE .tooltip:after {
+    content: '';
+    position: absolute;
+    left: 9rem;
+    border: 1rem solid transparent;
+    top: 100%;
+    border-top-color: #00b4a0; }
+  .output-big-5--sub-trait-label_POSITIVE .tooltip .base--a {
+    color: white; }
+    .output-big-5--sub-trait-label_POSITIVE .tooltip .base--a:hover {
+      color: #e0e0e0; }
+
+.output-big-5--sub-trait-label_NEGATIVE .tooltip {
+  position: absolute;
+  background-color: #5596e6;
+  padding: 1rem;
+  width: 20rem;
+  left: -9rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  visibility: hidden;
+  opacity: 0;
+  bottom: calc(100% + 1.5rem); }
+  .output-big-5--sub-trait-label_NEGATIVE .tooltip:after {
+    content: '';
+    position: absolute;
+    left: 9rem;
+    border: 1rem solid transparent;
+    top: 100%;
+    border-top-color: #5596e6; }
+  .output-big-5--sub-trait-label_NEGATIVE .tooltip .base--a {
+    color: white; }
+    .output-big-5--sub-trait-label_NEGATIVE .tooltip .base--a:hover {
+      color: #e0e0e0; }
+
+.output-big-5--sub-trait-label:hover .tooltip {
+  visibility: visible;
+  opacity: 1; }
+
+.output-big-5--sub-tree {
+  padding-left: 1rem;
+  display: none; }
+  .percent-bar-and-score.toggled + .output-big-5--sub-tree {
+    display: block; }
+			
