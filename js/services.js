@@ -209,7 +209,7 @@ services.service('init', function($timeout, $window, filestore, Reports){
 				console.log('init: filestore: ', filestore);
 				Reports.setReports(filestore.getFileReports());
 				
-				console.log('filereports, reports: ', filestore.getFileReports(), Reports.getReports());
+				console.log('filereports, reports, filestores: ', filestore.getFileReports(), Reports.getReports(), filestore.getStore());
 			}, 3000);			
 			
 		}
@@ -1509,6 +1509,10 @@ services.service('filestore', function($http) {
 		},
 		getFileReports: function() {
 			return filereports;
+		},
+		//for debug only
+		getStore: function() {
+			return filestores;
 		}
 	}
 })
