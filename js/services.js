@@ -1476,8 +1476,8 @@ services.service('filestore', function($http) {
 				
 				if (filereports) {
 					filereports.forEach(function(itm) {
-						var fileUrl =  itm.file.replace(' ', '__') + '.json';
-						getFile(fileUrl).then(function(res) {
+						//var fileUrl =  itm.file.replace(' ', '__') + '.json';
+						getFile(itm.file).then(function(res) {
 							var file = res.data;
 							filestores[itm.file] = file;
 						}, function(err) {
