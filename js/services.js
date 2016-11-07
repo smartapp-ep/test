@@ -1769,7 +1769,13 @@ services.service('Reports', function(store, filestore, $timeout) {
 			if (store.get(file)) {
 				return store.get(file);
 			} else {
-				return filestore.get(file);
+				
+				//dirty workaround to get resolved data before return
+				if (filestore.get(file)) return filestore.get(file);
+				$timeout(function() {
+					return filestore.get(file);
+				}, 3000);
+				
 			}
 		},
 		
