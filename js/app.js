@@ -301,13 +301,23 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	//.state('app.display', //...
   
    .state('app.summary', {
-    url: '/summary/:file',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/summary.html',
-		controller: 'SummaryCtrl'
-      }
-    }
+		url: '/summary/:file',
+		views: {
+		  'menuContent': {
+			templateUrl: 'templates/summary.html',
+			controller: 'SummaryCtrl'
+		  }
+		},
+		resolve: {
+			report: function(Reports, $stateParams) {
+				console.log ('promise from Reports: ', Reports.getPromise($stateParams.file))
+				return Reports.getPromise($stateParams.file); /*.then(function(rpt){
+					return rpt;
+				}).catch(function(err) {
+					return err;
+				}); */
+			}
+		}	
   })     
   
    .state('app.people', {
@@ -742,7 +752,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   
   // if none of the above states are matched, use this as the fallback
   //$urlRouterProvider.otherwise('/app/playlists');
-  $urlRouterProvider.otherwise('/app/about');
+  //$urlRouterProvider.otherwise('/app/about');
 });
 
 app.config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider, $translateProvider) {

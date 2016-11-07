@@ -10,8 +10,8 @@ var services = angular.module('ipa.services', ['ionic', 'pascalprecht.translate'
 var jsClientAuth = false;
 
 //var server = 'https://server.local:3000';
-var server = 'https://192.168.2.151';
-//var server = 'https://192.168.0.4:3000';
+//var server = 'https://192.168.2.151';
+var server = 'https://direct-keel-136302.appspot.com';
 
 
 var apiUrl = server + '/api/v1';
@@ -1459,7 +1459,7 @@ services.service('filestore', function($http) {
 	var test;
 
 	function getFile (file) {
-		return $http.get(fileUrl + '/' + file);
+		return $http.get(fileUrl + '/' + file.replace(' ', '__') + '.json');
 	}
 
 	function initFileReports() {
@@ -1501,7 +1501,10 @@ services.service('filestore', function($http) {
 
 	return {
 		initFileReports: initFileReports,
+		//return from memory 
 		get: getFileFromStore,
+		//read file with promise 
+		getFile: getFile,
 		filereports: filereports,
 		test: test,
 		setTest: function(val) {
@@ -1518,7 +1521,7 @@ services.service('filestore', function($http) {
 })
 
 
-services.service('Reports', function(store, filestore, $timeout) {
+services.service('Reports', function(store, filestore, $timeout, $q) {
 	
 	console.log('');
 	console.log('=============report service');
@@ -1752,6 +1755,34 @@ services.service('Reports', function(store, filestore, $timeout) {
 		//}, 1000)
 	}
 	
+	function getPromise(file) {
+		
+		console.log('did i get called??? - getPromise');
+		var deferred = $q.defer();
+		var result = store.get(file);
+	
+		if (result) {
+			deferred.resolve(result);
+		} else {
+			//try to get from filestore (if it's in memory already)
+			result = filestore.get(file);
+			if (result) {
+				deferred.resolve(result);
+			} else {
+				//if not in memory, most likely a direct url fetch without a chance to initialize the user agent 
+				deferred.resolve(filestore.getFile(file));
+			}
+		}
+		
+		//return deferred.promise;
+		
+		//return filestore.getFile(file);
+		
+		deferred.resolve(result);
+		return deferred.promise;
+
+	}
+	
 	return {
 		set: function(person, piTree) {
 			//reports[person] = piTree;
@@ -1773,15 +1804,13 @@ services.service('Reports', function(store, filestore, $timeout) {
 			if (store.get(file)) {
 				return store.get(file);
 			} else {
-				
-				//dirty workaround to get resolved data before return
-				if (filestore.get(file)) return filestore.get(file);
-				$timeout(function() {
-					return filestore.get(file);
-				}, 3000);
-				
+				return filestore.get(file);	
 			}
 		},
+		
+		getPromise: getPromise,
+		
+		
 		
 		getScore: function(file, trait, facet, pc) {
 			//console.log(facet);

@@ -1252,13 +1252,18 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	}
 })
 
-.controller('SummaryCtrl', function($scope, Reports, $stateParams, $ionicPopup) {
+.controller('SummaryCtrl', function($scope, Reports, $stateParams, $ionicPopup, report) {
+	
+	console.log('SummaryCtrl');
+	console.log('report: ', report);
 	
 	$scope.file = $stateParams.file;
 	$scope.name = $scope.file.split('_')[0];
 	
 	//error checking? on file on report???
-	$scope.report = Reports.get($scope.file);
+	//$scope.report = Reports.get($scope.file);
+	$scope.report = report;
+	
 	if ($scope.report) {
 		$scope.summary = $scope.report.summary;
 		$scope.behaviors = $scope.report.behaviors;
