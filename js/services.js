@@ -1469,7 +1469,7 @@ services.service('filestore', function($http) {
 		console.log('location: ', window.location);
 
 		if (window.location.hostname != 'localhost' && window.location.hostname != '' ) {
-			getFile('piReports.json').then(function(res) {
+			getFile('piReports').then(function(res) {
 				filereports = res.data;
 				
 				console.log('filereports: ', filereports);
