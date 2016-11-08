@@ -10,8 +10,8 @@ var services = angular.module('ipa.services', ['ionic', 'pascalprecht.translate'
 var jsClientAuth = false;
 
 //var server = 'https://server.local:3000';
-//var server = 'https://192.168.2.151';
-var server = 'https://direct-keel-136302.appspot.com';
+var server = 'https://192.168.2.151';
+//var server = 'https://direct-keel-136302.appspot.com';
 
 
 var apiUrl = server + '/api/v1';
@@ -1760,14 +1760,17 @@ services.service('Reports', function(store, filestore, $timeout, $q) {
 		console.log('did i get called??? - getPromise');
 		var deferred = $q.defer();
 		var result = store.get(file);
+		var res = {};
 	
 		if (result) {
-			deferred.resolve(result);
+			res.data = result;
+			deferred.resolve(res);
 		} else {
 			//try to get from filestore (if it's in memory already)
 			result = filestore.get(file);
 			if (result) {
-				deferred.resolve(result);
+				res.data = result;
+				deferred.resolve(res);
 			} else {
 				//if not in memory, most likely a direct url fetch without a chance to initialize the user agent 
 				deferred.resolve(filestore.getFile(file));

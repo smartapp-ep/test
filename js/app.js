@@ -311,11 +311,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		resolve: {
 			report: function(Reports, $stateParams) {
 				console.log ('promise from Reports: ', Reports.getPromise($stateParams.file))
-				return Reports.getPromise($stateParams.file); /*.then(function(rpt){
-					return rpt;
+				return Reports.getPromise($stateParams.file).then(function(res){
+					return res.data;
 				}).catch(function(err) {
 					return err;
-				}); */
+				}); 
 			}
 		}	
   })     
