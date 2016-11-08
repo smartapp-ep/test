@@ -1252,7 +1252,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	}
 })
 
-.controller('SummaryCtrl', function($scope, Reports, $stateParams, $ionicPopup, report) {
+.controller('SummaryCtrl', function($scope, Reports, $stateParams, $ionicPopup, report, Utils) {
 	
 	console.log('SummaryCtrl');
 	console.log('report: ', report);
@@ -1262,21 +1262,26 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	
 	//error checking? on file on report???
 	//$scope.report = Reports.get($scope.file);
-	$scope.report = report;
-	
-	if ($scope.report) {
-		$scope.summary = $scope.report.summary;
-		$scope.behaviors = $scope.report.behaviors;
-		console.log($scope.report);
+	//check error! 
+	if (report instanceof Error) {
+		Utils.error($ionicPopup, report);
 	} else {
-		$ionicPopup.alert({
-			title: 'Report Empty',
-			template: 'The report is empty or has an empty summary.'
-		})
+		$scope.report = report;
+		
+		if ($scope.report) {
+			$scope.summary = $scope.report.summary;
+			$scope.behaviors = $scope.report.behaviors;
+			console.log($scope.report);
+		} else {
+			$ionicPopup.alert({
+				title: 'Report Empty',
+				template: 'The report is empty or has an empty summary.'
+			})
+		}		
 	}
 })
 
-.controller('ReportCtrl', function($scope, $rootScope, $state, Reports, $stateParams, InitFile, $ionicTabsDelegate, $timeout) { //, facetTree) {
+.controller('ReportCtrl', function($scope, $rootScope, $state, Reports, $stateParams, InitFile, $ionicTabsDelegate, $timeout, report, traitsSummary, $ionicPopup, Utils) { //, facetTree) {
 	
 	console.log('--ReportCtrl');
 	console.log('params: ');
@@ -1291,20 +1296,29 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	
 	$scope.name = $rootScope.name = Reports.getName($scope.file);	
 	//prepare profile tree for this facet (ideally shared by all perspective...but cost is low)
-	$scope.tree = $rootScope.tree = Reports.get($scope.file).tree[$scope.facet];
+	//$scope.tree = $rootScope.tree = Reports.get($scope.file).tree[$scope.facet];
 	
-	$scope.scoreTest = false;
+	if (report instanceof Error) return Utils.error($ionicPopup, report);
+	if (traitsSummary instanceof Error) return Utils.error($ionicPopup, traitsSummary);
 	
-	if ($scope.score != 'profile') {
-		//parent.scoreTest = true;
-		$scope.scoreTest = true;
-	}
 	
-	//getSummary that's specific to facet but independent to perspectives & views
-	$scope.traitsSummary = InitFile.getData('Traits-Summary', $scope.facet);		
-	//$state.go('app.report.perspectives', {perspective:'Relationship'});
+		$scope.tree = $rootScope.tree =report.tree[$scope.facet];
+		
+		$scope.scoreTest = false;
+		
+		if ($scope.score != 'profile') {
+			//parent.scoreTest = true;
+			$scope.scoreTest = true;
+		}
+		
+		//getSummary that's specific to facet but independent to perspectives & views
+		//$scope.traitsSummary = InitFile.getData('Traits-Summary', $scope.facet);		
+		$scope.traitsSummary = traitsSummary;
+		
+		//$state.go('app.report.perspectives', {perspective:'Relationship'});
+		
+		//if file, facet, score change doesn't re-run controller need to put above in init and detect chagne... 		
 	
-	//if file, facet, score change doesn't re-run controller need to put above in init and detect chagne... 
 })
 
 

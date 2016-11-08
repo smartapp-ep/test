@@ -1261,7 +1261,7 @@ var specifiedFunc = populateMedium;
 
 // works but problem with resolve 
 
-	this.$get = function($q) {
+	this.$get = function($q, $timeout) {
 			return {
 				getData: function(name, facet) {					
 					
@@ -1325,7 +1325,19 @@ var specifiedFunc = populateMedium;
 		
 				getDataPromise: function(name, facet) {
 					var deferred = $q.defer();
-					deferred.resolve(this.getData(name, facet));
+					var res = {};
+					var result = this.getData(name,facet);
+					if (result) {
+						res.data = result;
+						deferred.resolve(res);
+					} else {
+						// promise approach... 
+						//dirty approach using timeout...(?)
+						$timeout(function() {
+							res.result = this.getData(name,facet);
+							deferred.resolve(res);
+						},3000)
+					}
 					return deferred.promise;
 				},
 				

@@ -264,14 +264,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
   }) 
 
    .state('app.reports', {
-    url: '/reports',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/reports.html',
-		controller: 'ReportsCtrl'
-      }
-    }
-  })   
+		url: '/reports',
+		views: {
+		  'menuContent': {
+			templateUrl: 'templates/reports.html',
+			controller: 'ReportsCtrl'
+		  }
+		}	
+	})   
   
 	//report export / import 
 	//not used(?)
@@ -501,8 +501,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			'menuContent': {
 				templateUrl: "templates/report/report.html",
 				controller: 'ReportCtrl'
+			}			
+		},
+		resolve: {
+			report: function(Reports, $stateParams) {
+				console.log ('app report state: promise from Reports: ', Reports.getPromise($stateParams.file))
+				return Reports.getPromise($stateParams.file).then(function(res){
+					return res.data;
+				}).catch(function(err) {
+					return err;
+				}); 
+			},
+			traitsSummary: function(InitFile, $stateParams) {
+				console.log('app report state: promise from InitFile: ', InitFile.getDataPromise('Traits-Summary', $stateParams.facet) );
+				return InitFile.getDataPromise('Traits-Summary', $stateParams.facet).then(function(res) {
+					return res.data;
+				}).catch(function(err){
+					return err;
+				})
 			}
-		}
+		}		
     })	
 	
 	
