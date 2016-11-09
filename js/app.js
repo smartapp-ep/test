@@ -144,11 +144,11 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		}, function(nomatch) {
 			
 			console.log('');
-			console.log('deeplink: no match');
+			console.log('deeplink, no match: ', nomatch);
 			
 			//for test only 
 			// if no match goes to about
-			$state.go('app.about');
+			//$state.go('app.about');
 		});
 	
 		//another route
@@ -186,11 +186,11 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		}, function(nomatch) {
 			
 			console.log('');
-			console.log('deeplink: no match');
+			console.log('deeplink route2 no match: ', nomatch);
 			
 			//for test only 
 			// if no match goes to about
-			$state.go('app.about');
+			//$state.go('app.about');
 		});	
 	
 	
@@ -504,6 +504,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			}			
 		},
 		resolve: {
+
+			traitsSummary: function(InitFile, $stateParams) {
+				console.log('app report state: promise from InitFile: ', InitFile.getDataPromise('Traits-Summary', $stateParams.facet) );
+				return InitFile.getDataPromise('Traits-Summary', $stateParams.facet).then(function(res) {
+					console.log('app report state, res: ', res);
+					return res.data;
+				}).catch(function(err){
+					console.log('app report state, err: ', err);
+					return err;
+				})
+			},
 			report: function(Reports, $stateParams) {
 				console.log ('app report state: promise from Reports: ', Reports.getPromise($stateParams.file))
 				return Reports.getPromise($stateParams.file).then(function(res){
@@ -511,15 +522,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 				}).catch(function(err) {
 					return err;
 				}); 
-			},
-			traitsSummary: function(InitFile, $stateParams) {
-				console.log('app report state: promise from InitFile: ', InitFile.getDataPromise('Traits-Summary', $stateParams.facet) );
-				return InitFile.getDataPromise('Traits-Summary', $stateParams.facet).then(function(res) {
-					return res.data;
-				}).catch(function(err){
-					return err;
-				})
-			}
+			}			
+			
 		}		
     })	
 	
@@ -538,7 +542,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
 				templateUrl: 'templates/report/perspectives.html',
 				controller: 'PerspectivesCtrl'	
 			}			
-		}
+		}/*,
+		resolve: {
+
+			traits: function(InitFile, $stateParams, $scope) {
+				console.log('app perspective state: promise from InitFile: ', InitFile.getDataPromise($stateParams.perspective, $scope.facet) );
+				return InitFile.getDataPromise($stateParams.perspective, $stateParams.facet).then(function(res) {
+					console.log('app perspective state, res: ', res);
+					return res.data;
+				}).catch(function(err){
+					console.log('app perspective state, err: ', err);
+					return err;
+				})
+			}
+		}*/
     })		
 
 	//just a template holding both perspective info & facet lists
@@ -768,9 +785,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
   
   ;
   
-  // if none of the above states are matched, use this as the fallback
-  //$urlRouterProvider.otherwise('/app/playlists');
-  //$urlRouterProvider.otherwise('/app/about');
+	// if none of the above states are matched, use this as the fallback
+	//$urlRouterProvider.otherwise('/app/about');
+	$urlRouterProvider.otherwise('/app/test');
 });
 
 app.config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider, $translateProvider) {

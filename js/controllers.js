@@ -2166,6 +2166,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 
 .controller('FacetCtrl', function($scope, $rootScope, $state, $stateParams, $ionicModal) {
 	console.log('FacetCtrl==== ');
+	console.log('state: ', $state);
 	
 	
 	/*
@@ -2234,7 +2235,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 })
 
 .controller('TraitCtrl', function($scope, $rootScope, $state, $stateParams) {
-	console.log('=============TraitCtrl); //, params: ', $stateParams, '$scope', $scope);
+	console.log('=============TraitCtrl params: ', $stateParams, '$scope', $scope);
 	
 	/*
 	var parent = $rootScope;
@@ -2310,6 +2311,9 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 		
 		//check if perspective has changed and relaod trait 
 		//if ($stateParams.perspective != $state.params.perspective) {
+			
+		//below moved to initTraitView;	
+			/*
 		if ($scope.perspectiveChanged || $scope.traitIdx != $state.params.traitIdx) {
 			$scope.trait = $scope.traits.children[$state.params.traitIdx];
 			$scope.$parent.$parent.perspectiveChanged = false;
@@ -2317,10 +2321,26 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			if ($scope.traitIdx != $state.params.traitIdx) {
 				initTrait($state.params.traitIdx);
 			}
-		}
+		} 
+			*/
+		initTraitView();	
+			
 	})	
 	
-	//initTrait();
+	function initTraitView() {
+		if ($scope.perspectiveChanged || $scope.traitIdx != $state.params.traitIdx) {
+			$scope.trait = $scope.traits.children[$state.params.traitIdx];
+			$scope.$parent.$parent.perspectiveChanged = false;
+			
+			if ($scope.traitIdx != $state.params.traitIdx) {
+				initTrait($state.params.traitIdx);
+			}
+		}		
+	}
+	
+	//below is only needed by directly getting the state by url... 
+		//otherwise beforeEnter event handles it already (now with it initTrait will be called twice when accessed in gui(?)
+	initTraitView();
 	
 })
 

@@ -1,0 +1,22 @@
+<html>
+
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				var url = window.location.pathname.replace('reports.html', '') + '#'+ window.location.search.substr(1);
+				console.log('url: ', url);
+				$('#report').attr('src', url);
+			})
+		</script>
+		
+	</head>
+
+
+	<body>
+
+		<iframe id="report" align="middle" width="400" height="800" src="/#/app/reports/reports"></iframe>	
+
+	<body>
+</html>

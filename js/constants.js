@@ -6,6 +6,7 @@ var constants = angular.module('ipa.constants', ['ionic', 'ipa.services']);
 var dev = {};
 
 var languages = ['en', 'es'];
+//var languages = ['en'];
 var language = 'en';
 var languageNames = {
 	'en': 'English',
@@ -76,6 +77,9 @@ var viewIndex = {
 
 var data;
 
+var initDataCompleted = false;
+
+var dirtyPromise = 35000;
 
 
 
@@ -1265,6 +1269,20 @@ var specifiedFunc = populateMedium;
 			return {
 				getData: function(name, facet) {					
 					
+					console.log('am i here');
+					console.log('data: ', data);
+					console.log('name, facet: ', name, facet);
+					console.log('language: ', language);
+					console.log('data[language]: ', data[language]);
+					console.log('data[language][name]: ', data[language][name]);
+					//console.log('data[language][name][facet]: ', data[language][name][facet])
+					if (initDataCompleted) {
+						console.log('yes data completed');
+					} else {
+						console.log('data not yet completed');
+					}
+					
+					
 					//generating data: use once only
 					
 					//console.log('debug: new structure');
@@ -1324,19 +1342,33 @@ var specifiedFunc = populateMedium;
 				},
 		
 				getDataPromise: function(name, facet) {
+					
+					console.log('----------');
+					console.log('getDataPromise');
+					
 					var deferred = $q.defer();
 					var res = {};
-					var result = this.getData(name,facet);
-					if (result) {
+					
+					console.log('this: ' , this);
+					
+					var result;
+					
+					console.log('result: ', result);
+					
+					//this could be {} when initializing... 
+					if (initDataCompleted) {
+						result = this.getData(name,facet);
+						console.log('am i here? result: ', result);
 						res.data = result;
 						deferred.resolve(res);
 					} else {
 						// promise approach... 
 						//dirty approach using timeout...(?)
 						$timeout(function() {
-							res.result = this.getData(name,facet);
+							console.log('am i here?');
+							res.data = this.getData(name,facet);
 							deferred.resolve(res);
-						},3000)
+						}.bind(this), dirtyPromise);
 					}
 					return deferred.promise;
 				},
@@ -1400,6 +1432,7 @@ var specifiedFunc = populateMedium;
 
 constants.config (function(InitFileProvider) {
 	
+	//loadFiles();
 	
 	//device test 
 		//var dev = {};
@@ -1455,8 +1488,22 @@ constants.config (function(InitFileProvider) {
 	
 	function loadFiles () {
 		var language;
-		for (i=0; i< languages.length; i++) {
+		for (i=0; i <= languages.length; i++) {
+			
+			if (i == languages.length) {
+				//singal initDataCompleted
+				console.log('initDataCompleted!');
+				initDataCompleted = true;
+				console.log('data[language]', data.en);
+				console.log('data[language][name]', data.en['Traits-Summary']);
+				return;
+			}
+			
 			language = languages[i];
+			
+			//addition: also load the traits-summary/info which is not specific to perspective (perspective independent) 
+			InitFileProvider.initData(language, 'Traits-Summary', 'info/suggestion/' +language + '/Traits-Summary.json');			
+			
 			var perspective;
 			
 			for (j=0; j< perspectives.length; j++) {
@@ -1464,9 +1511,6 @@ constants.config (function(InitFileProvider) {
 				InitFileProvider.initData(language, perspective, 'info/suggestion/'+language+'/' + perspective + '/traits.json');
 				//console.log('info/suggestion/'+language+'/' + perspective + '/traits.json');
 			}
-			
-			//addition: also load the traits-summary/info which is not specific to perspective (perspective independent) 
-			InitFileProvider.initData(language, 'Traits-Summary', 'info/suggestion/' +language + '/Traits-Summary.json');
 			
 		}
 		
