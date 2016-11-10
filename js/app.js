@@ -786,8 +786,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   ;
   
 	// if none of the above states are matched, use this as the fallback
-	//$urlRouterProvider.otherwise('/app/about');
-	$urlRouterProvider.otherwise('/app/test');
+	$urlRouterProvider.otherwise('/app/about');
 });
 
 app.config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider, $translateProvider) {
