@@ -79,7 +79,7 @@ var data;
 
 var initDataCompleted = false;
 
-var dirtyPromise = 35000;
+var dirtyPromiseInterval = 5000;
 
 
 
@@ -1265,7 +1265,7 @@ var specifiedFunc = populateMedium;
 
 // works but problem with resolve 
 
-	this.$get = function($q, $timeout) {
+	this.$get = function($q, $interval) {
 			return {
 				getData: function(name, facet) {					
 					
@@ -1333,7 +1333,12 @@ var specifiedFunc = populateMedium;
 						//console.log(facet);
 						//console.log(data[language][name][facet]);
 						//console.log(data);
-						return data[language][name][facet];
+						
+						if (data[language][name] && data[language][name][facet]) 
+							return data[language][name][facet];
+						
+						return null;
+						
 					} else if (name) {
 						return data[name];
 					} else {
@@ -1350,27 +1355,42 @@ var specifiedFunc = populateMedium;
 					var res = {};
 					
 					console.log('this: ' , this);
+					var thisObj = this;
 					
-					var result;
+					//var result = this.getData(name,facet);
 					
-					console.log('result: ', result);
+					//console.log('result: ', result);
 					
 					//this could be {} when initializing... 
 					if (initDataCompleted) {
 						result = this.getData(name,facet);
 						console.log('am i here? result: ', result);
-						res.data = result;
-						deferred.resolve(res);
+						if (result) {
+							res.data = result;
+							deferred.resolve(res);
+						} else {
+							getDataLoop();
+						}
 					} else {
 						// promise approach... 
 						//dirty approach using timeout...(?)
-						$timeout(function() {
-							console.log('am i here?');
-							res.data = this.getData(name,facet);
-							deferred.resolve(res);
-						}.bind(this), dirtyPromise);
+						getDataLoop();
 					}
 					return deferred.promise;
+					
+					function getDataLoop() {
+						
+						var interval = $interval(function() {
+							console.log('am i here - interval?');
+							result = thisObj.getData(name,facet);
+							
+							if (result) {
+								res.data = result								
+								$interval.cancel(interval);
+								deferred.resolve(res);
+							}
+						}, dirtyPromiseInterval);
+					}
 				},
 				
 				setLanguage: function(detectedLanguage) {
@@ -1432,7 +1452,7 @@ var specifiedFunc = populateMedium;
 
 constants.config (function(InitFileProvider) {
 	
-	//loadFiles();
+	loadFiles();
 	
 	//device test 
 		//var dev = {};
@@ -1450,7 +1470,7 @@ constants.config (function(InitFileProvider) {
 				throw error;
 			}
 			console.log('platform ready, device: ', dev);
-			loadFiles();
+			//loadFiles();
 		})
 			
 	
