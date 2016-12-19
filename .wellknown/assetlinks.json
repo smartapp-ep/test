@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "xyz.smartapp.p360",
+    "sha256_cert_fingerprints":
+    ["75:41:1A:E3:6D:B1:8E:23:04:9D:15:82:82:53:F8:E3:94:4A:1E:B1:88:BE:93:4C:18:A0:CC:4A:B3:F7:23:EB"]
+  }
+}]
