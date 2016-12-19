@@ -540,8 +540,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		},
 		resolve: {
 			report: function(Reports, $stateParams) {
-				console.log ('promise from Reports: ', Reports.getPromise($stateParams.file))
-				return Reports.getPromise($stateParams.file).then(function(res){
+				//decoding it first 
+				var file = decodeURI($stateParams.file);
+				console.log ('promise from Reports: ', Reports.getPromise(file))
+				return Reports.getPromise(file).then(function(res){
 					return res.data;
 				}).catch(function(err) {
 					return err;
