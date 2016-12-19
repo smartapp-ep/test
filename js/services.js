@@ -9,8 +9,13 @@ var services = angular.module('ipa.services', ['ionic', 'pascalprecht.translate'
 //due to change of design, not really should call dev, but more appropriately jsClientAuth
 var jsClientAuth = false;
 
+//whether to mock payment... (only applicable on real device - still mock if not on real dev)
+var billingMock = false;
+
 //var server = 'https://server.local:3000';
 var server = 'https://192.168.2.151';
+//var server = 'https://192.168.1.12';
+
 //var server = 'https://direct-keel-136302.appspot.com';
 
 
@@ -33,6 +38,7 @@ var storeUrls = 'ios: applestore/appId; android: androidplay/appId';
 
 var storeUrlsSvr = server + '/pi/personality360';
 
+var version = 'v1';
 
 
 //for client side 
@@ -71,7 +77,7 @@ var storeUrlsSvr = server + '/pi/personality360';
 	}	
 	
 
-	var device = {};
+	var thisDevice = {};
 	var browser = window;
 	
 
@@ -232,7 +238,7 @@ services.service('init', function($timeout, $window, filestore, Reports){
 		},
 		setDeviceInfo: deviceInfo,
 		getDeviceInfo: function() {
-			return device;
+			return thisDevice;
 		},
 		setServer : function(serverName) {
 			server = serverName;
@@ -241,7 +247,8 @@ services.service('init', function($timeout, $window, filestore, Reports){
 			return server;
 		},
 		
-		initFileReports: initFileReports
+		initFileReports: initFileReports,
+		loadPublicReports: Reports.loadPublicReports
 
 	}
 })
@@ -294,26 +301,26 @@ services.service('init', function($timeout, $window, filestore, Reports){
 
 	function deviceInfo(platform) {
 		
-		console.log('device info: did i get called???');
+		console.log('thisDevice info: did i get called???');
 
 			if (platform.isIPad() || platform.isIOS()) {
-				device.platform = 'ios';
+				thisDevice.platform = 'ios';
 			} else if (platform.isAndroid()) {
-				device.platform = 'android';
+				thisDevice.platform = 'android';
 			} else {
 				//var error = new Error();
 				//error.name = 'UnSupported';
 				//error.message = 'Your phone is not supported'
 				//throw error;
-				device.platform = 'unsupported'; //platform.device();
+				thisDevice.platform = 'unsupported'; //platform.thisDevice();
 			}
 
-		device.lang = navigator.language.split('-')[0]
+		thisDevice.lang = navigator.language.split('-')[0]
 		
 		//for dev - remove for prd!! 
-		//device.platform = 'andriod';
-		//device.lang = 'en';
-		console.log('device: ',device);
+		//thisDevice.platform = 'andriod';
+		//thisDevice.lang = 'en';
+		console.log('thisDevice: ',thisDevice);
 	}	
 	
 	function setBrowser(win) {
@@ -868,10 +875,11 @@ services.service('External', function($http, $window, store, facebook, ApiSvc, $
 		//error handling if not supported / fb ?
 	}
 	
+	//not used!
 	//fb only!
 	//only prepares the message to send, caller does next step of export
 		//or should import as first step??? perhaps yes!
-	function shareReport_hold(src, rpt, cb) {
+	function shareReport_old(src, rpt, cb) {
 		
 		//error handling... or caller to check source!
 		//src = 'facebook';
@@ -952,18 +960,18 @@ name: "My name"
 
 	}
 	
-	function shareReport(src, rpt, cb) {
+	function shareReport(src, name, reportSrc, img, cb) {
 		
-		var userId = store.get('userId');
+		var userId = store.get('piUserId');
 		
 		//if there's no user id then assume it's one of the celebrities 
 		userId = userId ? userId : 'celebrity';
-		var link = server + '/app/reports/import/' + userId + '/' + btoa(rpt.name); //encodeURI(rpt.name);
+		var link = server + '/app/reports/import/' + userId + '/' + reportSrc + '/' + btoa(name) + '/' + version + '?img=' + img; //encodeURI(rpt.name);
 		
 		console.log('link: ', link);
 
 		
-		$translate(['shareReportCaption', 'shareReportDescription'], {name: rpt.name}).then(function(trans){
+		$translate(['shareReportCaption', 'shareReportDescription'], {name: name}).then(function(trans){
 			caption = trans.shareReportCaption;
 			description = trans.shareReportDescription;
 			console.log('translated caption, description ', caption, description);
@@ -1011,7 +1019,7 @@ name: "My name"
 				*/
 
 			} else if (svc[src]) {
-				console.log('server side share - browser');
+				console.log('server side share (send) - browser');
 				shareReportSvr(src, link);
 				return cb(null);
 			}
@@ -1019,8 +1027,11 @@ name: "My name"
 			//server side... by apiSvc
 			console.log('server side share - api');
 			//further processing required... 
-			
-			//ApiSvc.shareReport(src, opt, cb);
+			var opt = {
+				quote: caption + ' -- ' + description,
+				href: link
+			}
+			return ApiSvc.shareMsg(src, opt, cb);
 
 			
 
@@ -1521,7 +1532,7 @@ services.service('filestore', function($http) {
 })
 
 
-services.service('Reports', function(store, filestore, $timeout, $q) {
+services.service('Reports', function(store, filestore, $timeout, $q, $interval, $http) {
 	
 	console.log('');
 	console.log('=============report service');
@@ -1656,14 +1667,18 @@ services.service('Reports', function(store, filestore, $timeout, $q) {
 		
 		reports.push(report);
 		
+		console.log('report: ', report);
 		console.log('reports pushed, new value: ', reports);
+		
+		store.set('piReports', reports);
+		
 		setTimeout(function() {
 			console.log('reports pushed, new value after 1.5 sec: ', reports);
-			store.set('piReports', reports);
+			//store.set('piReports', reports);
 		}, 1500);
 		
-		console.log('reports pushed: ', reports);
-		store.set('piReports', reports);		
+		//console.log('reports pushed: ', reports);
+		//store.set('piReports', reports);		
 		
 		//convert file and store it
 		
@@ -1786,6 +1801,87 @@ services.service('Reports', function(store, filestore, $timeout, $q) {
 
 	}
 	
+	//load report from file, asynchronously 
+	function loadReports(dir) {
+		reports = reports || store.get('piReports') || [];
+		
+		//reports.push(res.data);
+		//store.set('piReports', reports);
+		
+		var piReports;
+		var deferred = $q.defer();
+		
+		$http.get(dir + '/piReports.json').then(function(res) {
+			piReports = res.data;
+			console.log('loading piReports: ', piReports);
+			reports = piReports.concat(reports);
+			store.set('piReports', reports);
+			
+			var errors = [];
+			var progress = 0;
+			
+			piReports.forEach(function(itm) {
+				var fileUrl = dir + '/' + itm.file.replace(' ', '__') + '.json';
+				$http.get(fileUrl).then(function(res) {
+					var file = res.data;
+					store.set(itm.file, file);
+					progress++;
+				}, function(err) {
+					errors.push(err);
+					progress++;
+				})
+				
+			})
+			
+			var interval = $interval(function() {
+				console.log('am i here - interval?');
+				
+				console.log('progress: ', progress);
+				console.log('reports: ', reports);
+				console.log('reports.length: ', piReports.length);
+				
+				if (progress == piReports.length) {
+					$interval.cancel(interval);
+					if (errors.length>0) {
+						console.log('error in loading reports: ', JSON.stringify(errors));
+						return deferred.reject(errors);
+					} else {
+						console.log('reports successfully loaded');
+						return deferred.resolve();
+					}								
+				}
+			}, 1500);			
+			
+			
+			
+		}, function(err) {
+			console.log('error loading reports: ', err);
+			return referred.reject(err);
+		})	
+		
+		return deferred.promise;
+				
+	
+	}
+	
+	function loadPublicReports(cb) {
+		
+		var publicReportLoaded = store.get('publicReportsLoaded');
+		
+		//if not previously loaded && not running on server
+			//todo: not sure about ios!
+		if (!publicReportLoaded && (window.location.hostname == 'localhost' || window.location.hostname == '' ) ) {
+			loadReports('data/public-reports').then(function(res) {
+				store.set('publicReportsLoaded', 'true');
+				return cb(null);
+			}).catch(function(err){
+				return cb(err);
+			})
+		} else {
+			return cb(null);
+		}
+	}
+	
 	return {
 		set: function(person, piTree) {
 			//reports[person] = piTree;
@@ -1884,7 +1980,8 @@ services.service('Reports', function(store, filestore, $timeout, $q) {
 			return reports;
 		},
 		//can't used!
-		reports: reports
+		reports: reports,
+		loadPublicReports: loadPublicReports
 		
 	}
 })
@@ -2003,11 +2100,22 @@ services.service('CreditSvc', function(ApiSvc, External, store, PaymentSvc) {
 	} 
 	
 	function claim(src, postRes, cb) {
-		Credits.claim({param: src, claim: postRes}, processResponse.bind(null, cb), processError.bind(null, cb));
+		console.log(''); console.log('cr.claim');
+		console.log('src: ', src);
+		if (src == 'paid') {
+			Credits.claim({param: src, claim: postRes}, processPaidResponse.bind(null, src, postRes.receipt, cb), processError.bind(null, cb));
+		} else {
+			Credits.claim({param: src, claim: postRes}, processResponse.bind(null, cb), processError.bind(null, cb))
+		}
 	}
 	
 	function processArgs(args) {
+		
+		console.log('');
+		console.log('processArgs');
+		console.log('args: ', args);
 		var argsCopy = (args.length === 1 ? [args[0]] : Array.apply(null, args));
+		console.log('argsCopy', argsCopy);
 		return argsCopy;
 	}
 	
@@ -2023,6 +2131,46 @@ services.service('CreditSvc', function(ApiSvc, External, store, PaymentSvc) {
 			//if (res.data && res.data.length) saves(res.data);
 				//single cr only!
 		return cb(null, res);		
+	}
+	
+	//paid credit only!
+	function processPaidResponse () {
+		var args = processArgs(arguments);
+		var src = args[0];
+		var receipt = args[1];
+		var cb = args[2];
+		//var res = args[1];
+		var res = args[3];
+		
+		console.log('cb: ', cb);
+		console.log('receipt: ', receipt);
+		console.log('src: ', src);
+		
+		console.log('res in processRes: ', res);
+			//if res.token? res.data.token???
+			//save it!!!
+			if (res && res.data && !res.data.length) add(res.data);
+			//if (res.data && res.data.length) saves(res.data);
+				//single cr only!
+				
+			//also consume it since now the purchase is in db 
+				//alternatively do this before another purchase... (?)
+				//still need to check anyway? ??? 
+				//and... simplified if only have 1 prodId... (? X)
+			
+		if (src == 'paid') {
+			return consume(receipt, cb);
+		} else {	
+			return cb(null, res);		
+		}
+	}
+	
+	//function to consume an after successfully purchase & claim the credits
+	function consume(receipt, cb) {
+		console.log('consuming immediately afer credit added');
+		var prodId = PaymentSvc.getProductId(receipt);
+		console.log('prodId : ', prodId);
+		PaymentSvc.consumePurchase(prodId, cb);
 	}
 	
 	function processError () {
@@ -2100,6 +2248,7 @@ services.service('CreditSvc', function(ApiSvc, External, store, PaymentSvc) {
 		precheck(params.src, function(err, ok){
 			if (err) return cb(err);
 			//if no err then ok
+			//if (params.type == 'free') return Credits.acquire({param: param, claim: res}, processResponse.bind(null, cb), processError.bind(null, cb));
 			if (params.type == 'free') return Credits.acquire({param: param, claim: res}, processResponse.bind(null, cb), processError.bind(null, cb));
 			
 			if (params.type == 'prom') {
@@ -2355,7 +2504,8 @@ services.service('CreditSvc', function(ApiSvc, External, store, PaymentSvc) {
 		acquire: acquire,
 		records: records,
 		refresh: refresh,
-		use: use
+		use: use,
+		save: save
 		//need client side credit check (before calling pi profile)
 	}
 })
@@ -2377,7 +2527,7 @@ services.service('Utils', function() {
 	}
 	
 	function errorPopup(popup, err) {
-		var name = Error;
+		var name = 'Error';
 		var msg = JSON.stringify(err);
 		if (err.data) {
 			name = err.data.name ? err.data.name : name;
@@ -2474,9 +2624,28 @@ services.service('ApiSvc', function($resource, $q) {
 			return cb(err);
 		}
 		
+		/*
 		shareRsc.get({source: src, lang: dev.lang}, function(err, res){
 			if (err) return cb(err);
 			return cb(res);
+		})
+		*/
+		
+		shareRsc.get({source: src, lang: dev.lang}).$promise.then(function(res) {
+			return cb(null, res);
+		}).catch(function(err){
+			return cb(err);
+		})
+	}
+	
+	//sharing with opt contains msg(quote) and / or link (href)
+	function shareMsg(src, opt, cb) {
+		shareRsc = shareRsc || $resource(shareUrl);
+		//return shareRsc.save({source: src}, opt, cb);
+		shareRsc.save({source: src}, opt).$promise.then(function(res) {
+			return cb(null, res);
+		}).catch(function(err) {
+			return cb(err);
 		})
 	}
 	
@@ -2558,16 +2727,20 @@ services.service('ApiSvc', function($resource, $q) {
 		}
 	);
 	
+	var rsctest = $resource(server + '/pi/rsctest');
+	
 	return {
 		//checkCredits: checkCredits,
 		getFriends: getFriends,
 		getProfile: getProfile,
 		//requestCredits: requestCredits,
 		share: share,
+		shareMsg: shareMsg,
 		Credits: Credits,
 		getSocialToken: getSocialToken,
 		Tempdb: Tempdb,
-		reports: reports
+		reports: reports,
+		rsctest: rsctest
 	}
 })
 
@@ -2719,7 +2892,7 @@ services.service('Auths', function(External, jwtHelper, store, $q, $resource, $w
 	}
 	
 
-
+	//not used 
 	function autoAuth(source) {
 		//attempt to do native auth, does not fallback to serve auth, instead leaving that for caller to decide
 			//whereas calling auth(source) will try hard to auth the user to the source specified 
@@ -2847,7 +3020,7 @@ services.service('Auths', function(External, jwtHelper, store, $q, $resource, $w
 			}
 		}
 		
-		//for client side 
+		//for client side /? not used? 
 		function processServerAuthForClient(data) {
 			if (External.isClientAuth(data.source)) {
 				store.set('pi_' + data.source + '_profile', data.profile);
@@ -2873,6 +3046,13 @@ services.service('Auths', function(External, jwtHelper, store, $q, $resource, $w
 				store.set('pi_' + res.data.source + '_exp', res.data.exp);
 			}
 			store.set('piLastSource', res.data.source);
+			
+			//also store userId (for multiple users on same device)
+				//at least good for testing
+				//can also be used for revoking token??? 
+			var tokenPayload = jwtHelper.decodeToken(res.data.token);
+			console.log('decoded token: ' , tokenPayload);
+			store.set('piUserId', tokenPayload.sub);
 		}
 	}
 	
@@ -2899,6 +3079,7 @@ services.service('Auths', function(External, jwtHelper, store, $q, $resource, $w
 			token = undefined;
 			store.remove('piToken');
 			store.remove('piLastSource');
+			store.remove('piUserId');
 			//for profile, will be overwritten next time when login
 			authenticated = false; 
 		}
@@ -2921,7 +3102,10 @@ services.service('Auths', function(External, jwtHelper, store, $q, $resource, $w
 //wrapper for platform individual plugin 
 	//should update credit record (refresh?) when successful?
 services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
-	var prodId = 'credits';
+	
+	//var prodId = 'credits';
+	var prodId = 'testcredits01_bundle_3';
+	
 	var platform; 
 	//mock:
 	var plugins = {
@@ -2930,52 +3114,165 @@ services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
 		unsupported: false
 	}
 	var iabSvc;
+	var prepareClaim;
+	var getProductId;
 	
 	ionic.Platform.ready(function(){
 		//clt = clients[source];
 		$timeout(function() {
 			console.log('');
-			console.log('===get device info');
+			console.log('===get thisDevice info, PaymentSvc');
 			console.log('');
 			//platform = init.getDeviceInfo().platform;
 			// check the plugin exists? .. no should check it its own service...
 				//then it needs to expose a method to tell if plugin exists... 
 				//???
-			iabSvc = device.platform == 'android' ? AndroidIAB : IosIAB;
+			console.log('thisDevice: ', thisDevice);	
+			console.log('device: ', device);
+			//device is not available on browser (not sure on simulator)
+			//a better approach is: is (android only???) if plugin setup successful then can be used 
+				//ofc also check billingMock ...
+			
+			if (billingMock || device.cordova < '3.7' || device.isVirtual) {	
+				iabSvc = thisDevice.platform == 'android' ? AndroidIAB : IosIAB;
+			} else {
+				iabSvc = device.platform == 'Android' ? inappbilling : 'inappbillingiOS' // -- name of ios plugin 
+					// -- wrapper (that'll wrap the real iap plugin) and map the native calls to match android's inappbilling;
+					//alternatively use a wrapper for both android & ios plugin 
+					
+			//need a variable for init status... (?) (or just let it fail in case of setup error... at least feedback to user (during setup)???)
+			//also, may still need a flag - as even in real dev may still want billingMock
+			}
+			
+			prepareClaim = thisDevice.platform == 'android' ? prepareClaimAndroid : prepareClaimIOS;
+			getProductId = thisDevice.platform == 'android' ?  getProductIdAndroid : getProductIdIOS;
+			
 		}, 1000)		
 	})
 	
-	//prodId mapping 
+	//prodId mapping //not used...
 	prodMap = {
-		3: 'credits3'
+		3: prodId
 	}
+
 	function purchase(num, cb) {
 		console.log('platform: ', platform);
 		console.log('iabSvc: ', iabSvc);
 		console.log('AndroidIAB', AndroidIAB);
-		iabSvc.purchase(prodId+num, function(err, res) {
-			if (err) return cb(err);
+		
+		//check if already own 
+			//alternatively (better?) check when error during purchase (?)
+			
+		iabSvc.buy(function(res) {
 			console.log('res from purchase: ', res);
-			var claim = {
-				receipt: res.data.receipt,
-				platform: device.platform,
-				orderId: res.data.orderId
-			}
+			var claim = prepareClaim(res);
 			return cb(null, {data: claim});
-		});
+		}, function(err) {
+			
+			//if err is owned, then consume it ... 
+			if (typeof(err) == 'string' && err.indexOf('Item Already Owned') != -1) {
+				return consumeThenBuy(num, cb);
+			}
+			return cb(err);
+		}, prodMap[num]);
 	}
 	
+	
+	function consumeThenBuy(num, cb) {
+		iabSvc.consumePurchase(function(res) {
+			//also do a refresh just in case (eg google play crashes) of infinite loop 
+			iab.Svc.refreshPurchases(function(res) {
+				return pruchase(num, cb);
+			}, function(err) {
+				return cb(err);
+			})
+			
+		}, function(err) {
+			return cb(err);
+		}, prodMap[num]);
+	}
+	
+	function purchaseStatic(prodId, cb) {
+		console.log('iabSvc: ', iabSvc);
+		prodId = prodId || 'android.test.purchased';
+		iabSvc.buy(function(res){
+			return cb(null, res);
+		}, function(err){
+			return cb(err);
+		}, prodId);
+	}
+	
+	
+	function purchaseStaticVerify(prodId, cb) {
+		prodId = prodId || 'android.test.purchased';
+		iabSvc.buy(function(res){
+			
+			console.log('res from iab.buy: ', res);
+			
+			var claim = prepareClaim(res);
+			//return Credit.claim({data: claim}, cb);
+			return cb(null, {data:claim});
+		}, function(err){
+			return cb(err);
+		}, prodId)
+	}
+	
+	function consumePurchase(prodId, cb) {
+		prodId = prodId || 'android.test.purchased';
+		iabSvc.consumePurchase(function(res) {
+			return cb(null, res);
+		}, function(err) {
+			return cb(err);
+		}, prodId);
+	}
+
+
+	//function to produce / prepare claim from payment res 
+	function prepareClaimAndroid(res) {
+			var claim = {
+				receipt: {
+					data: res.receipt,					
+					signature: res.signature
+				},
+				platform: thisDevice.platform,
+				orderId: res.orderId
+			};
+			
+		return claim;
+	}
+	
+	function getProductIdAndroid(receipt) {
+		return JSON.parse(receipt).productId;
+	}
+
+	
 	return {
-		purchase: purchase
+		purchase: purchase,
+		purchaseStatic: purchaseStatic,
+		purchaseStaticVerify: purchaseStaticVerify,
+		consumePurchase: consumePurchase,
+		getProductId: getProductId 
 	}
 })
 
+
+
+//mops of IAP plugins 
 services.service('AndroidIAB', function() {
 	//mock 
 	var iab = {
 		consumePurchase: consumePurchase,
 		buy: buy
 	}
+	
+	var receipt = {
+		"packageName":"xyz.smartapp.p360",
+		"productId":"testcredits01_bundle_3",
+		"purchaseTime":1481375512159,
+		"purchaseState":0,
+		"purchaseToken":"joafhnfmngneenoncnenpidf.AO-J1Ow_cSbVlSuXADA2ZS79WfQI2SchzBrX16feJIUzL2tj7nm75g_LTQvNui0Jt0ZdQghjAo1nkypE5RBub_mYqo6PtjYKaXymlXRumPctP9GVYUwatjGCIWU8ZvDSSn8ImRWdYE_Q"
+	}
+	//var receiptStr = JSON.stringify(receipt);
 	
 	function buy(suc, fail, prodId) {
 		var purTrans = {
@@ -2985,14 +3282,16 @@ services.service('AndroidIAB', function() {
 			"purchaseTime":1397590291362, 
 			"purchaseState":0, 
 			"purchaseToken":"ndglbpnjmbfccnaocnppjjfa.AO-J1Ozv857LtAk32HbtVNaK5BVnDm9sMyHFJkl-R_hJ7dCSVTazsnPGgnwNOajDm-Q3DvKEXLRWQXvucyW2rrEvAGr3wiG3KnMayn5yprqYCkMNhFl4KgZWt-4-b4Gr29_Lq8kcfKCkI57t5rUmFzTdj5fAdvX5KQ", 
-			"receipt": "{ data: 'stringified purchase data', signature: 'yyyy' }", 
-			"signature": "qs54SGHgjGSJHSKJHIU"			
+			//"receipt": "{ data: 'stringified purchase data', signature: 'yyyy' }", 
+			"receipt": JSON.stringify(receipt),		
+			"signature": "kpfRLa3cug/YsjtTQzJ2/ZLZffeqL/wsxR5h49Zi4h92oNE1lyT/rZ7BUAgV9O5lgYCwCN0S/mdzxHWR12sSmnsvT0lwy56xR11aCLEzGX5eTIVFJhxkkNzYB2nd49pIVZvv4bq5QrHh8ui/nuNyqqYZSEYhkuLEAFVpS8GlKdiSQkE1DWPk8lsGoPqozxXyRO2Nu7pKUL12SdnY5cXBTBKjdUBk8o5B/iMbtZJiOHLciJenRkM0/zik9DKVh+vr0ZWa/8b1eNduA4S3qAK1FK9ZqFXAxbkru4efqWZ+R9BcbSyktxKILKJhzMJHbLX+fb+fBbyVJopUfMGcx3q7QQ=="			
 		}
 		return suc(purTrans);
 	};
 	
 	function consumePurchase(suc, fail, prodId) {
-		
+		console.log(prodId + 'successfully consumed! -- msg from mop iab ');
+		return suc(null);
 	}
 	
 	function consume(prodId, cb) {
@@ -3002,6 +3301,7 @@ services.service('AndroidIAB', function() {
 	function purchase(prodId, cb) {
 		return iab.buy(success.bind(null, cb), fail.bind(null, cb), prodId)
 	}
+	
 	function success() {
 		var cb = arguments[0];
 		var trans = arguments[1];
@@ -3028,7 +3328,9 @@ services.service('AndroidIAB', function() {
 	}
 	
 	return {
-		purchase: purchase
+		purchase: buy,
+		//purchase: purchase, // converting to node style callback 
+		buy: buy //actual plugin behaivor... (angular style callback)
 	}
 })
 

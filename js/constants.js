@@ -1467,6 +1467,7 @@ constants.config (function(InitFileProvider) {
 				var error = new Error();
 				error.name = 'UnSupported';
 				error.message = 'Your phone is not supported'
+				//instead of throwing an error, pop it out to user?
 				throw error;
 			}
 			console.log('platform ready, device: ', dev);

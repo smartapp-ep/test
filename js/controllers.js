@@ -1,4 +1,4 @@
-angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'ionic.contrib.ui.tinderCards2', 'pascalprecht.translate', 'ngCordova'])
+angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'ionic.contrib.ui.tinderCards2', 'pascalprecht.translate'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, $ionicNavBarDelegate, $ionicSideMenuDelegate) {
 	
@@ -136,7 +136,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 })
 
 
-.controller('TestCtrl', function($scope, $rootScope, $window, $http, $ionicPopup, Reports, $state, $resource, ApiSvc, Auths, store, External, facebook, init, Utils) {
+.controller('TestCtrl', function($scope, $rootScope, $window, $http, $ionicPopup, Reports, $state, $resource, ApiSvc, Auths, store, External, facebook, init, Utils, PaymentSvc, CreditSvc) {
 	
 	//testing og meta tags 
 	$rootScope.ogtitle='testing og title';
@@ -275,7 +275,10 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 		//$window.open('https://192.168.0.4:3000/pi', '_blank');
 		//delete window.open;
 		//var win = $window.open('https://192.168.0.4:3000/pi/merge', '_blank', 'menubar=yes, toolbar=yes, width=600, height=400');
-		var win = $window.open('https://192.168.0.4:3000/pi/merge', '_system', 'location=yes,menubar=yes,toolbar=yes');
+		
+		var svr = init.getServer();
+		
+		var win = $window.open(svr + '/pi/merge', '_system', 'location=yes,menubar=yes,toolbar=yes');
 		win.addEventListener("beforeunload", function(e){
 			$scope.test = $window.localStorage.getItem( 'test' );
 			console.log('$scope.test');
@@ -536,18 +539,110 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 		init.setServer(serverName);
 	}
 
-	
+	//import or share report test  (not both...)
 	$scope.importReport = function(file) {
 		var rpts = Reports.list();
-		
-		External.shareReport('facebook', rpts[0], function(err, res) {
+		var src = 'yammer';
+		External.shareReport(src, rpts[0], function(err, res) {
 			console.log('err, res: ', err, res);
 		})
 		//$state.go('app.import', {file: file});
 	}
+	
+	var prodId = 'testcredits01_bundle_3';
+	
+	$scope.testpay = function() {
+		PaymentSvc.purchaseStatic(null, function(err, res) {	
+			if (err) console.log('err from purchase: ', err);
+			console.log('res from purchase: ', res);
+		})
+	}
+
+	$scope.testpayDynamic = function() {
+		PaymentSvc.purchaseStatic(prodId, function(err, res) {	
+			if (err) console.log('err from purchase: ', err);
+			console.log('res from purchase: ', res);
+		})
+	}	
+
+	
+	$scope.testpayVerify = function () {
+		//CreditSvc.acquire()
+		//PaymentSvc.purchaseStaticVerfiy(null, function(err, res) {
+		PaymentSvc.purchaseStaticVerify(prodId, function(err, res) {
+			if (err) {
+				console.log('err from purchase: ', err);
+				return;
+			}
+			console.log('res from purchase: ', res);
+			CreditSvc.claim(3, res.data, function(err, res){
+				if (err) console.log('res from payment verified: ', err);
+				console.log('res from payment verified: ', res);
+			})
+		})		
+	}
+	
+
+	$scope.testConsume = function() {
+		//PaymentSvc.consume(null, function(err, res) {
+		PaymentSvc.consumePurchase(prodId, function(err, res) {
+			if (err) {
+				console.log('err from consume: ', err);
+				return;
+			}
+			console.log('res from consume: ', res);
+		})			
+	}
+
+	$scope.testConsumeStatic = function() {
+		//PaymentSvc.consume(null, function(err, res) {
+		PaymentSvc.consumePurchase(null, function(err, res) {
+			if (err) console.log('err from consume: ', err);
+			console.log('res from consume: ', res);
+		})			
+	}	
+	
+	
+	$scope.appInvite = function() {
+		
+		if (!facebookConnectPlugin) {
+			console.log('no fb plugin!');
+			return;
+		}
+
+		var svr = init.getServer();
+		var url = svr + '/appinvite.html';
+		var picture = svr + '/images/p360.png';
+		
+		facebookConnectPlugin.appInvite(
+			{
+				url: url,
+				picture: picture
+			},
+			function(obj){
+				if(obj) {
+					if(obj.completionGesture == "cancel") {
+						// user canceled, bad guy
+						console.log('user cancelled');
+					} else {
+						// user really invited someone :)
+						console.log('user invited someone');
+					}
+				} else {
+					// user just pressed done, bad guy
+					console.log('user just pressed done');
+				}
+			},
+			function(obj){
+				// error
+				console.log('error from appInvite: ', obj);
+			}
+		);
+	
+	}
 })
 
-.controller('AnalyzeCtrl', function($scope, InitFile, $http, $ionicModal, $window, $ionicPopup, $ionicLoading, Reports, $state, Auths, External, ApiSvc, Profiling) {
+.controller('AnalyzeCtrl', function($scope, InitFile, $http, $ionicModal, $window, $ionicPopup, $ionicLoading, Reports, $state, Auths, External, ApiSvc, Profiling, Utils) {
 	//InitFile.copyFormat();
 	var users;
 	
@@ -680,13 +775,17 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			if (err) {
 				$ionicLoading.hide();
 				
+				if (err.data) err = err.data;
+				
 				if (err.name && err.name == 'NoSocialToken') {
+					
 					console.error('NoSocialToken fr getFriends API: ', err);
+					//*** todo... didn't utilize client side check... !
 					
 					//show confirm (& if ok auth(source) )
 						var confirmPopup = $ionicPopup.confirm({
 							title: err.name || 'Error',
-							template: err.message || err
+							template: err.message || JSON.stringify(err)
 						});
 						confirmPopup.then(function(res) {
 							if (res) {
@@ -702,7 +801,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 								}).catch(function(err){
 									$ionicPopup.alert({
 										title: err.name || 'Error',
-										template: err.message || err
+										template: err.message || JSON.stringify(err)
 									})
 								})
 							}
@@ -714,7 +813,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 					console.log('other err fr getFriends api: ', err);
 					$ionicPopup.alert({
 							title: err.name || 'Error',
-							template: err.message || err
+							template: err.message || JSON.stringify(err)
 					});
 				}			
 			} else {
@@ -830,24 +929,36 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 				progBar.close();
 				console.log('err from getProfile: ', err);
 				
-				if (err.name && err.name  == 'NoCredit') {
+				if (err.data) err = err.data; //if err from server it's in the form of res.data; otherwise it's res...
+				
+				if (err.name && err.name  == 'NoCredits') {
+					
 					console.log('No credit');
-					var confirmPopup = $ionicPopup.confirm(err.message);
+					
+					var confirmPopup = $ionicPopup.confirm({
+						title: err.name,
+						template: err.message
+					});
 					confirmPopup.then(function(res) {
 						if (res) {
 							//go to credits pages... // alternatively a full popup for pay, free.. but what's the point, everyone would choose free..
 							console.log('redirect to get credits page');
-							$state.go('app.credits');
+							$state.go('app.credits.free');
 						}
 					})
 				} else if (err.name && err.name == 'NoSocialToken') {
 					//shouldn't need this as user should have gone thru getFriends...
-					var confirmPopup = $ionicPopup.confirm(err.message);
+						//**** should check auth(src) before analzying ... similar to exporting report *** todo!!!
+					var confirmPopup = $ionicPopup.confirm({
+						title: err.name,
+						template: err.message
+					});						
 					confirmPopup.then(function(res) {
 						if (res) {
 							//go to credits pages... // alternatively a full popup for pay, free.. but what's the point, everyone would choose free..
 							console.log('login user with source');
-							//ApiSvc.auth(source)
+							Auths.auth(source)
+							
 						}
 					})
 				} else if (err.name && err.name == 'NotEnoughText') {
@@ -861,7 +972,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 					//show alert for err msg...
 					$ionicPopup.alert({
 						title: err.name || 'Error',
-						template: err.message || err
+						template: err.message || JSON.stringify(err)
 					});
 					
 				}				
@@ -903,7 +1014,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 })
 
 
-.controller('ReportsCtrl', function($scope, $window, Reports, $ionicPopup, $state, store, Auths, ApiSvc) {
+.controller('ReportsCtrl', function($scope, $window, Reports, $ionicPopup, $state, store, Auths, ApiSvc, External, Utils, $ionicLoading) {
 	
 
 	console.log('will this run again when re-entering the view?');
@@ -974,12 +1085,13 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	changeReportName(item, idx);
 	Reports.save($scope.items);
   };
-  $scope.share = function(item) {
-    //alert('Share Item: ' + item.name);
-	console.log('sharing item: ', item);
-	$scope.item = item;
-	$scope.chooseSource();
-  };
+	
+	$scope.share = function(item) {
+		//alert('Share Item: ' + item.name);
+		console.log('sharing item: ', item);
+		$scope.item = item;
+		$scope.chooseSource();
+	};
   
   //sharing
   //$scope.src = 'facebook';
@@ -1003,41 +1115,64 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 		
 		$scope.sourceSelection.then(function(res) {
 			console.log('Tapped!', res);
+			//should close it here?
+			$scope.sourceSelection.close();
 		});
 	}
 	
 	//need to login first (and handle next url instead of calling function in controller...?) x
 		//programactically 
 	$scope.shareReport = function(src) {
-		console.log('============share, $scope.src & $scope.item', src, $scope.item);
-		
-		//check if need to login 
-		if (Auths.isAuthenticated(src)) {
-			
-		} else {
-			//log user in 
-			
-			//share 
-			
-		}
+		console.log('============share, $scope.src, src & $scope.item: ', $scope.src, src, $scope.item);
 		
 		ApiSvc.reports.export({
-				file: $scope.item.file, 
+				//file: $scope.item.file, 
+				file: store.get('piUserId') + '/' + $scope.item.file,
 				name: $scope.item.name,
 				date: $scope.item.date,
 				image: $scope.item.image,
 				source: $scope.item.source,
 				content: store.get($scope.item.file)
+				
 		}).$promise.then(function(res){
+			
+			$ionicLoading.hide();
 			console.log('res: ', res);
+			
+			//check if need to login 
+			if (Auths.isAuthenticated(src)) {
+				shareLink(src, $scope.item.name, $scope.item.source, $scope.item.image);
+			} else {
+				//log user in 
+				Auths.auth(src).then(function(err, res) {
+					shareLink(src, $scope.item.name, $scope.item.source, $scope.item.image);
+				}).catch(function(err) {
+					console.log('err from login: ', err);
+					Utils.error($ionicPopup, err);
+				})
+				
+				
+			}			
 		}).catch(function(err) {
-			console.log('err: ', err);
+			$ionicLoading.hide();
+			console.log('err from exporting: ', err);
+			Utils.error($ionicPopup, err);
 		})
 		
 		$scope.sourceSelection.close();
+		
+		$ionicLoading.show(); //???
+		
 		//$state.go('app.report.perspectives.facet', {perspective: perspective});
-
+		
 	}  
+	
+	function shareLink(src, link, reportSrc, img) {
+		External.shareReport(src, link, reportSrc, img, function(err) {
+			if (err) return Utils.error($ionicPopup, err);
+			return Utils.result($ionicPopup, null, 'Report Shared');
+		})
+	}
 	
 	// function export or service Reports.export
 	
@@ -1117,10 +1252,22 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	//no need any more since using 64 encode 
 	//var name = $stateParams.file.replace('-', ' ');
 	
+	
+	//resource test
+	/*
+	ApiSvc.rsctest.get().$promise.then(function(res) {
+		console.log('res from test: ', res);
+	}).catch(function(err) {
+		console.log('err from test: ', err);
+	})
+	*/
+	
+	var file = $stateParams.userId + '/' + atob($stateParams.file) + '_' + $stateParams.src;
+	
 	ApiSvc.reports.get({file: file}).$promise.then(function(res) {
 		//add the file to reports (overwrites it if exists...or use the same kind of mechanism in naming - report service!) and open it 
-		var report = res.data;
-		console.log('report: ' , report);
+		var report = res.data; 
+		console.log('data, report: ' , data, report);
 		
 		var target = {
 			name: report.name,
@@ -1133,7 +1280,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	}).catch(function(err) {
 		console.log('err: ' , err);
 	})
-
+	
 	
 })
 
@@ -2870,7 +3017,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	$scope.authMsg = 'You have recently authenticated to : ' + $scope.getAuthSources();
 })
 
-.controller('LogoutCtrl', function($scope, $state, Auths) {
+.controller('LogoutCtrl', function($scope, $state, $ionicHistory, Auths) {
 	//$scope.authenticated = false;
 
 	$scope.logout = function() {
@@ -2879,6 +3026,11 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 		$scope.authenticated = Auths.isAuthenticated();
 	}	
 	$scope.login = function() {
+
+		$ionicHistory.nextViewOptions({
+		  disableBack: true
+		});	
+		
 		$state.go('app.login');
 	}
 	

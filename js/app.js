@@ -23,7 +23,7 @@ var app = angular.module('ipa', ['ionic', 'ionic.native', 'pascalprecht.translat
 	});
 
 
-app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translate, init, $cordovaDeeplinks) {
+app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translate, init, $cordovaDeeplinks, Utils, $ionicPopup, $location) {
   
 
   
@@ -34,6 +34,21 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		  cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 		  cordova.plugins.Keyboard.disableScroll(true);
 		}
+		
+		
+		//check network status 
+        if(navigator.connection.type == Connection.NONE) {
+			$ionicPopup.confirm({
+				title: "Internet Disconnected",
+                content: "The internet is disconnected on your device. Without network functionality is only limited to open existing personality reports."
+            })
+            .then(function(result) {
+                if(!result) {
+                    ionic.Platform.exitApp();
+                }
+            });
+        }
+            		
 		
 		console.log('1');
 		
@@ -104,95 +119,258 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		console.log(ionic.Platform.platform())
 		init.setDeviceInfo(ionic.Platform);
 		init.initFileReports();
+		init.loadPublicReports(function(err){
+			console.log('did i get called? - loading public reports, from app.run');
+			if (err) {
+				console.warn('error loading public reports: ', err);
+				Utils.errors($ionicPopup, err);
+			}
+		})
 		
-		
-	
-		//deep links
-		    // Note: route's first argument can take any kind of object as its data,
-			// and will send along the matching object if the route matches the deeplink
+		function deeplink() {
+			//deep links
+				// Note: route's first argument can take any kind of object as its data,
+				// and will send along the matching object if the route matches the deeplink
 
-		$cordovaDeeplinks.route({
-			'/app/reports/import/:file': {
-				target: 'app.import',
-				parent: 'app.reports'
-			}
-		}).subscribe(function(match) {
+			//var importUrl = '/app/reports/import/:file'; //original / targetted 
 			
-			console.log('what the ..');
-			console.log('');
-			console.log('deeplink: match........');
-			console.log('match: ', match);
-					console.log('');
-					console.log('what the hell...');
-					console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);			
-			
-			// One of our routes matched, we will quickly navigate to our parent
-			// view to give the user a natural back button flow	
-			$timeout(function() {
-				$state.go(match.$route.parent, match.$args);
-				// Finally, we will navigate to the deeplink page. Now the user has
-				// the 'product' view visible, and the back button goes back to the
-				// 'products' view.				
+			$cordovaDeeplinks.route({
+				//'/app/reports/import/:userId/:src/:file': {
+				'/app/reports/import/:userId/:src/:file/:version': {				
+					target: 'app.import',
+					parent: 'app.reports'
+				}
+			}).subscribe(function(match) {
+				
+				console.log('what the ..');
+				console.log('');
+				console.log('deeplink: match........');
+				console.log('match: ', match);
+						console.log('');
+						console.log('what the hell...');
+						console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);			
+				
+				//for this initial version, the version parameter will simply be ignored 
+				var args = removeExtraParams(match.$args);
+				
+				//function to remove extra params: (version & img) from args;
+				function removeExtraParams(args) {
+					var newArgs;
+					newArgs = {
+						userId: match.$args.userId,
+						src: match.$args.src,
+						file: match.$args.file
+					}
+					
+					//alternatively: 
+					//newArgs = JSON.parse(JSON.stringify(match.$args));
+					//newArgs.version = null;
+					return newArgs;
+				}
+				
+				
+				// One of our routes matched, we will quickly navigate to our parent
+				// view to give the user a natural back button flow	
 				$timeout(function() {
 					
-					console.log('');
-					console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);
-					$state.go(match.$route.target, match.$args);
-				}, 800);
-			}, 100);
-			
-		}, function(nomatch) {
-			
-			console.log('');
-			console.log('deeplink, no match: ', nomatch);
-			
-			//for test only 
-			// if no match goes to about
-			//$state.go('app.about');
-		});
-	
-		//another route
+					//$state.go(match.$route.parent, match.$args);
+					$state.go(match.$route.parent, args);
+					// Finally, we will navigate to the deeplink page. Now the user has
+					// the 'product' view visible, and the back button goes back to the
+					// 'products' view.				
+					$timeout(function() {
+						
+						console.log('');
+						console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);
+						//$state.go(match.$route.target, match.$args);
+						$state.go(match.$route.target, args);
+					}, 800);
+				}, 100);
+				
+			}, function(nomatch) {
+				
+				console.log('');
+				console.log('deeplink, import route, no match: ', nomatch);
+				
+				//for test only 
+				// if no match goes to about
+				//$state.go('app.about');
+			});
 		
-		$cordovaDeeplinks.route({
-			'/app/test': {
-				target: 'app.test',
-				parent: 'app.about'
-			}
-		}).subscribe(function(match) {
-			
-			console.log('what the ..');
-			console.log('');
-			console.log('deeplink: match........');
-			console.log('match: ', match);
-					console.log('');
-					console.log('what the hell...');
-					console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);			
-			
-			// One of our routes matched, we will quickly navigate to our parent
-			// view to give the user a natural back button flow	
-			$timeout(function() {
-				$state.go(match.$route.parent, match.$args);
-				// Finally, we will navigate to the deeplink page. Now the user has
-				// the 'product' view visible, and the back button goes back to the
-				// 'products' view.				
+			/*** routes for search result */
+			//only one version - the latest; if there's backward compatibility problem,
+				//can only hope user upgrade!
+
+				//function to prepare args (for search result url)
+					//assuming using current iframe approach (without server side processing)
+					//which one should be used??? should try server side? (first? too? or use existing one first)
+				function processArgs(args) {
+					var newArgs;
+					newArgs = {
+						file: decodeURI(args.file)
+					}
+					
+					//alternatively: 
+					//newArgs = JSON.parse(JSON.stringify(match.$args));
+					//newArgs.version = null;
+					return newArgs;
+				}
+				
+			$cordovaDeeplinks.route({
+				//'/app/reports/import/:userId/:src/:file': {
+				//'/app/reports.html?/app/summary/:file': {
+				'/app/reports.html': {
+					target: 'app.summary',
+					parent: 'app.reports'
+				}
+			}).subscribe(function(match) {
+				
+				console.log('what the ..');
+				console.log('');
+				console.log('deeplink: match........');
+				console.log('match: ', match);
+						console.log('');
+						console.log('what the hell...');
+						console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);			
+				//match: $args, $link (path, queryString), $route;		
+				
+				//wont use?
+				//var args = processArgs(match.$args);
+				
+
+				
+				
+				// One of our routes matched, we will quickly navigate to our parent
+				// view to give the user a natural back button flow	
 				$timeout(function() {
 					
-					console.log('');
-					console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);
-					$state.go(match.$route.target, match.$args);
-				}, 800);
-			}, 100);
+					//$state.go(match.$route.parent, match.$args);
+					$state.go(match.$route.parent, null);
+					// Finally, we will navigate to the deeplink page. Now the user has
+					// the 'product' view visible, and the back button goes back to the
+					// 'products' view.				
+					$timeout(function() {
+						
+						console.log('');
+						console.log('match.$link.queryString: ', match.$link.queryString);
+						//console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);
+						//$state.go(match.$route.target, match.$args);
+						//$state.go(match.$route.target, args);
+						$location.path(match.$link.queryString);
+						
+					}, 800);
+				}, 100);
+				
+			}, function(nomatch) {
+				
+				console.log('');
+				console.log('deeplink, search result route, no match: ', nomatch);
+				
+				//for test only 
+				// if no match goes to about
+				//$state.go('app.about');
+			});
 			
-		}, function(nomatch) {
 			
-			console.log('');
-			console.log('deeplink route2 no match: ', nomatch);
 			
-			//for test only 
-			// if no match goes to about
-			//$state.go('app.about');
-		});	
+			$cordovaDeeplinks.route({
+				'/app/test': {
+					target: 'app.test',
+					parent: 'app.about'
+				}
+			}).subscribe(function(match) {
+				
+				console.log('what the ..');
+				console.log('');
+				console.log('deeplink: match........');
+				console.log('match: ', match);
+						console.log('');
+						console.log('what the hell...');
+						console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);			
+				
+				// One of our routes matched, we will quickly navigate to our parent
+				// view to give the user a natural back button flow	
+				$timeout(function() {
+					$state.go(match.$route.parent, match.$args);
+					// Finally, we will navigate to the deeplink page. Now the user has
+					// the 'product' view visible, and the back button goes back to the
+					// 'products' view.				
+					$timeout(function() {
+						
+						console.log('');
+						console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);
+						$state.go(match.$route.target, match.$args);
+					}, 800);
+				}, 100);
+				
+			}, function(nomatch) {
+				
+				console.log('');
+				console.log('deeplink route2 (test) no match: ', nomatch);
+				
+				//for test only 
+				// if no match goes to about
+				//$state.go('app.about');
+			});	
 	
+		}
+		
+		deeplink();
+		//testing... on resume 
+		document.addEventListener("resume", function() {
+			console.log('the app is resuming...');
+			deeplink();
+		
+		}, false);
+		
+		
+		//(todo): route for search / (public) reports 
+		
+		//inappbilling for android
+		
+		console.log('device: ', device);
+		
+		if((window.device && device.platform == "Android") && typeof inappbilling !== "undefined") {
+			inappbilling.init(function(resultInit) {
+				console.log("IAB Initialized");
+				//further initialize IAB services ... 
+				
+			},
+			function(errorInit) {
+				console.log("IAB Initialized ERROR -> " + errorInit);
+			}, 
+			{showLog: true},
+			['testcredits01_bundle_3']); // for now only testing static response 
+		}
+		
+		
+		//admob
+		var pubIdAndroid = 'pub-1483757918215780';
+		var adBannerIdAndroid = 'ca-app-pub-1483757918215780/2193572553';
+		
+            if(window.plugins && window.plugins.AdMob) {
+                var admob_key = device.platform == "Android" ? adBannerIdAndroid : "IOS_PUBLISHER_KEY";
+                var admob = window.plugins.AdMob;
+                admob.createBannerView( 
+                    {
+                        'publisherId': admob_key,
+                        'adSize': admob.AD_SIZE.BANNER,
+                        'bannerAtTop': false
+                    }, 
+                    function() {
+                        admob.requestAd(
+                            { 'isTesting': true }, 
+                            function() {
+                                admob.showAd(true);
+                            }, 
+                            function() { console.log('failed to request ad'); }
+                        );
+                    }, 
+                    function() { console.log('failed to create banner view'); }
+                );
+            }
+
+		
 	
 	});
  
@@ -275,8 +453,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
   
 	//report export / import 
 	//not used(?)
-	.state('app.reports.export', {
-		url: '/export/:file/:report',
+	.state('app.export', {
+		url: '/reports/export/:file/:report',
 		views: {
 			'menuContent': {
 				templateUrl: 'templates/reports/export.html',
@@ -286,7 +464,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	})
 
 	.state('app.import', {
-		url: '/reports/import/:file',
+		url: '/reports/import/:userId/:src/:file/:version',
 		views: {
 			'menuContent': {
 				templateUrl: 'templates/reports/import.html',
@@ -800,6 +978,8 @@ app.config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider, $t
 	//$translateProvider.preferredLanguage("en");
 	$translateProvider.fallbackLanguage("en");
 	//$translateProvider.determineLanguage();
+	
+	$translateProvider.useSanitizeValueStrategy('escape');
 	
 });
 //	var suggestions = angular.module('ipa.suggestions',[ionic]);  

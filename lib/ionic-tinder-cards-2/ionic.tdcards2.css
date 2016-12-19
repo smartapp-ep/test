@@ -5,7 +5,7 @@ td-cards {
 
 td-card {
   position: absolute;
-  //top: calc(50% - 150px);
+  top: calc(50% - 150px);
   left: calc(50% - 150px);
   width: 300px;
   height: 300px;
