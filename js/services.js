@@ -13,11 +13,12 @@ var jsClientAuth = false;
 var billingMock = false;
 
 //var server = 'https://server.local:3000';
-var server = 'https://192.168.2.151';
+//var server = 'https://192.168.2.151';
 //var server = 'https://192.168.1.12';
 
 //var server = 'https://direct-keel-136302.appspot.com';
 
+var server = 'https://p360test.herokuapp.com';
 
 var apiUrl = server + '/api/v1';
 var userUrl = apiUrl + '/users';
