@@ -1404,7 +1404,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	console.log('SummaryCtrl');
 	console.log('report: ', report);
 	
-	$scope.file = $stateParams.file;
+	$scope.file = encodeURI($stateParams.file);
 	$scope.name = $scope.file.split('_')[0];
 	
 	//error checking? on file on report???

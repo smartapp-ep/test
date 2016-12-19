@@ -37,7 +37,8 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		
 		
 		//check network status 
-        if(navigator.connection.type == Connection.NONE) {
+        //if(navigator.connection.type == Connection.NONE) {
+		if(navigator.connection.type == 'none') {	
 			$ionicPopup.confirm({
 				title: "Internet Disconnected",
                 content: "The internet is disconnected on your device. Without network functionality is only limited to open existing personality reports."
@@ -197,7 +198,10 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 				//$state.go('app.about');
 			});
 		
-			/*** routes for search result */
+			/*** routes for search result (web scheme)*/
+				//shouldn't need (?)
+				//summary only!! 
+				
 			//only one version - the latest; if there's backward compatibility problem,
 				//can only hope user upgrade!
 
@@ -219,7 +223,9 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 			$cordovaDeeplinks.route({
 				//'/app/reports/import/:userId/:src/:file': {
 				//'/app/reports.html?/app/summary/:file': {
-				'/app/reports.html': {
+				
+				//'/app/reports.html': { // if on same server; (currently on app sub domain instead of /app)
+				'/reports.html': {
 					target: 'app.summary',
 					parent: 'app.reports'
 				}
@@ -270,6 +276,52 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 				// if no match goes to about
 				//$state.go('app.about');
 			});
+			
+			
+			/*** route for search (custom scheme) ***/
+				//summary only!
+			$cordovaDeeplinks.route({
+				'/app/summary/:file': {				
+					target: 'app.summary',
+					parent: 'app.reports'
+				}
+			}).subscribe(function(match) {
+				
+				console.log('');
+				console.log('deeplink: match, search route (customer scheme, summary).......');
+				console.log('match: ', match);
+				console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);			
+				
+				//for this initial version, the version parameter will simply be ignored 
+				//var args = removeExtraParams(match.$args);
+				
+				// One of our routes matched, we will quickly navigate to our parent
+				// view to give the user a natural back button flow	
+				$timeout(function() {
+					
+					//$state.go(match.$route.parent, match.$args);
+					$state.go(match.$route.parent, match.$args);
+					// Finally, we will navigate to the deeplink page. Now the user has
+					// the 'product' view visible, and the back button goes back to the
+					// 'products' view.				
+					$timeout(function() {
+						
+						console.log('');
+						console.log('match.$route.target & match.$args: ', match.$route.target, match.$args);
+						//$state.go(match.$route.target, match.$args);
+						$state.go(match.$route.target, match.$args);
+					}, 800);
+				}, 100);
+				
+			}, function(nomatch) {
+				
+				console.log('');
+				console.log('deeplink, search route (customer scheme/summary), no match: ', nomatch);
+				
+				//for test only 
+				// if no match goes to about
+				//$state.go('app.about');
+			});			
 			
 			
 			
