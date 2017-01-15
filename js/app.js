@@ -8,22 +8,30 @@
 //var constants = angular.module('ipa.constants', []);
 //var app = angular.module('ipa', ['ionic','ionic.service.core', 'ipa.controllers', 'ipa.services', 'ipa.constants', 'ipa.directives', 'ionic.contrib.ui.tinderCards2','ionic.contrib.ui.tinderCards']);
 
-var app = angular.module('ipa', ['ionic', 'ionic.native', 'pascalprecht.translate', 'ipa.controllers', 'ipa.services', 'ipa.constants', 'ipa.directives', 'ionic.contrib.ui.tinderCards2', 
+var app = angular.module('ipa', ['ionic', 'ionic.cloud', 'ionic.native', 'pascalprecht.translate', 'ipa.controllers', 'ipa.services', 'ipa.constants', 'ipa.directives', 'ionic.contrib.ui.tinderCards2', 
   'angular-storage',
   'angular-jwt']);
 
+var appVersion = "0.0.0"
 
-	app.config(function($ionicConfigProvider) {
+app.config(function($ionicConfigProvider, $ionicCloudProvider) {
 		//$ionicConfigProvider.views.maxCache(5);
 		$ionicConfigProvider.tabs.position('bottom');
 		// note that you can also chain configs
 		//$ionicConfigProvider.backButton.text('Go Back').icon('ion-chevron-left');
 		
 		//console.log('who run first? app.config');
-	});
+		
+		//ionic cloud setup 
+		$ionicCloudProvider.init({
+			"core": {
+				"app_id": "3bee48c3"
+			}
+		});		
+});
 
 
-app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translate, init, $cordovaDeeplinks, Utils, $ionicPopup, $location) {
+app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translate, init, $cordovaDeeplinks, Utils, $ionicPopup, $ionicLoading, $location, $ionicDeploy) {
   
 
   
@@ -36,12 +44,33 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		}
 		
 		
+		//testing popup
+		/*
+		$ionicPopup.confirm({
+			title: 'test',
+			content: 'testing popup in app.run'
+		}).then(function(res) {
+			if (res) {
+				console.log('ok is pressed.');
+			} else {
+				console.log('cancel is pressed');
+			}
+		})
+		*/
+		
+		
+		
 		//check network status 
+		if (navigator && navigator.connection)
+			console.log('navigator.connection.type: ', navigator.connection.type);
         //if(navigator.connection.type == Connection.NONE) {
-		if(navigator.connection.type == 'none') {	
+		if(navigator.connection && navigator.connection.type == 'none') {	
+			
+			console.log('no internet!');
+			
 			$ionicPopup.confirm({
 				title: "Internet Disconnected",
-                content: "The internet is disconnected on your device. Without network functionality is only limited to open existing personality reports."
+                template: "The internet is disconnected on your device. Without network functionality is only limited to open existing personality reports."
             })
             .then(function(result) {
                 if(!result) {
@@ -49,9 +78,50 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
                 }
             });
         }
-            		
-		
+
+		//check version 
+		if (window.cordova && window.cordova.getAppVersion) {
+			cordova.getAppVersion(function(version) {
+				appVersion = version;
+				console.log('appVersion is : ', appVersion);
+			});
+		}
+			
 		console.log('1');
+		
+		//check for newer snapshot 
+		if (window.cordova)
+		$ionicDeploy.check().then(function(snapshotAvailable) {
+			if (snapshotAvailable) {
+				$ionicDeploy.download()
+				.then($ionicDeploy.extract())
+				.then(function() {
+					$ionicLoading.hide();
+					$ionicDeploy.load();
+				})
+				.catch(function(err) {
+					console.log('err in ionic deploy download/extract: ', err);
+					$ionicLoading.hide();
+					$ionicPopup.alert({
+						title: 'Error',
+						template: err
+					})					
+				})
+				$ionicLoading.show({
+					template: 'New inapp update found, downloading... this should only take a very shot time, please wait...'
+				})
+			}
+		}).catch(function(err) {
+			console.log('err in ionic deploy check: ', err);
+			$ionicLoading.hide();
+			//prompt to user? 
+			
+			if (!window.jasmine) 
+			$ionicPopup.alert({
+				title: 'Update Check Error',
+				template: err
+			})
+		})
 		
 		if (window.cordova && window.cordova.InAppBrowser) {
 			console.log('impossible');
@@ -380,9 +450,9 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		
 		//inappbilling for android
 		
-		console.log('device: ', device);
+		console.log('device: ', window.device);
 		
-		if((window.device && device.platform == "Android") && typeof inappbilling !== "undefined") {
+		if((window.device && window.device.platform == "Android") && typeof inappbilling !== "undefined") {
 			inappbilling.init(function(resultInit) {
 				console.log("IAB Initialized");
 				//further initialize IAB services ... 
@@ -432,6 +502,12 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
+  //root (really just for protractor tests)
+  .state('root', {
+	  url: '/',
+	  template: '<h3>Hello!</h3>'
+  })
+  
   .state('app', {
     url: '/app',
     abstract: true,

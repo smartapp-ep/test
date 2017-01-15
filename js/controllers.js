@@ -1,4 +1,4 @@
-angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'ionic.contrib.ui.tinderCards2', 'pascalprecht.translate'])
+angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'ionic.cloud', 'ionic.contrib.ui.tinderCards2', 'pascalprecht.translate'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, $ionicNavBarDelegate, $ionicSideMenuDelegate) {
 	
@@ -686,7 +686,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 				scope: $scope,
 				title: 'Info: No Friends returned from ' + src,
 				//translate!!!
-				template: 'Due to new Facebook policy, your friend won\'t show up unless s/he also uses the app. Please click invite to \"Invite\" your friend to use the app or \"continue\" to analyze yourself',
+				template: 'Due to new Facebook policy, your friend won\'t show up unless s/he also uses the app. Click \"Invite\" to invite your friend to the app, \"Continue\" to analyze yourself, or \"Cancel" to use Twitter or Yammer instead.',
 					// + 'once your friend installs the app we can analyze her/his posts. '
 					//options: invite, (?tell her/him about it), analyze yourself
 				buttons: [
@@ -708,6 +708,12 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 									//then nothing needs to be done on server side;
 									//yet, if no client then still need to handle it on server 
 						}
+					},
+					{
+						text: 'Cancel',
+						onTap: function(e) {
+							$scope.action = 'cancel'
+						}
 					}
 				]
 			})
@@ -726,10 +732,20 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 					External.invite(src, function(err, res) {
 						if (err) {
 							console.log('err from invite: ', err);
-							return;
+							$ionicPopup.alert({
+								title: 'Error',
+								template: JSON.stringify(err)
+							})
+						} else {
+							console.log('res from invite: ', res);
+							$ionicPopup.alert({
+								template: 'Once your friends install the app, facebook will allow the app to access their profile, and you\'ll be able to choose them to analzye.'
+							})							
 						}
-						console.log('res from invite: ', res);
 					})
+					
+				} else if ($scope.action == 'cancel') {
+					
 				} else {
 					$scope.getProfile(src, null);
 				}

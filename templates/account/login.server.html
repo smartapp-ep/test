@@ -4,15 +4,15 @@
 
 		<ion-list>
 			<ion-item>
-				<ion-button class="button button-icon fblogin" on-tap="login('facebook')" ng-disabled="isClientAuth('facebook') || ( isAuthAt('facebook') && isAuth() )">
+				<ion-button id="fblogin" class="button button-icon fblogin" on-tap="login('facebook')" ng-disabled="isClientAuth('facebook') || ( isAuthAt('facebook') && isAuth() )">
 				</ion-button>
 			</ion-item>
 			<ion-item>
-				<ion-button class="button button-icon twlogin" ng-click="login('twitter')" ng-disabled="isClientAuth('twitter') || ( isAuthAt('twitter') && isAuth() )">
+				<ion-button id="twlogin" class="button button-icon twlogin" ng-click="login('twitter')" ng-disabled="isClientAuth('twitter') || ( isAuthAt('twitter') && isAuth() )">
 				</ion-button>
 			</ion-item>
 			<ion-item>
-				<ion-button class="button button-icon ymlogin" on-tap="login('yammer')" ng-disabled="isClientAuth('yammer') || ( isAuthAt('yammer') && isAuth() )">
+				<ion-button id="ymlogin" class="button button-icon ymlogin" on-tap="login('yammer')" ng-disabled="isClientAuth('yammer') || ( isAuthAt('yammer') && isAuth() )">
 				</ion-button>
 			</ion-item>
 		</ion-list>

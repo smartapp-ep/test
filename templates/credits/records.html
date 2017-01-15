@@ -1,4 +1,4 @@
-<ion-view view-title="Free Credits">
+<ion-view view-title="My Credits">
   <ion-content overflow-scroll="true" padding="true">
   
   		  <ion-refresher
@@ -6,6 +6,11 @@
 			on-refresh="doRefresh()">
 		  </ion-refresher>
 		  
+		<!-- should we do an auto resync instead??? -->
+		<br>
+		<div align="center">Pull to synchronize from server</div>
+		<br>		  
+	
     <h5>Credit Records</h5>
 
 			<div class="row row-top" style="font-weight: bold;">
@@ -33,8 +38,8 @@
 	</ion-list>
  
 	<div>
-
-	<!--button ng-click = "checkCredits()"> check credits </button-->
+		<!-- only for testing -->
+		<button id="refresh" ng-click = "doRefresh()"> Synchronize from Server </button>
 	</div>	
 	
   </ion-content>

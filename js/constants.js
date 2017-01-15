@@ -1468,7 +1468,8 @@ constants.config (function(InitFileProvider) {
 				error.name = 'UnSupported';
 				error.message = 'Your phone is not supported'
 				//instead of throwing an error, pop it out to user?
-				throw error;
+				//throw error; //commented out due to protractor.. 
+				//use platform or device directly??? 
 			}
 			console.log('platform ready, device: ', dev);
 			//loadFiles();

@@ -18,18 +18,43 @@ var billingMock = false;
 
 //var server = 'https://direct-keel-136302.appspot.com';
 
-var server = 'https://p360test.herokuapp.com';
+
+var defaultServer = 'p360test.herokuapp.com';
+//var defaultServer = '192.168.1.12';
+//var defaultServer = '192.168.2.151';
+
+var appServer = 'http://app.personality360.xyz';
+
+var Server = {
+	svr: defaultServer,
+	get: function() {
+		return 'https://' + this.svr;
+	},
+	set: function(serverName) {
+		this.svr = serverName;
+	}
+}
+
+//this won't work ... since variables like apiUrl is set and fixed
+/*
+var server = function() {
+	return Server.get();
+}
+*/
+server = Server.get();
+
+console.log('');
+console.log('===============');
+console.log('server: ', server);
+
+
 
 var apiUrl = server + '/api/v1';
 var userUrl = apiUrl + '/users';
 var loginUrl = server + '/pi/auth/external';
 var supportUrl = server + '/pi/support';
 
-var user1Name = 'oghazjm_panditsen_1469707416@tfbnw.net';
-var user1Id = '101356316976304';
-var usre2name = 'zwvadyw_bharambesky_1469707417@tfbnw.net';
-var user2Id = '103528133425233'
-var pw = 'NewH0pe';
+
 
 var storeUrl = {
 	ios: 'www.example.com',
@@ -191,6 +216,7 @@ services.service('init', function($timeout, $window, filestore, Reports){
 	
 	//run in app so should not need this... (???) 
 	//it wasn't called in app; but below is fine since the init service is being called... 
+	//var svr = defaultServer; //'p360test.herokuapp.com';
 	
 	ionic.Platform.ready(function(){
 		//clt = clients[source];
@@ -242,10 +268,10 @@ services.service('init', function($timeout, $window, filestore, Reports){
 			return thisDevice;
 		},
 		setServer : function(serverName) {
-			server = serverName;
+			Server.set(serverName);
 		},
 		getServer: function() {
-			return server;
+			return Server.get();
 		},
 		
 		initFileReports: initFileReports,
@@ -253,6 +279,9 @@ services.service('init', function($timeout, $window, filestore, Reports){
 
 	}
 })
+
+
+
 //helper function and variables for fb and auths
 	
 	//config in service provider or platform.run to set client when device ready(?)
@@ -581,43 +610,54 @@ services.service('facebook', function(store, $timeout) {
 		}, {scope: permission});		
 	}
 	
+	
 	//fallback to server (in ext/social) to use send 
 		//i.e. ext need additional check to make sure clt is plugin and use server side (but if js available then send first)
 		//though it'll additionally check here... if no plugin simply throw err... 
-	function invite(cb) {
+	function invite(cb) {	
+		var svc = appSever;
+		var url = svr + '/appinvite.html';
+		//var picture = svr + '/images/p360.png';
+		var picture = svr + '/img/p360.png';
+		
 		if (hasPlugin.facebook) {
 			//check login status and login user if necessary ...
 				
 				clt.appInvite(
 					{
-						url: '',
-						picture: ''
+						url: url,
+						picture: picture
 					}
 				), function(res) {
 					if(res) {
 						if(res.completionGesture == "cancel") {
 							// user canceled, bad guy
+							return cb(new Error('Invitation cancelled'));
 						} else {
 							// user really invited someone :)
 							console.log('invited, res: ', res)
+							return cb(null, res);
 						}
 					} else {
 						// user just pressed done, bad guy
 						console.log('user clicked done, res: ', res);
+						return cb(new Error('Invitation cancelled'));
 					}
 					//return nothing and continue anyhow...
-					return cb(null);
+					//return cb(null);
 				}, function(err) {
 					console.log('err from invite cb');
 					//throw err;
 					return cb(err);
 				}
-		} // else ??? use js sdk but the sdk should be being used already (in clt already)
+		} else { // else ??? use js sdk but the sdk should be being used already (in clt already)
 		
-		var err = new Error();
-		err.name = 'InviteNotCalled';
-		err.message = 'No fb plugin or fb app not install or user not login to app';
-		throw err;
+			var err = new Error();
+			err.name = 'InviteNotCalled';
+			err.message = 'No fb plugin or fb app not install or user not login to app';
+			//throw err;
+			return cb(err);
+		}
 	}
 	
 	//for js (x??)
@@ -814,7 +854,6 @@ services.service('facebook', function(store, $timeout) {
 
 services.service('External', function($http, $window, store, facebook, ApiSvc, $timeout, $interval, $translate) { 
 
-	
 	//source either as query or parameter for json / restful style or both  
 	var usersUrl = server + '/pi/analyze/getusers';
 	var svc = {
@@ -1073,6 +1112,8 @@ name: "My name"
 
 	}
 	
+	//for now only for fb... and used in analyze at fb 
+		//potentially in the future have suggestion/share/invite menu for other sources too
 	function invite(src, cb){
 		//if client side, -> if plugin ... 
 		if (clientAuth[src]) {
@@ -1081,6 +1122,7 @@ name: "My name"
 					return svc[src].invite(cb)
 				} 
 				//fall back to use suggest (//mainly for dev)
+					//potentially could send message to some particular users - todo(?) or next release 
 				return svc[src].suggest(cb);
 
 		} 
@@ -2404,8 +2446,8 @@ services.service('CreditSvc', function(ApiSvc, External, store, PaymentSvc) {
 			threshold: 10
 		},
 		watson: {
-				threshold: 500
-			}
+			threshold: 500
+		}
 	}
 	
 	mergeDrt(drt, rt);
