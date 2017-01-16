@@ -610,9 +610,13 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			return;
 		}
 
-		var svr = init.getServer();
+		//var svr = init.getServer();
+		//var url = svr + '/appinvite.html';
+		//var picture = svr + '/images/p360.png';
+		
+		var svr = 'http://app.personality360.xyz';
 		var url = svr + '/appinvite.html';
-		var picture = svr + '/images/p360.png';
+		var picture = svr + '/img/p360.png';
 		
 		facebookConnectPlugin.appInvite(
 			{

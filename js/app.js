@@ -61,23 +61,27 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		
 		
 		//check network status 
-		if (navigator && navigator.connection)
-			console.log('navigator.connection.type: ', navigator.connection.type);
-        //if(navigator.connection.type == Connection.NONE) {
-		if(navigator.connection && navigator.connection.type == 'none') {	
-			
-			console.log('no internet!');
-			
-			$ionicPopup.confirm({
-				title: "Internet Disconnected",
-                template: "The internet is disconnected on your device. Without network functionality is only limited to open existing personality reports."
-            })
-            .then(function(result) {
-                if(!result) {
-                    ionic.Platform.exitApp();
-                }
-            });
-        }
+		function checkNetwork() {
+			if (navigator && navigator.connection)
+				console.log('navigator.connection.type: ', navigator.connection.type);
+			//if(navigator.connection.type == Connection.NONE) {
+			if(navigator.connection && navigator.connection.type == 'none') {	
+				
+				console.log('no internet!');
+				
+				$ionicPopup.confirm({
+					title: "Internet Disconnected",
+					template: "The internet is disconnected on your device. Without network functionality is only limited to open existing personality reports."
+				})
+				.then(function(result) {
+					if(!result) {
+						ionic.Platform.exitApp();
+					}
+				});
+			}
+		}
+		
+		checkNetwork();
 
 		//check version 
 		if (window.cordova && window.cordova.getAppVersion) {
@@ -442,6 +446,8 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		document.addEventListener("resume", function() {
 			console.log('the app is resuming...');
 			deeplink();
+			//check network status 
+			checkNetwork();
 		
 		}, false);
 		

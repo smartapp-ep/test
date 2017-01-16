@@ -615,10 +615,17 @@ services.service('facebook', function(store, $timeout) {
 		//i.e. ext need additional check to make sure clt is plugin and use server side (but if js available then send first)
 		//though it'll additionally check here... if no plugin simply throw err... 
 	function invite(cb) {	
-		var svc = appSever;
-		var url = svr + '/appinvite.html';
+		var svr = appServer;
+		
+		//var url = svr + '/appinvite.html';
 		//var picture = svr + '/images/p360.png';
 		var picture = svr + '/img/p360.png';
+		
+		//http doesn't work?!
+		var svr = server;
+		var url = svr + '/appinvite.html';
+		
+		console.log('url: ', url);
 		
 		if (hasPlugin.facebook) {
 			//check login status and login user if necessary ...
