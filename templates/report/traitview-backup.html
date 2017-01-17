@@ -1,0 +1,146 @@
+<!--ion-view view-title="{{traitName | translate}}" cache-view="true" hide-back-button="false"-->	
+<ion-view view-title="{{traitName | translate}}" cache-view="true">	
+
+  	<ion-nav-buttons side="left" class="button button-clear button-icon icon ion-navicon">
+			<button class="button button-icon icon ion-ios-arrow-left" ng-click=backToFacet() style="font-size:12px">{{facet}}</button>
+	</ion-nav-buttons>
+
+	<!--ion-content padding="true" class="bgflower1" on-scroll="reportScroll()" overflow-scroll="false"  scroll="yes"--> <!-- has-tabs='true' --> 
+	<ion-content on-scroll="reportScroll()" overflow-scroll="false"  scroll="yes"> 		
+		
+	<div frost style ="position: absolute; width: 100%; padding: inherit;">
+	
+		<!--**** facet / needs / values ***-->
+	<div class="divgrass1">
+	
+		<br><br><br><br>
+		<div style="font-size: 24px; font-weight: 900; color: #e47e12;">{{name}}</div>
+		<br><br><br>		
+
+			
+		<div>
+				<!-- <div class="item item-divider"> -->
+					<h3>{{trait.traitName | translate}}</h3>
+				<!-- </div> -->
+				<br>
+				
+			<!-- <div ng-show="viewName =='Love' && perspective=='Relationship'"> -->
+			<!-- <div><details ng-open="{{trait.viewDetails[viewName]}}"> -->
+			<div>
+				<details ng-open="(perspective=='Relationship' && viewName=='Love') || viewName=='AllViews' || trait.traitType == 'need' ">
+
+					<summary>Trait Information: {{traitSummary.description}}</summary>
+					
+					<div class="percent-bar-and-score">
+						<div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
+							{{trait.traitName | translate}}
+							<i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
+
+						</div>
+				
+						<div class="percent-bar percent-bar-and-score--percent-bar">
+							<div class="percent-bar--meter" style="-webkit-transform: translate({{getScore(trait.traitName, 'pc')}}); transform: translate({{getScore(trait.traitName, 'pc')}})">
+								<div class="percent-bar--ball percent-bar--ball_POSITIVE-FILL"></div>
+								<div class="percent-bar-and-score--number">
+									{{getScore(trait.traitName, 'pc')}}
+								</div>
+							</div>
+						</div>
+					</div>	  
+		
+					<br><br>
+					<div>
+						<p><b>{{'Higher' | translate}}</b>: {{traitSummary.info.high}}</p>
+						<p><b>{{'Lower' | translate}}</b>: {{traitSummary.info.low}}</p>
+					</div>
+					
+					<!-- extra for the trait if any -->
+					<div ng-show="traitSummary.extra"> 
+						<br>
+						{{traitSummary.extra}}
+					</div>				
+				</details>
+			</div>
+			
+			<!--extra-->
+			<div>	
+				<!-- extra (for the view), if any -->
+				<div ng-if="getView(trait['views'], viewName)['extra']">
+					<br>
+					{{getView(trait['views'], viewName)['extra']}}
+				</div>
+				
+				<br>
+				<div> 
+					<h5>{{'Perspective' | translate}}: <b style="color: {{getPerspectiveColor()}};">{{perspective | translate}}</b></h5>
+					<h5>{{'View' | translate}}: <b style="color: {{getViewColor(viewName)}};">{{viewName | translate}}</b></h5>
+					<!--p>{{getView(trait['views'], viewName)['general'][getScore(trait.traitName)]}} </p-->
+					<p ng-bind-html="getView(trait['views'], viewName)['general'][getScore(trait.traitName)]" ></p>
+					
+				</div> 
+				<!-- <div> {{viewName}}: {{getView(trait['views'])}} </div> -->		
+				<div>{{'RolesInstruction' | translate}}</div>
+				<div ng-if="!trait.AllViews && trait.traitType != 'need'">{{'ViewsInstruction' | translate}}</div>
+			</div>
+		</div>	
+	
+			
+	</div>
+
+
+			
+			<div noscroll="" ng-controller = "CardsCtrl2" cardtypes="{{getRolesFromView(getView(trait.views, viewName), getScore(trait.traitName), trait.traitName) }}" id='rolecards' on-drag="onDragRight()" on-release="onRelease()" style="position: relative"> 
+     <!-- *************************
+        TD Cards
+        - We start off with an ng-if so that the cards are not generated
+          unless $scope.cards is not 'null'
+      ************************* -->
+				<div ng-if="cards.active">
+					<td-cards>
+						<td-card ng-repeat="card in cards.active" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)">
+							<!-- <div class="image" ng-controller="CardCtrl2" ng-if="card.info[getScore(trait.traitName)] != '' "> -->
+							<div class="image frost-overlay" ng-controller="CardCtrl2">						
+								<div class="no-text"><i class="icon ion-thumbsdown"></i></div>
+								<div class="yes-text"><i class="icon ion-thumbsup"></i></div>
+              <!-- *************************
+                Discard
+                - The card is removed from the deck and a fly away animation is triggered.
+                - onClickTransitionOut is found in ionic.tdcards.js
+                - Animation can be customized by changing defaults
+              ************************* -->
+								<!-- <div class="discard" ng-click="onClickTransitionOut(card)">DISCARD</div>-->
+									<!-- <img ng-src="{{ card.image}}"> -->
+								<!--div class="item item-divider" stylehi  = "background-color: {{getViewColor(viewName)}};"-->
+								<div class="item item-divider" style = "background-color: {{viewColor}};">
+									<div style="float: left;">{{'Role' | translate}}: {{card.roleName | translate}}</div>
+									<i class = "ion-ios-arrow-thin-right", style="float:right;"></i>
+								</div>
+								<!-- <div class="item item-text-wrap" style="height:220px; font-size:13px;" ng-bind-html="card.info[getScore(trait.traitName)]"> -->
+								<div class="item item-text-wrap" style="height:220px; font-size:13px;" ng-bind-html="card.info">								
+									<!--{{card.info.high}}-->
+								</div>
+								<!--div class="item" style="font-size:12px; background-color: {{getViewOverlayColor(viewName)}};"-->
+								<div class="item" style="font-size:12px; background-color: {{viewOverlayColor}};">
+									<span>{{trait.traitName | translate}}</span>
+									<span style="float:right;">{{perspective | translate}}/{{viewName | translate}}
+								</div>
+							</div>
+						</td-card>
+          <!-- *************************
+            End Card
+            - 'drag' is set to false. The user cannot drag it.
+            - 'refreshCards()' reloads all cards that have NOT been discarded.
+          ************************* -->
+						<td-card id="end-card" drag="false">
+							<!-- <i class="icon ion-ios-refresh disable-user-behavior" ng-click="refreshCards()"></i> -->							
+							<i class="icon ion-ios-refresh-empty disable-user-behavior" on-tap="refreshCards()"></i>
+						</td-card>
+					</td-cards>
+				</div>
+			</div>
+		
+	</div>
+		
+	</ion-content>
+<!-- </ion-nav-view>	 -->
+</ion-view>
