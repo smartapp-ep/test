@@ -19,9 +19,9 @@ var billingMock = false;
 //var server = 'https://direct-keel-136302.appspot.com';
 
 
-//var defaultServer = 'p360test.herokuapp.com';
+var defaultServer = 'p360test.herokuapp.com';
 //var defaultServer = '192.168.1.12';
-var defaultServer = '192.168.2.151';
+//var defaultServer = '192.168.2.151';
 
 var appServer = 'http://app.personality360.xyz';
 
