@@ -51,7 +51,7 @@ var facets = {
 }
 */
 
-var facets = ["Agreeableness", "Conscientiousness",  "Extraversion", "Neuroticism", "Openness", "Needs", "Values"];
+var facets = ["Agreeableness", "Conscientiousness",  "Extraversion", "Emotional range", "Openness", "Needs", "Values"];
 var perspectives = ['Relationship', 'Approaching', 'Self-Improvement'];
 
 var perspectiveDescriptions = {

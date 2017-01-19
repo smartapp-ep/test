@@ -1,0 +1,25 @@
+<ion-view view-title="{{'Preferences' | translate}} - {{name}}" cache-view="true">
+
+	<!--ion-content padding="true" class="has-header bgsky1" delegate-handle="report4" on-scroll="reportScroll()" overflow-scroll="false"  scroll="yes"--> <!-- has-tabs='true' --> 
+	<ion-content overflow-scroll="false"  scroll="yes">	
+	<!--div frost style ="position: absolute; width: 100%; padding: inherit;"-->
+	<!--div class="divsky1"--><!--todo: change this to dif background img-->
+	
+		<!--br>
+		<div style="font-size: 24px; font-weight: 900; color: #e47e12;">{{name}}</div>
+		<br-->
+
+		<!-- preferences && tooltips? -->
+
+		<ion-list>
+			<!--ion-item ng-repeat="cat in preferences" href="#/app/preference/{{pref.name}}"-->
+		   <ion-item ng-repeat="cat in preferences" ng-click="open(cat)">
+				{{cat.name}}
+			</ion-item>
+		</ion-list>
+
+		
+	<!--/div></div-->
+	</ion-content>
+
+</ion-view>

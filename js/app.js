@@ -615,10 +615,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
    .state('app.summary', {
 		url: '/summary/:file',
 		views: {
-		  'menuContent': {
-			templateUrl: 'templates/summary.html',
-			controller: 'SummaryCtrl'
-		  }
+			'menuContent': {
+				templateUrl: 'templates/summary.html',
+				controller: 'SummaryCtrl'
+			}
 		},
 		resolve: {
 			report: function(Reports, $stateParams) {
@@ -632,7 +632,44 @@ app.config(function($stateProvider, $urlRouterProvider) {
 				}); 
 			}
 		}	
-  })     
+	})     
+  
+  
+    .state('app.preferences', {
+		url: '/preferences/:file',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/report/preferences.html',
+				controller: 'PreferencesCtrl'
+			}
+		},
+		resolve: {
+			report: function(Reports, $stateParams) {
+				//decoding it first 
+				var file = decodeURI($stateParams.file);
+				console.log ('promise from Reports: ', Reports.getPromise(file))
+				return Reports.getPromise(file).then(function(res){
+					return res.data;
+				}).catch(function(err) {
+					return err;
+				}); 
+			}
+		}		
+    })
+
+  .state('app.preference', {
+    //url: '/preference/:category',
+	url: '/preference',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/report/preference.html',
+        controller: 'PreferenceCtrl'
+      }
+    },
+	params: {
+		category: null
+	}
+  })    
   
    .state('app.people', {
     url: '/people',

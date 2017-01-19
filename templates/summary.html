@@ -9,13 +9,18 @@
 		<div style="font-size: 24px; font-weight: 900; color: #e47e12;">{{name}}</div>
 		<br><br><br>
 		<!-- summary, perhaps with most obvious traits + bar -->
-		<div ng-bind-html="summary">
-		</div>
+		<div ng-bind-html="summary"></div>
+		
+		<!--div>
+			<pre>{{summary}}</pre>
+		</div-->
 		
 		<br><br><br>
 		<!-- behaviors perhaps with most obvious needs / values + bar  && tooltips! -->
 
-		<div>
+		<!-- only for v2 -->
+		<div ng-if="report.behaviors">
+		<!--div ng-if="report.hasOwnProperty('behaviors')"-->
 			<p><b>You're likely to: </b></p>
 			<div ng-repeat="item in behaviors.likely">
 				<p><u>{{item.name}}</u></p>
@@ -38,12 +43,21 @@
 		
 		<br><br>
 		<!-- best day & time -->
-		<div>
+		<div ng-if="report.behavior">
+			<!-- prior to v3
 			<p><b>Most sociable day: </b>{{report.tree.behavior.day || 'Unknown'}}</p>
 			<p><b>Most sociable time: </b>{{report.tree.behavior.time || 'Unknown'}}</p> 
+			-->
+			
+			<!--translate needed !!! todo -->
+			<p><b>Activities or Energy Level</b></p>
+			<div ng-repeat='behavior in report.behavior'>
+				<div>{{behavior.name}} : {{behavior.value}}</div>
+			</div>
 		</div>
 	
-	<div/><div>
+	</div>
+	</div>
 	</ion-content>
 
 </ion-view>

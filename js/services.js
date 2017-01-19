@@ -19,9 +19,9 @@ var billingMock = false;
 //var server = 'https://direct-keel-136302.appspot.com';
 
 
-var defaultServer = 'p360test.herokuapp.com';
+//var defaultServer = 'p360test.herokuapp.com';
 //var defaultServer = '192.168.1.12';
-//var defaultServer = '192.168.2.151';
+var defaultServer = '192.168.2.151';
 
 var appServer = 'http://app.personality360.xyz';
 
@@ -1023,12 +1023,7 @@ name: "My name"
 			description = trans.shareReportDescription;
 			console.log('translated caption, description ', caption, description);
 
-
-
-			//client or server
-			if (clientAuth[src]) {
-				
-				var opt = {
+			var opt = {
 					quote: caption + ' -- ' + description,
 					method: 'share',
 					//mobile_iframe: true,
@@ -1038,7 +1033,23 @@ name: "My name"
 					//description: description,
 					//picture: "http://example.com/image.png"			
 					//picture: rpt.image
-				};
+			};
+			
+			//twitter limits msg to 140 characters
+				//it actually shortens it when it's real domain
+			/*
+			if (src == 'twitter') {
+				opt.quote = description; 
+			} else {
+				//mainly for fb so the image appears on share msg (the og:image tag, other src may be possible too, then twitter requires fetching img fr db on backend)
+				opt.link = opt.link + '?img=' + img;
+			}
+			*/
+			
+			//client or server
+			if (clientAuth[src]) {
+				
+
 
 				console.log('opt: ', opt);
 				
@@ -1074,13 +1085,7 @@ name: "My name"
 			//server side... by apiSvc
 			console.log('server side share - api');
 			//further processing required... 
-			var opt = {
-				quote: caption + ' -- ' + description,
-				href: link
-			}
 			return ApiSvc.shareMsg(src, opt, cb);
-
-			
 
 			//next step actually exports the report.... caller calls!
 				//or prev steps... 
@@ -1622,6 +1627,7 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 		return Math.floor(rawScore * 100)+'%';
 	}
 	
+	//not used?
 	function findTrait(facet, trait, report) {
 		report.tree.children
 	};
@@ -1633,6 +1639,14 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 			newTree.score = score(newTree.rawScore);
 			newTree.PCScore = formatScore(newTree.rawScore);
 	}
+	
+	function transformTraitV3(item, newTree) {
+			newTree.traitName = item.name;
+			newTree.traitType = item.category == 'personality' ? 'facet' : item.category;
+			newTree.rawScore = item.percentile; // process to format of % later
+			newTree.score = score(newTree.rawScore);
+			newTree.PCScore = formatScore(newTree.rawScore);
+	}	
 	
 	function changeKey (obj, key, newkey) {
 		obj[newkey] = obj[key];
@@ -1676,7 +1690,7 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 				newTree[nv.name].children[item.id] = subTree;
 			});
 		}
-		
+				
 		//behavior - may or may not exists!
 		if (tree.children[3]) {
 			newTree.behavior = {};
@@ -1686,6 +1700,91 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 		}
 		return newTree;
 	}
+	
+	function transformReportV3(report) {
+		var prof = {};
+		var tree = report;
+		var newTree = {};
+		// b5:
+		var b5 = report.personality;
+		b5.forEach(function(item, idx, arr) {
+			newTree[item.name] = {};
+			transformTraitV3(item, newTree[item.name]);
+			newTree[item.name].children = {};
+			
+			var traits = item.children;
+			
+			traits.forEach(function(subItem, subIdx, subArr) {
+				var subTree = {};
+				transformTraitV3(subItem, subTree);
+				newTree[item.name].children[subItem.name] = subTree;
+			});
+		})
+		
+		
+		//needs & values
+		var nvNames = ['needs', 'values'];
+		
+		nvNames.forEach(function(name) {
+			
+			var nv = tree[name];
+			var traitName = name == 'values'? 'Values' : 'Needs';
+			newTree[traitName] = {};
+			
+			//transformTrait(nv, newTree[name]);
+			newTree[traitName].traitName = traitName;
+			newTree[traitName].traitType = name;
+			
+			//for needs & values, use names not ids
+			//changeKey(newTree, nv.id, nv.name);
+			
+			newTree[traitName].children = {};
+						
+			nv.forEach(function(item, idx, arr) {
+				var subTree = {};
+				//subtree[item.id] = {};
+				transformTraitV3(item, subTree);
+				newTree[traitName].children[item.name] = subTree;
+			});
+		})
+		
+		//behavior (may not exist)
+		if (tree.behavior) {
+			prof.behavior = [];
+			
+			tree.behavior.forEach(function(itm){
+			//when display: forEach(itm): itm.name: energy /activity level: itm.percentage
+				var b = {};
+				b.name = itm.name;
+				b.value = parseFloat(itm.percentage.toFixed(4));
+				prof.behavior.push(b);
+			})
+		}
+		
+		//consumption preference
+			//when display, cat.forEach(pref.forEach(pref.name, yes/no)
+		prof.preferences = [];
+		tree.consumption_preferences.forEach(function(cat){
+			var category = {};
+			category.name = cat.name;
+			category.children = [];
+			cat.consumption_preferences.forEach(function(itm){
+				var pref = {};
+				pref.name = itm.name;
+				pref.value = itm.score == '1.0' ? 'Yes' : 'No';
+				if (itm.score == '0.5') pref.value = '50% Chance';
+				category.children.push(pref); 
+			})
+			prof.preferences.push(category);
+		})
+		
+		prof.word_count = tree.word_count;
+		prof.warnings = tree.warnings;
+		prof.process_language = tree.processed_language;
+		prof.tree = newTree;
+		prof.summary = tree.summary.replace(/\n/g, '<br><br>');
+		return prof;
+	}	
 	
 	//either provide a raw profile or import of report content (converted & formatted)
 	function create(target, source, profile, importReport) {
@@ -1747,6 +1846,67 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 		//return the new file (name) in case duplicate
 		return file; 
 	}
+
+	function createV3(target, source, profile, importReport) {
+		var file = target.name + '_' + source
+		//store.set(file, profile);
+
+
+		reports = reports || store.get('piReports') || [];
+
+		var duplicate = store.get(file);
+		console.log('file', file);
+		console.log('duplicate: ', duplicate);
+		if (duplicate) {
+				
+				var appendix = findNextAppendix(target.name, source);
+				target.name += appendix;
+				file = target.name + '_' + source;
+		}
+		
+		var report = {
+			name: target.name,
+			file: file,
+			image: target.image,
+			source: source,
+			date: new Date()
+		}
+		
+		if (importReport) report.date = importReport.date; 
+		
+		reports.push(report);
+		
+		console.log('report: ', report);
+		console.log('reports pushed, new value: ', reports);
+		
+		store.set('piReports', reports);
+		
+		setTimeout(function() {
+			console.log('reports pushed, new value after 1.5 sec: ', reports);
+			//store.set('piReports', reports);
+		}, 1500);
+		
+		//console.log('reports pushed: ', reports);
+		//store.set('piReports', reports);		
+		
+		//convert file and store it
+		
+		//var piTree = 'pi reports';
+		
+		//for test (?)
+		if (profile) {
+			profile = transformReportV3(profile);
+			//profile.tree = piTree;
+		} else if (importReport) {
+			profile = importReport.content;
+		}
+		
+		store.set(report.file, profile);
+		
+		//return the new file (name) in case duplicate
+		return file; 
+	}
+
 	
 	function findNextAppendix(name, source) {
 		var i;
@@ -2013,7 +2173,7 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 		
 		transform: transformReport,
 		
-		create: create,
+		create: createV3,
 		list: list,
 		nameChanged: nameChanged,
 		removeFile: removeFile,
@@ -2031,7 +2191,10 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 		},
 		//can't used!
 		reports: reports,
-		loadPublicReports: loadPublicReports
+		loadPublicReports: loadPublicReports,
+		
+		//for test only 
+		transformV3: transformReportV3
 		
 	}
 })

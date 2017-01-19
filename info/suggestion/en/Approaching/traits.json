@@ -495,7 +495,7 @@
 			}]
 		},
 		{
-			"traitName": "Liberalism",
+			"traitName": "Authority-challenging",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -1498,7 +1498,7 @@
 			}]
 		},
 		{
-			"traitName": "Friendliness",
+			"traitName": "Outgoing",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -1928,7 +1928,7 @@
 			}]
 		},
 		{
-			"traitName": "Morality",
+			"traitName": "Uncompromising",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -2168,7 +2168,7 @@
 			}]
 		}]
 	},
-	"Neuroticism": {
+	"Emotional range": {
 		"traitName": "Emotional range",
 		"traitType": "facet",
 		"general": {
@@ -2177,7 +2177,7 @@
 			"low": "Her/his emotion is less sensitive to external events, see individual traits to see what this implies in respect to approaching her/him."
 		},
 		"children": [{
-			"traitName": "Anger",
+			"traitName": "Fiery",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -2268,7 +2268,7 @@
 			}]
 		},
 		{
-			"traitName": "Anxiety",
+			"traitName": "Prone to worry",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -2359,7 +2359,7 @@
 			}]
 		},
 		{
-			"traitName": "Depression",
+			"traitName": "Melancholy",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -2654,7 +2654,7 @@
 			}]
 		},
 		{
-			"traitName": "Vulnerability",
+			"traitName": "Susceptible to stress",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{

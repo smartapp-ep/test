@@ -9,57 +9,42 @@
 			"Adventurousness": {
 				"description": "Eagerness to trying new activities and experiencing new things.",
 				"info": {
-					"high": "You are eager to experience new things.",
-					"low": "You enjoy familiar routines and prefer not to deviate from them."
+					"high": "Eager to experience new things.",
+					"low": "Enjoy familiar routines and prefer not to deviate from them."
 				}
 			},
 			"Artistic interests": {
 				"description": "Appreciation for art and beauty, both man-made and in nature.",
 				"info": {
-					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
-					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
-					"high": "Value getting along with others. They have a more optimistic view of human nature.",
-					"medium": "medium , neutral",
-					"low": "Value self interests over others. They are more skeptical of others' motives."
+					"high": "Enjoy beauty and seek out creative experiences.",
+					"low": "Less concerned with artistic or creative activities than most people."
 				}
 			},
 			"Emotionality": {
 				"description": "Emotional availability; awareness of own feelings.",
 				"info": {
-					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
-					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
-					"high": "Value getting along with others. They have a more optimistic view of human nature.",
-					"medium": "medium , neutral",
-					"low": "Value self interests over others. They are more skeptical of others' motives."
+					"high": "Aware of own feelings and how to express them.",
+					"low": "do not frequently think about or openly express own emotions."
 				}
 			},
 			"Imagination": {
 				"description": "Openness to creating an inner world of fantasy.",
 				"info": {
-					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
-					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
-					"high": "Value getting along with others. They have a more optimistic view of human nature.",
-					"medium": "medium , neutral",
-					"low": "Value self interests over others. They are more skeptical of others' motives."
+					"high": "Have a wild imagination.",
+					"low": "Prefer facts over fantasy."
 				}
 			},
 			"Intellect": {
 				"description": "Intellectual curiosity; openness to new ideas.",
 				"info": {
-					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
-					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
-					"high": "Value getting along with others. They have a more optimistic view of human nature.",
-					"medium": "medium , neutral",
-					"low": "Value self interests over others. They are more skeptical of others' motives."
+					"high": "Open to and intrigued by new ideas and love to explore them.",
+					"low": "Prefer dealing with the world as it is, rarely considering abstract ideas."
 				}
 			},
-			"Liberalism": {
+			"Authority-challenging": {
 				"info": {
-					"summary": "This is one of the six facets in the B5 Model. It consists the traits such as Altruism & Morality etc",
-					"general": "This facet averages its individual traits and is generally an indication of a person's tendency to be compassionate and cooperative toward others. ",
-					"high": "Value getting along with others. They have a more optimistic view of human nature.",
-					"medium": "medium , neutral",
-					"low": "Value self interests over others. They are more skeptical of others' motives."
+					"high": "Prefer to challenge authority and traditional values to help bring about change.",
+					"low": "Prefer following with tradition to maintain a sense of stability."
 				}
 			}
 		}
@@ -175,7 +160,7 @@
 					"low": "You prefer activities that are quiet, calm, and safe."
 				}
 			},
-			"Friendliness": {
+			"Outgoing": {
 				"description": "Interest in and friendliness towards others; socially confident.",
 				"info": {
 					"high": "You make friends easily and feel comfortable around other people.",
@@ -220,7 +205,7 @@
 					"low": "Holds herself or himself in high regard and is satisfied with who s/he is."
 				}
 			},
-			"Morality": {
+			"Uncompromising": {
 				"description": "Tendency to see need for pretense or manipulation when dealing with others and are therefore whether is candid, frank, and genuine. Impact to relationship from this trait is hard to predict - there is an intricate and complex connection between morality and personal relationships.",
 				"info": {
 					"high": "Tend to think it is wrong to take advantage of others to get ahead.",
@@ -243,28 +228,28 @@
 			}
 		}
 	},
-	"Neuroticism": {
+	"Emotional range": {
 		"description": {
 			"high": "More likely to have negative emotions or get upset. It could mean they are going through a tough time.",
 			"low": "More calm and less likely to get upset. It does not mean they are positive, or happy people."
 		},
 		"summary": "<b>Neuroticism</b> is one of the facets in the \"Big 5\" personality model. <br><br> Also referred to as Emotional Range or Natural Reactions, is the extent to which a person's emotions are sensitive to the individual's environment. This facet measures a person's emotion sensitivity, each trait below in this facet reflects an aspect of this tendency.",		
 		"children": {
-			"Anger": {
+			"Fiery": {
 				"description": "Tendency to experience–but not necessarily express–anger or frustration.",
 				"info": {
 					"high": "You have a fiery temper, especially when things do not go your way.",
 					"low": "It takes a lot to get you angry."
 				}
 			},
-			"Anxiety": {
+			"Prone to worry": {
 				"description": "Tendency to dwell on difficulty or troubles; easily experience unease or concern.",			
 				"info": {
 					"high": "You tend to worry about things that might happen.",
 					"low": "You tend to feel calm and self-assured."
 				}
 			},
-			"Depression": {
+			"Melancholy": {
 				"description": "Normal tendency to experience feelings of guilt, sadness, hopelessness, or loneliness.",				
 				"info": {
 					"high": "You think quite often about the things you are unhappy about.",
@@ -285,7 +270,7 @@
 					"low": "You are hard to embarrass and are self-confident most of the time."
 				}
 			},
-			"Vulnerability": {
+			"Susceptible to stress": {
 				"description": "Difficulty in coping with stress or pressure in difficult situations.",
 				"info": {
 					"high": "You are easily overwhelmed in stressful situations.",

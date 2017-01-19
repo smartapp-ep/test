@@ -644,6 +644,22 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 		);
 	
 	}
+
+	//transforming profile test 
+	$scope.transform = function() {
+		//var url = 'data/profiles/raw/edwin_behavior_v3.json';
+		var url = 'data/profiles/raw/edwin_text_v3.json';
+		$http.get(url).then(function(res){
+			console.log('raw profile: ', res.data);
+			var v3 = Reports.transformV3(res.data);
+			console.log('v3 profile transformed: ', v3);
+			store.set('v3', v3);
+		})
+	}
+	
+	$scope.openV3 = function() {
+		$state.go('app.traits', {file: 'Edwin Pun_text'});
+	}
 })
 
 .controller('AnalyzeCtrl', function($scope, InitFile, $http, $ionicModal, $window, $ionicPopup, $ionicLoading, Reports, $state, Auths, External, ApiSvc, Profiling, Utils) {
@@ -897,8 +913,8 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			console.log(profile);
 			$window.localStorage.rawReport = JSON.stringify(profile);
 			
-			var report = profile; //response.data;
-			var piTree = Reports.transform(report);
+			//var report = profile; //response.data;
+			//var piTree = Reports.transform(report); //this is v2 only 
 
 
 			progBar.close();
@@ -931,8 +947,9 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 
 			
 			$scope.modal.hide(); // or remove???
-			//$state.go('app.traits', {person: target.name});
-			$state.go('app.traits', {file: Reports.list().pop().file});
+			var reports = Reports.list();
+			$state.go('app.traits', {file: reports[reports.length-1].file});
+			//$state.go('app.traits', {file: Reports.list().pop().file});
 			
 		}
 		
@@ -1435,18 +1452,63 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	} else {
 		$scope.report = report;
 		
-		if ($scope.report) {
+		if ($scope.report && $scope.report.summary) {
 			$scope.summary = $scope.report.summary;
-			$scope.behaviors = $scope.report.behaviors;
-			console.log($scope.report);
+			//only for v2
+			if ($scope.report.behaviors) $scope.behaviors = $scope.report.behaviors;
+			console.log('report: ', $scope.report);
 		} else {
 			$ionicPopup.alert({
 				title: 'Report Empty',
-				template: 'The report is empty or has an empty summary.'
+				template: 'The report is empty or has an empty Summary.'
 			})
 		}		
 	}
 })
+
+
+.controller('PreferencesCtrl', function($scope, $state, $stateParams, Utils, report, $ionicPopup) {
+
+	console.log('PreferencesCtrl');
+	console.log('report: ', report);
+	
+	$scope.file = decodeURI($stateParams.file);
+	$scope.name = $scope.file.split('_')[0];
+	
+	//error checking? on file on report???
+	//$scope.report = Reports.get($scope.file);
+	//check error! 
+	if (report instanceof Error) {
+		Utils.error($ionicPopup, report);
+	} else {
+		$scope.report = report;
+		
+		if ($scope.report && $scope.report.preferences) {
+			$scope.preferences = $scope.report.preferences;
+			console.log('report: ', $scope.report);
+		} else {
+			$ionicPopup.alert({
+				title: 'Report Empty',
+				template: 'The report is empty or has an empty Preferences.'
+			})
+		}		
+	}
+  
+	$scope.open = function(cat) {
+		console.log('cat: ', cat);
+		$state.go('app.preference', {category: cat});
+	}
+  
+})
+
+
+.controller('PreferenceCtrl', function($scope, $stateParams) {
+	$scope.category = $stateParams.category;
+	console.log('cat: ', $scope.category);
+})
+
+
+
 
 .controller('ReportCtrl', function($scope, $rootScope, $state, Reports, $stateParams, InitFile, $ionicTabsDelegate, $timeout, report, traitsSummary, $ionicPopup, Utils) { //, facetTree) {
 	

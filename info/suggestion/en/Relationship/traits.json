@@ -430,7 +430,7 @@
 			}]
 		},
 		{
-			"traitName": "Liberalism",
+			"traitName": "Authority-challenging",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -948,7 +948,7 @@
 					"combos": {
 						"traits": [{
 							"facet": "Agreeableness",
-							"trait": "Morality"
+							"trait": "Uncompromising"
 						}],
 						"info": {
 							"low": {
@@ -971,7 +971,7 @@
 					"combos": {
 						"traits": [{
 							"facet": "Agreeableness",
-							"trait": "Morality"
+							"trait": "Uncompromising"
 						}],
 						"info": {
 							"low": {
@@ -994,7 +994,7 @@
 					"combos": {
 						"traits": [{
 							"facet": "Agreeableness",
-							"trait": "Morality"
+							"trait": "Uncompromising"
 						}],
 						"info": {
 							"low": {
@@ -1019,7 +1019,7 @@
 					"combos": {
 						"traits": [{
 							"facet": "Agreeableness",
-							"trait": "Morality"
+							"trait": "Uncompromising"
 						},
 						{
 							"facet": "Conscientiousness",
@@ -1081,7 +1081,7 @@
 					"combos": {
 						"traits": [{
 							"facet": "Agreeableness",
-							"trait": "Morality"
+							"trait": "Uncompromising"
 						}],
 						"info": {
 							"medium": {
@@ -2026,7 +2026,7 @@
 			}]
 		},
 		{
-			"traitName": "Friendliness",
+			"traitName": "Outgoing",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -2514,7 +2514,7 @@
 			}]
 		},
 		{
-			"traitName": "Morality",
+			"traitName": "Uncompromising",
 			"traitType": "trait",
 			"views": [{
 				"viewName": "Love",				
@@ -2816,7 +2816,7 @@
 			}]
 		}]
 	},
-	"Neuroticism": {
+	"Emotional range": {
 		"traitName": "Emotional range",
 		"traitType": "facet",
 		"general": {
@@ -2826,7 +2826,7 @@
 		},
 		"perspective": "This analysis is from the perspective of relationship building, you can change perspective using toggle button located in the top right corner of the navigation bar.",		
 		"children": [{
-			"traitName": "Anger",
+			"traitName": "Fiery",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -2905,7 +2905,7 @@
 			}]
 		},
 		{
-			"traitName": "Anxiety",
+			"traitName": "Prone to worry",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -2983,7 +2983,7 @@
 					"combos": {
 						"traits": [{
 							"facet": "Extraversion",
-							"trait": "Friendliness"
+							"trait": "Outgoing"
 						}],
 						"info": {
 							"high": {
@@ -2999,7 +2999,7 @@
 			}]
 		},
 		{
-			"traitName": "Depression",
+			"traitName": "Melancholy",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{
@@ -3236,7 +3236,7 @@
 			}]
 		},
 		{
-			"traitName": "Vulnerability",
+			"traitName": "Susceptible to stress",
 			"traitType": "trait",
 			"AllViews": "true",
 			"views": [{

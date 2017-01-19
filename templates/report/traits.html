@@ -37,6 +37,10 @@
 		{{'Summary' | translate}}
 	  </ion-item>
 	  
+		<ion-item href="#/app/preferences/{{file}}">
+			{{'Preferences' | translate }}
+		</ion-item>
+	  
 		<!--ion-item ng-repeat="facet in facets" href="#/app/report/{{file}}/{{facet}}/{{score}}/perspectives/Relationship/facet"-->		
 		<ion-item ng-repeat="facet in facets" ng-click="openFacet(facet)">	  
 			{{facet | translate}}

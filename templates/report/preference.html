@@ -1,0 +1,16 @@
+<ion-view view-title="{{category.name}}">
+	<ion-content>
+		<h4>{{category.name}}</h4>
+		
+		<!--div ng-repeat = "pref in category.children">
+			<div>{{pref.name}} : {{pref.value}}</div>
+		</div-->
+	
+		<ion-list>
+			<!--ion-item ng-repeat="cat in preferences" href="#/app/preference/{{pref.name}}"-->
+			<ion-item ng-repeat="pref in category.children">
+				{{pref.name}} : <b>{{pref.value}}</b>
+			</ion-item>
+		</ion-list>	
+	</ion-content>
+</ion-view>
