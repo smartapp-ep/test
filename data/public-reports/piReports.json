@@ -3,5 +3,15 @@
 	"file": "Hillary Clinton_twitter",
 	"image": "https://pbs.twimg.com/profile_images/796243884636512260/zHVoWqKV_normal.jpg",
 	"source": "twitter",
-	"date": "2016-12-02T02:43:31.947Z"
+	"date": "2016-12-02T02:43:31.947Z",
+	"$$hashKey": "object:79"
+},
+{
+	"name": "Donald J. Trump",
+	"file": "Donald J. Trump_twitter",
+	"image": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+	"source": "twitter",
+	"date": "2017-01-23T02:44:54.357Z",
+	"$$hashKey": "object:80"
 }]
+

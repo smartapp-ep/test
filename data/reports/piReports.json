@@ -1,57 +1,17 @@
 [{
-	"name": "Craig Broadbent",
-	"file": "Craig Broadbent_yammer",
-	"image": "https://mug0.assets-yammer.com/mugshot/images/48x48/5Z7j3CGvSVPqrSgbWQ0j5s77BnxD3Nnz",
-	"source": "yammer",
-	"date": "2016-07-31T05:38:10.264Z",
-	"$$hashKey": "object:79"
-},
-{
-	"name": "Kathy Lien",
-	"file": "Kathy Lien_twitter",
-	"image": "https://pbs.twimg.com/profile_images/2628203299/0a7465ff3a133d893d9fb65cbc2a18b7_normal.jpeg",
+	"name": "Hillary Clinton",
+	"file": "Hillary Clinton_twitter",
+	"image": "https://pbs.twimg.com/profile_images/796243884636512260/zHVoWqKV_normal.jpg",
 	"source": "twitter",
-	"date": "2016-07-31T06:08:38.403Z",
-	"$$hashKey": "object:80"
+	"date": "2016-12-02T02:43:31.947Z",
+	"$$hashKey": "object:80"	
 },
 {
 	"name": "Edwin Pun",
-	"file": "Edwin Pun_facebook",
+	"file": "Edwin Pun_text",
 	"image": "http://graph.facebook.com/10154894005144897/picture",
-	"source": "facebook",
+	"source": "text",
 	"date": "2016-07-31T06:25:27.879Z",
-	"$$hashKey": "object:81"
-},
-{
-	"name": "Elissa Muller",
-	"file": "Elissa Muller_yammer",
-	"image": "https://mug0.assets-yammer.com/mugshot/images/48x48/Kl9bD1tWHj-M4QnG82r4qp2GtG9bFQ05",
-	"source": "yammer",
-	"date": "2016-07-31T12:47:30.446Z",
-	"$$hashKey": "object:82"
-},
-{
-	"name": "Cheryl Bellamy1",
-	"file": "Cheryl Bellamy1_yammer",
-	"image": "https://mug0.assets-yammer.com/mugshot/images/48x48/3CBQmM7hs7jdbFWDN92Bf2GCr7vBPTqq",
-	"source": "yammer",
-	"date": "2016-07-31T13:08:12.550Z",
-	"$$hashKey": "object:83"
-},
-{
-	"name": "Cassandra Read-Hamilton",
-	"file": "Cassandra Read-Hamilton_yammer",
-	"image": "https://mug0.assets-yammer.com/mugshot/images/48x48/V5WCd4FQpm29JL2ZQnxl3347pdFjW-1P",
-	"source": "yammer",
-	"date": "2016-07-31T13:11:10.704Z",
-	"$$hashKey": "object:84"
-},
-{
-	"name": "Hillary Clinton",
-	"file": "Hillary Clinton_twitter",
-	"image": "https://pbs.twimg.com/profile_images/2628203299/0a7465ff3a133d893d9fb65cbc2a18b7_normal.jpeg",
-	"source": "twitter",
-	"date": "2016-10-26T06:08:38.403Z",
-	"$$hashKey": "object:85"
-}
-]
+	"$$hashKey": "object:80"		
+}]
+

@@ -18,7 +18,9 @@ var billingMock = false;
 
 //var server = 'https://direct-keel-136302.appspot.com';
 
+var admobTest = true;
 
+//var defaultServer = 'pi360.herokuapp.com';
 var defaultServer = 'p360test.herokuapp.com';
 //var defaultServer = '192.168.1.12';
 //var defaultServer = '192.168.2.151';
@@ -62,9 +64,11 @@ var storeUrl = {
 }
 var storeUrls = 'ios: applestore/appId; android: androidplay/appId';
 
-var storeUrlsSvr = server + '/pi/personality360';
-
+//var storeUrlsSvr = server + '/pi/personality360';
+var storeUrlsSvr = server + '/appinvite.html';
 var version = 'v1';
+
+var fbLtd = 300;
 
 
 //for client side 
@@ -787,13 +791,16 @@ services.service('facebook', function(store, $timeout) {
 		var prof;
 		if (!id || id == 'me' || id == store.get('pifacebook') ) {
 			prof = profile || store.get('facebookProfile');
+			
+			console.log('facebookProfile: ', prof);
+			
 			if (prof) return cb(null, prof);
 		}
 		
 		id = id || 'me';
 		getToken(function(err, token) {
 			if (err) return cb(err);
-			clt.api('/'+id + '?accessToken=' + token, function(res) {
+			clt.api('/'+id + '?fields=name' + '&accessToken=' + token, ['public_profile'], function(res) {
 				console.log('res: ', res);
 				if (res && !res.error) {
 					console.log('res: ', res);
@@ -809,7 +816,10 @@ services.service('facebook', function(store, $timeout) {
 					console.log('err fr get profile: ', res);
 					return cb(err, null);
 				}
-			})			
+			}, function(err){
+				console.log('err from calling api /id: ', err);
+				return cb(err);
+			});							
 		})		
 	}
 	
@@ -821,16 +831,34 @@ services.service('facebook', function(store, $timeout) {
 		id = id || 'me';
 		getToken(function(err, token) {
 			if (err) return cb(err);
-			clt.api('/'+id + '/posts?accessToken=' + token, function(res) {
+			
+			console.log('');
+			console.log('token from getToken - called from getPosts', token );
+			console.log('');
+			
+			clt.api('/'+id + '/posts?limit=' + fbLtd + '&accessToken=' + token, ['user_posts'], function(res) {
+				
+				console.log('');
+				console.log('res from fb posts api: ', res);
+				console.log('');
+				
 				if (res && !res.error) {
 					/* handle the result */
 					//var posts = []
-					var posts = '';
+					//var posts = '';
+
+					/*
 					res.data.forEach(function(itm) {
 						//posts.push(itm);
 						posts += itm.message + ' ';
 					})
+					*/
+					
+					var posts = processFB(res.data);
+					
 					return cb(null, posts);
+					
+					
 				}
 				console.log('err from getPosts: ', err);
 				//ext check size before calling api???
@@ -840,8 +868,27 @@ services.service('facebook', function(store, $timeout) {
 				error.message = 'problem in getting posts from ' + src + ' ' + res;
 				return cb(error);
 
+			}, function(err){
+				console.log('err from calling api post: ', err);
+				return cb(err);
 			});			
 		})				
+	}
+	
+	//convert fb.data into IBM content items 
+	function processFB(fbInput) {
+		var result = [];
+		fbInput.forEach(function(itm) {
+			if (itm.message) {
+				var contentItm = {
+					content: itm.message,
+					created: new Date(itm.created_time).getTime()
+				};
+				//result.unshift(contentItm);
+				result.push(contentItm);
+			}
+		})
+		return result;
 	}
 	
 	return {
@@ -1196,7 +1243,7 @@ name: "My name"
 						return getProfileClientSide(src, profile.id, cb);
 					})
 				} else {
-					//??? //ever tested!!! **** 
+					//??? //never tested!!! **** 
 					return getProfileClientSide(src, target, cb);
 				}
 			//...
@@ -1216,19 +1263,23 @@ name: "My name"
 	function getProfileClientSide(src, target, cb) {
 						getPosts(src, target, function(err, posts) {
 							if (err) return cb(err);
-							//check size!
-							if (posts.split(' ').length < requiredTxt) {
+							
+							//check size! (leave it this to ibm api or server (bef calling it)) ... very little dif
+							/*
+							if (typeof(posts) == 'string' && posts.split(' ').length < requiredTxt) {
 								
 								console.log('am i here 2 ?');
 								
 								var error = new Error();
 								error.name = 'NotEnoughText';
-								error.message = 'there\'s not enough texts for analysis';
+								error.message = 'There\'s not enough texts for analysis';
 								
 								console.log('what the heck');
 								
 								return cb(error, null);
 							} 
+							*/
+							
 							return ApiSvc.getProfile('text', posts)
 							.then(function(res) {
 								return cb(null, res);
@@ -1483,6 +1534,7 @@ name: "My name"
 	}
 	
 	return {
+
 		login: login, 	
 		svc: svc,
 		getFriends: getFriends,
@@ -1499,7 +1551,6 @@ name: "My name"
 		getPosts: getPosts //for test
 	}
 });
-
 services.service('ErrHandler', function() {
 	return {
 		msgPrompt: function(msg) {
@@ -1525,7 +1576,9 @@ services.service('filestore', function($http) {
 	var test;
 
 	function getFile (file) {
-		return $http.get(fileUrl + '/' + file.replace(' ', '__') + '.json');
+		console.log('');
+		console.log('filestore, file & converted file: ', file, file.replace(/ /g, '__') + '.json');
+		return $http.get(fileUrl + '/' + file.replace(/ /g, '__') + '.json');
 	}
 
 	function initFileReports() {
@@ -1783,6 +1836,7 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 		prof.process_language = tree.processed_language;
 		prof.tree = newTree;
 		prof.summary = tree.summary.replace(/\n/g, '<br><br>');
+		prof.type = tree.type;
 		return prof;
 	}	
 	
@@ -1975,9 +2029,9 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 	function refresh() {
 		reports = store.get('piRerports', true);
 		console.log('reports: from refresh: ', reports);
-		//setTimeout(function() {
+		//setTimeout(function() ((
 			return list();
-		//}, 1000)
+		//)), 1000)
 	}
 	
 	function getPromise(file) {
@@ -2031,7 +2085,7 @@ services.service('Reports', function(store, filestore, $timeout, $q, $interval, 
 			var progress = 0;
 			
 			piReports.forEach(function(itm) {
-				var fileUrl = dir + '/' + itm.file.replace(' ', '__') + '.json';
+				var fileUrl = dir + '/' + itm.file.replace(/ /g, '__') + '.json';
 				$http.get(fileUrl).then(function(res) {
 					var file = res.data;
 					store.set(itm.file, file);
@@ -2395,6 +2449,11 @@ services.service('CreditSvc', function(ApiSvc, External, store, PaymentSvc) {
 	}
 	
 	function save(cr) {
+		
+		console.log('');
+		console.log('CreditSvc.save. cr: ', cr);
+		console.log('');
+		
 		var src = cr.src;
 		store.set('credits/' + src, cr);
 	}
@@ -3318,6 +3377,7 @@ services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
 	
 	//var prodId = 'credits';
 	var prodId = 'testcredits01_bundle_3';
+	var sku = 'testcredits01_bundle_3';
 	
 	var platform; 
 	//mock:
@@ -3376,22 +3436,25 @@ services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
 		//check if already own 
 			//alternatively (better?) check when error during purchase (?)
 			
-		iabSvc.buy(function(res) {
+		return iabSvc.buy(function(res) {
 			console.log('res from purchase: ', res);
 			var claim = prepareClaim(res);
 			return cb(null, {data: claim});
 		}, function(err) {
 			
+			console.log('err from iabSvc.buy: ', err);
 			//if err is owned, then consume it ... 
 			if (typeof(err) == 'string' && err.indexOf('Item Already Owned') != -1) {
 				return consumeThenBuy(num, cb);
+			} else {
+				return cb(err);
 			}
-			return cb(err);
 		}, prodMap[num]);
 	}
 	
 	
 	function consumeThenBuy(num, cb) {
+		/*
 		iabSvc.consumePurchase(function(res) {
 			//also do a refresh just in case (eg google play crashes) of infinite loop 
 			iab.Svc.refreshPurchases(function(res) {
@@ -3403,6 +3466,20 @@ services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
 		}, function(err) {
 			return cb(err);
 		}, prodMap[num]);
+		*/
+		
+		consumePurchase(prodMap[num], function(err, res){
+			if (typeof(err) == 'string' && err.indexOf('Item is not Owned') != -1) {
+				//error other than could not consume because owned
+				return cb(err);
+			}
+			//item not owned or consumed - continue to purchase 
+			iabSvc.refreshPurchases(function(res) {
+				return purchase(num, cb);
+			}, function(err) {
+				return cb(err);
+			})			
+		})
 	}
 	
 	function purchaseStatic(prodId, cb) {
@@ -3430,15 +3507,65 @@ services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
 		}, prodId)
 	}
 	
+	//purchase & claim for verification & claim for credit 
+	//no need to use this , just use purchase!
+	/*
+	function purchaseVerify(num, cb) ...
+	*/
+	
+
 	function consumePurchase(prodId, cb) {
-		prodId = prodId || 'android.test.purchased';
-		iabSvc.consumePurchase(function(res) {
+		prodId = prodId || sku;
+			
+			iabSvc.consumePurchase(function(res) {
+				return cb(null, res);
+			}, function(err) {
+				return cb(err);
+			}, prodId);		
+
+	}	
+
+	function getOwnedProduct(cb) {
+		//prodId = prodId || sku;
+		iabSvc.getPurchases(function(res){
+			console.log('res from getPurchase : ', res);
 			return cb(null, res);
 		}, function(err) {
+			console.log('err from getPurchase: ', err);
 			return cb(err);
-		}, prodId);
+		})
 	}
-
+	
+	function getPurchaseToken(prodId, cb) {
+		//need to deal with when no own product (???)
+		getOwnedProduct(function(err, res){
+			if (err) return cb(err);
+			if (!res || res.length==0) {
+				//var error = new Error();
+				//error.name;
+				//error.message;
+				//return cb(new Error());
+				return cb(null, null);
+			}
+			var token = findPurchaseToken(res, prodId);
+			return cb(null, token);
+		})
+	}
+	
+	function findPurchaseToken(prods, prodId) {
+		var token;
+		prods.forEach(function(itm) {
+			if (itm.productId == prodId) {
+				console.log('found it! returning token.')
+				console.log('token: ', itm.purchaseToken);
+				return token = itm.purchaseToken;
+			}
+		})
+		//console.log('should have returned and never seen');
+		return token;
+	}
+	
+	
 
 	//function to produce / prepare claim from payment res 
 	function prepareClaimAndroid(res) {
@@ -3463,8 +3590,10 @@ services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
 		purchase: purchase,
 		purchaseStatic: purchaseStatic,
 		purchaseStaticVerify: purchaseStaticVerify,
+		//purchaseVerify: purchaseVerify,
 		consumePurchase: consumePurchase,
-		getProductId: getProductId 
+		getProductId: getProductId, 
+		getOwnedProduct: getOwnedProduct
 	}
 })
 
@@ -3566,8 +3695,14 @@ services.service('Profiling', function(CreditSvc, External, ApiSvc) {
 			
 			if (err) return cb(err);
 			
+			console.log('');
+			console.log('profiling.getProfile res: ', res);
+			console.log('');
+			
 			//CreditSvc.use(res.data.src);//don't use ... problematic ...
 			CreditSvc.save(res.data.credit)
+			
+			if (res.data.credit.type == 'paid') res.data.profile.type = 'paid';
 			return cb(null, res);			
 		})
 
@@ -3579,5 +3714,124 @@ services.service('Profiling', function(CreditSvc, External, ApiSvc) {
 })
 
 
+services.service('AdmobSvc', function($ionicPlatform) {
+	
+		var pubIdAndroid = 'pub-1483757918215780';
+		var adBannerIdAndroid = 'ca-app-pub-1483757918215780/2193572553';
+		var interstitialIdAndroid = 'ca-app-pub-1483757918215780/7493875359';
+		
+	var admob, bannerOpts, interstitialOpts;
+	
+	$ionicPlatform.ready(function() {
+		if(window.plugins && window.plugins.AdMob) {
+			admob = window.plugins.AdMob;
+                var admob_key = device.platform == "Android" ? adBannerIdAndroid : "IOS_PUBLISHER_KEY";
+				var admob_interstitialkey = device.platform == "Android" ? interstitialIdAndroid : "IOS_interstitial_KEY"
+                //var admob = window.plugins.AdMob;
+				
+				var bannerAdOpts = {
+                    'publisherId': admob_key,
+                    //'adSize': admob.AD_SIZE.BANNER,
+                    'bannerAtTop': false					
+				}
+				
+				var interstitialAdOpts = {
+                    'interstitialAdId': admob_interstitialkey,
+                    'autoShow': true,					
+				}
+					
+			init(bannerAdOpts, interstitialAdOpts)
+		}
+	})
+	
+	var init = function(bannerAdOpts, interstitialAdOpts) {
+		console.log('');
+		console.log('AdmobSvc: did i get init?')
+		//admob = admobPlugin;
+		bannerOpts = bannerAdOpts;
+		interstitialOpts = interstitialAdOpts;
+	}
+	
+	var createBannerView = function() { 
+		
+		console.log('');
+		console.log('createBannerView');
+		
+			if (admob) {
+				
+				console.log('admob exists...calling admob.createBannerview');
+				
+                admob.createBannerView( 
+                    //{
+                    //    'publisherId': admob_key,
+                    //    'adSize': admob.AD_SIZE.BANNER,
+                    //    'bannerAtTop': false
+                    //},
+					bannerOpts,
+                    function() {
+                        admob.requestAd(
+                            { 'isTesting': admobTest }, 
+                            function() {
+								console.log('successfully requestedAd, about to show it');
+                                admob.showAd(true);
+                            }, 
+                            function() { console.log('failed to request ad'); }
+                        );
+                    }, 
+                    function() { console.log('failed to create banner view'); }
+                );
+			}
+	}
 
+	function createInterstitialView() {
+		
+		console.log('');
+		console.log('createInterstitialView');
+		
+			if (admob) {	
+				//interstitial
+				console.log('about to call admob.createInterstitialView');
+				
+				admob.createInterstitialView(
+                    //{
+                    //    'interstitialAdId': admob_interstitialkey,
+                    //    'autoShow': true,
+                    //    'isTesting': true
+                    //},
+					interstitialOpts,
+                    function() {
+                        admob.requestInterstitialAd(
+                            { 'isTesting': admobTest }, 
+                            function() {
+								console.log('successfully requestedInterstitailAd, about to show it');
+                                admob.showInterstitialAd(true);
+                            }, 
+                            function() { console.log('failed to request Interstital ad'); }
+                        );
+                    }, 
+                    function() { console.log('failed to create interstitial view'); }				
+				);	
+			}
+	}
+	
+	function showInterstitial(reportType){
+		
+		console.log('');
+		console.log('showInterstitial');
+		
+		if (reportType == 'paid') {
+			return;
+		}
+		
+		console.log('about to call createInterstitialView');
+		createInterstitialView();
+	}
+	
+	return {
+		init: init,
+		createBannerView: createBannerView,
+		createInterstitialView: createInterstitialView,
+		showInterstitial: showInterstitial
+	}
+})
 

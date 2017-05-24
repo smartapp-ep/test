@@ -51,21 +51,34 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
   $scope.groups = [
     { name: 'Account', id: 1, href: 'account', 
 		items: [
-		{ subName: 'Login', subId: '1-1', href: 'login//'}, 
-		{ subName: 'Settings', subId: '1-1', href: 'settings'}, 
-		{ subName: 'Notification', subId: '1-1', href: 'notification'}, 
-		{ subName: 'Link Social Accounts', subId: '1-2', href: 'linkaccounts' }, 
-		{ subName: 'Logout', subId: '1-1', href: 'logout'}
+			{ subName: 'Login', subId: '1-1', href: 'login//'}, 
+			//(( subName: 'Settings', subId: '1-2', href: 'settings', ))
+			//(( subName: 'Notification', subId: '1-3', href: 'notification' )), 
+			//(( subName: 'Link Social Accounts', subId: '1-4', href: 'linkaccounts' )), 
+			//(( subName: 'Suport', subId: '1-6', href: 'support' )),
+			{ subName: 'Feedbacks', subId: '1-7', href: 'feedbacks'},
+			{ subName: 'Logout', subId: '1-5', href: 'logout'}
 		]
 	},
     { name: 'Credits', id: 1, href: 'credits', 
 		items: [
-		{ subName: 'My Credits', subId: '1-1', href: 'records' }, 
-		{ subName: 'Free', subId: '1-2', href:'free' }, 
-		{ subName: 'Promotion', subId: '1-3', href: 'prom' }, 
-		{ subName: 'Purchase', subId: '1-3', href: 'paid' }
+			{ subName: 'My Credits', subId: '1-1', href: 'records' }, 
+			{ subName: 'Free', subId: '1-2', href:'free' }, 
+			{ subName: 'Promotion', subId: '1-3', href: 'prom' }, 
+			{ subName: 'Purchase', subId: '1-3', href: 'paid' }
 		]
-	} 
+	},
+	{
+		name: 'Info', id: 1, href: 'info',
+		items: [
+			{ subName: 'Introduction', subId: '1-1', href: 'intro' },
+			{ subName: 'Analyze', subId: '1-2', href: 'analyze' },
+			//(( subName: 'Authentication', subId: '1-3', href: 'auth' )),
+			{ subName: 	'Reports', subId: '1-4', href: 'reports'},
+			{ subName: 'Account', subId: '1-5', href: 'account' },
+			{ subName: 'Credits', subId: '1-6', href: 'credits' }
+		]
+	}
   ];
   
   
@@ -557,19 +570,20 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			console.log('res from purchase: ', res);
 		})
 	}
-
+	
+	//purchase (verified & claimed, credit added if successfully)
 	$scope.testpayDynamic = function() {
-		PaymentSvc.purchaseStatic(prodId, function(err, res) {	
+		PaymentSvc.purchase(3, function(err, res) {	
 			if (err) console.log('err from purchase: ', err);
 			console.log('res from purchase: ', res);
 		})
 	}	
 
-	
+	//pay & verify (claim)
 	$scope.testpayVerify = function () {
 		//CreditSvc.acquire()
 		//PaymentSvc.purchaseStaticVerfiy(null, function(err, res) {
-		PaymentSvc.purchaseStaticVerify(prodId, function(err, res) {
+		PaymentSvc.purchase(3, function(err, res) {
 			if (err) {
 				console.log('err from purchase: ', err);
 				return;
@@ -580,6 +594,16 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 				console.log('res from payment verified: ', res);
 			})
 		})		
+	}
+	
+	$scope.payCredit = function() {
+		CreditSvc.acquire(3, function(err, res) {
+			if (err) {
+				console.log('err from credit.acquire: ', err);
+			} else {
+				console.log('res from credit.acquire: ', res);
+			}
+		})
 	}
 	
 
@@ -601,6 +625,17 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			console.log('res from consume: ', res);
 		})			
 	}	
+	
+	
+	$scope.getOwnedProduct = function() {
+		PaymentSvc.getOwnedProduct(function(err, res){
+			if (err) {
+				console.log('err from getOwnProduct : ', err);
+			} else {
+				console.log('res from getOwnProduct : ', res);
+			}
+		})
+	}
 	
 	
 	$scope.appInvite = function() {
@@ -653,7 +688,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			console.log('raw profile: ', res.data);
 			var v3 = Reports.transformV3(res.data);
 			console.log('v3 profile transformed: ', v3);
-			store.set('v3', v3);
+			store.set('Edwin Pun_text', v3);
 		})
 	}
 	
@@ -911,7 +946,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			
 			console.log('profile');
 			console.log(profile);
-			$window.localStorage.rawReport = JSON.stringify(profile);
+			//$window.localStorage.rawReport = JSON.stringify(profile);
 			
 			//var report = profile; //response.data;
 			//var piTree = Reports.transform(report); //this is v2 only 
@@ -1467,7 +1502,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 })
 
 
-.controller('PreferencesCtrl', function($scope, $state, $stateParams, Utils, report, $ionicPopup) {
+.controller('PreferencesCtrl', function($scope, $state, $stateParams, Utils, report, $ionicPopup, AdmobSvc) {
 
 	console.log('PreferencesCtrl');
 	console.log('report: ', report);
@@ -1481,8 +1516,10 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	if (report instanceof Error) {
 		Utils.error($ionicPopup, report);
 	} else {
-		$scope.report = report;
 		
+		AdmobSvc.showInterstitial(report.type);
+		
+		$scope.report = report;
 		if ($scope.report && $scope.report.preferences) {
 			$scope.preferences = $scope.report.preferences;
 			console.log('report: ', $scope.report);
@@ -1510,7 +1547,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 
 
 
-.controller('ReportCtrl', function($scope, $rootScope, $state, Reports, $stateParams, InitFile, $ionicTabsDelegate, $timeout, report, traitsSummary, $ionicPopup, Utils) { //, facetTree) {
+.controller('ReportCtrl', function($scope, $rootScope, $state, Reports, $stateParams, InitFile, $ionicTabsDelegate, $timeout, report, traitsSummary, $ionicPopup, Utils, AdmobSvc) { //, facetTree) {
 	
 	console.log('--ReportCtrl');
 	console.log('params: ');
@@ -1530,7 +1567,8 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	if (report instanceof Error) return Utils.error($ionicPopup, report);
 	if (traitsSummary instanceof Error) return Utils.error($ionicPopup, traitsSummary);
 	
-	
+		AdmobSvc.showInterstitial(report.type);
+		
 		$scope.tree = $rootScope.tree =report.tree[$scope.facet];
 		
 		$scope.scoreTest = false;
@@ -2840,9 +2878,9 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 
 
 ///////////
-// login 
+// account 
 
-.controller('LoginCtrl', function($scope, $state, store, Auths, $stateParams, $ionicLoading, $http, $timeout, $ionicPopup ) {
+.controller('LoginCtrl', function($scope, $state, store, Auths, $stateParams, $ionicLoading, $http, $timeout, $ionicPopup, $ionicHistory ) {
 	
 	//$scope.source = 'something';
 	console.log('');
@@ -2941,7 +2979,10 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	//child also need to call this... (?)
   function postLogin() {
 		if ($stateParams.nextState) {
-		
+			$ionicHistory.nextViewOptions({
+				historyRoot: true,
+				disableBack: true
+			});
 			$state.go($stateParams.nextState, $stateParams.nextParams)
 		} else {
 				//show login details
@@ -3092,7 +3133,8 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			//$state.go($state.current, {}, {reload: true});
 			//$window.location.reload(true);
 			$scope.authMsg +=  $scope.lastSource + ' ';
-			
+			console.log('');
+			console.log('authMsg: ', authMsg);
 		}	  
 	}
 	
@@ -3135,6 +3177,42 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 	  console.log('beforeEnter');
 		doLogout();
   }); 	
+})
+
+
+.controller('FeedbacksCtrl', function($ionicPopup, Utils, $scope){
+	console.log('');
+	console.log('=====');
+	console.log('FeedbackCtrl');
+	if (window.cordova && window.cordova.plugins && window.cordova.plugins.email) {
+		var email = cordova.plugins.email;
+		email.isAvailable(function(ava){
+			if (ava) {
+				emailAvailable();
+			} else {
+				emailUnavailable();
+			}
+		})
+	} else {
+		emailUnavailable();
+	}
+	
+	function emailAvailable(email, cb) {
+		console.log('email available');
+		email.open({
+			to: ['feedback@personality360.xyz'],
+			subject: 'Feedbacks',
+			body: 'I\'d like to provide the following feedbacks: ',
+		}, cb)
+	}
+	
+	function emailUnavailable() {
+		console.log('cordova or email unavailable');
+		$ionicPopup.alert({
+			titel: 'No email app detected',
+			template: 'Either cordova or email app is not available on the phone, please manually send an email to feedbacks@personality360.xyz.' // or go to personality360.xyz/feedbacks'
+		})
+	}
 })
 
 ;

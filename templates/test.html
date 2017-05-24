@@ -139,12 +139,13 @@
 		</div>	
 	</details>
 	
+	<br>
 	<div>
 	<h4>getDeviceInfo</h4>
 	<button ng-click = "getDeviceInfo()"> getDeviceInfo </button>
 	</div>
 
-
+	<br>
 	<div>
 	<h4>setServer</h4>
 	<label class="item item-input">
@@ -154,40 +155,61 @@
 	<button ng-click = "setServer('https://' + serverName)">set server</button>
 	</div>
 
+	<br>
 	<div>
 	<h4>Import Report</h4>
 	<button ng-click = "importReport('Edwin Pun_yammer')"> Import test </button>
 	</div>
 	
+	<br>
 	<details>
 		<summary>payment tests</summary>
+		<br>
 		<div>
 			<h4>static payment response</h4>
 			<button ng-click = "testpay()"> Payment test </button>
 		</div>
 		
+		<br>
 		<div>
 			<h4>dynamic test payment response</h4>
 			<button ng-click = "testpayDynamic()"> Dynamic Payment test </button>
 		</div>	
 		
+		<br>
 		<div>
 			<h4>dynamic test payment verify</h4>
 			<button ng-click = "testpayVerify()"> Payment & verify test </button>
 		</div>		
 
+		<br>
+		<div>
+			<h4>pay credit test</h4>
+			<button ng-click = "payCredit()"> Pay credit </button>
+		</div>	
+		
+		<br>
 		<div>
 			<h4>dynamic test consume</h4>
-			<button ng-click = "testConsume()"> Comsume test </button>
+			<button ng-click = "testConsume()"> Consume test </button>
 		</div>
 		
-		
+		<br>
 		<div>
 			<h4>static test consume</h4>
-			<button ng-click = "testConsumeStatic()"> Comsume test </button>
+			<button ng-click = "testConsumeStatic()"> Comsume static test </button>
 		</div>
+		
+		<br>
+		<div>
+			<h4>owned products</h4>
+			<button ng-click = "getOwnedProduct()"> get owned products </button>
+		</div>
+
+		
 	</details>
 	
+	<br>
 	<div>
 		<h4> app invite test </h4>
 		<button ng-click = "appInvite()"> invite </button>

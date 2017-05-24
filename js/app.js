@@ -12,7 +12,18 @@ var app = angular.module('ipa', ['ionic', 'ionic.cloud', 'ionic.native', 'pascal
   'angular-storage',
   'angular-jwt']);
 
-var appVersion = "0.0.0"
+var appVersion = "0.0.0";
+var lang = navigator.language; //test only, should have no initial value? or does not matter 
+var isLangSupported = {
+	'en': true
+}
+
+	//setup lang (must do this before config...)
+	lang = 	lang.split("-")[0];			
+	console.log('lang : ', lang);
+	lang = isLangSupported[lang] ? lang: 'en';
+	console.log('lang : ', lang);
+
 
 app.config(function($ionicConfigProvider, $ionicCloudProvider) {
 		//$ionicConfigProvider.views.maxCache(5);
@@ -31,7 +42,7 @@ app.config(function($ionicConfigProvider, $ionicCloudProvider) {
 });
 
 
-app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translate, init, $cordovaDeeplinks, Utils, $ionicPopup, $ionicLoading, $location, $ionicDeploy) {
+app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translate, init, $cordovaDeeplinks, Utils, $ionicPopup, $ionicLoading, $location, $ionicDeploy, AdmobSvc) {
   
 
   
@@ -139,7 +150,7 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		}
 		
 		if(typeof navigator.globalization !== "undefined") {
-					navigator.globalization.getPreferredLanguage(function(language) {
+					navigator.globalization.getPreferredLanguage(function(language) {							
 						$translate.use((language.value).split("-")[0]).then(function(data) {
 							console.log("SUCCESS -> " + data);
 						}, function(error) {
@@ -198,7 +209,7 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 			console.log('did i get called? - loading public reports, from app.run');
 			if (err) {
 				console.warn('error loading public reports: ', err);
-				Utils.errors($ionicPopup, err);
+				Utils.error($ionicPopup, err);
 			}
 		})
 		
@@ -473,32 +484,41 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 		
 		
 		//admob
+		/*
 		var pubIdAndroid = 'pub-1483757918215780';
 		var adBannerIdAndroid = 'ca-app-pub-1483757918215780/2193572553';
+		var interstitialIdAndroid = 'ca-app-pub-1483757918215780/7493875359';
 		
             if(window.plugins && window.plugins.AdMob) {
                 var admob_key = device.platform == "Android" ? adBannerIdAndroid : "IOS_PUBLISHER_KEY";
+				var admob_interstitialkey = device.platform == "Android" ? interstitialIdAndroid : "IOS_interstitial_KEY"
                 var admob = window.plugins.AdMob;
-                admob.createBannerView( 
-                    {
-                        'publisherId': admob_key,
-                        'adSize': admob.AD_SIZE.BANNER,
-                        'bannerAtTop': false
-                    }, 
-                    function() {
-                        admob.requestAd(
-                            { 'isTesting': true }, 
-                            function() {
-                                admob.showAd(true);
-                            }, 
-                            function() { console.log('failed to request ad'); }
-                        );
-                    }, 
-                    function() { console.log('failed to create banner view'); }
-                );
+				
+				var bannerAdOpts = {
+                    'publisherId': admob_key,
+                    'adSize': admob.AD_SIZE.BANNER,
+                    'bannerAtTop': false					
+				}
+				
+				var interstitialAdOpts = {
+                    'interstitialAdId': admob_interstitialkey,
+                    'autoShow': true,					
+				}
+				
+				AdmobSvc.init(admob, bannerAdOpts, interstitialAdOpts);
+				
+				AdmobSvc.createBannerView();
+				
+			
+				
             }
-
+		*/
 		
+		$timeout(function() {
+			console.log('');
+			console.log('app.run, calling AdmobSvc.createBannerView after waiting for 3s');
+			AdmobSvc.createBannerView();
+		}, 3000);
 	
 	});
  
@@ -506,6 +526,9 @@ app.run(function($ionicPlatform, Language, InitFile, $timeout, $state, $translat
 });
 
 app.config(function($stateProvider, $urlRouterProvider) {
+	
+	console.log('who runs first? - app.config');
+	
   $stateProvider
 
   //root (really just for protractor tests)
@@ -775,8 +798,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	  abstract: true,
 		views: {
 			'menuContent': {
-				templateUrl: 'templates/account/index.html',
-				controller: 'AccountsCtrl'
+				templateUrl: 'templates/account/index.html'//,
+				//controller: 'AccountCtrl'
 			}		
 		},
 		data: {
@@ -786,9 +809,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   .state('app.account.settings', {
 		url: '/settings',
-		templateUrl: 'templates/account/settings.html',
-		controller: 'SettingsCtrl'
-  })
+		templateUrl: 'templates/account/settings.html'//,
+		//controller: 'SettingsCtrl'
+  })  
 
 //////////
 // login (auth0 only???)
@@ -836,11 +859,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
   }) 
   
   
- /* tabs */
-
+	.state('app.account.feedbacks', {
+		url: '/feedbacks',
+		templateUrl: 'templates/account/feedbacks.html',
+		controller: 'FeedbacksCtrl'
+	})  
+  
 	/////////////////////
 	//report per facet
-	//incl 3 perspectives 
+	//incl 3 perspectives & 4 views (tabs)
 	
 	//not only holds layout for tabs but also deal with perspective and prepare data 
  
@@ -1131,8 +1158,58 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	})
 	*/
   
-  
 
+  
+	////////////////
+	// states for infos
+	//  
+	.state('app.info', {
+		url: '/info',
+		abstract: true,
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/info/' + lang + '/index.html' //,
+				//controller: 'AccountsCtrl'
+			}		
+		} 
+	})  
+
+	.state('app.info.intro', {
+		url: '/intro',
+		templateUrl: 'templates/info/' + lang + '/intro.html' //,
+		//controller: 'SettingsCtrl'
+	})  
+
+
+	.state('app.info.analyze', {
+		url: '/analyze',
+		templateUrl: 'templates/info/' + lang + '/analyze.html' //,
+		//controller: 'SettingsCtrl'
+	})
+  
+	.state('app.info.auth', {
+		url: '/auth',
+		templateUrl: 'templates/info/' + lang + '/auth.html' //,
+		//controller: 'SettingsCtrl'
+	})
+
+	.state('app.info.reports', {
+		url: '/reports',
+		templateUrl: 'templates/info/' + lang + '/reports.html' //,
+		//controller: 'SettingsCtrl'
+	})	
+	
+	.state('app.info.account', {
+		url: '/account',
+		templateUrl: 'templates/info/' + lang + '/account.html' //,
+		//controller: 'SettingsCtrl'
+	})	
+	
+	.state('app.info.credits', {
+		url: '/credits',
+		templateUrl: 'templates/info/' + lang + '/credits.html' //,
+		//controller: 'SettingsCtrl'
+	})	
   
   ;
   

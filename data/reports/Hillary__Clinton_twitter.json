@@ -1,444 +1,746 @@
 {
-	"id": "1339835893",
-	"source": "twitter",
-	"word_count": 3837,
-	"processed_lang": "en",
+	"behavior": [{
+		"name": "Sunday",
+		"value": 0.1434
+	},
+	{
+		"name": "Monday",
+		"value": 0.1873
+	},
+	{
+		"name": "Tuesday",
+		"value": 0.2749
+	},
+	{
+		"name": "Wednesday",
+		"value": 0.2749
+	},
+	{
+		"name": "Thursday",
+		"value": 0.0478
+	},
+	{
+		"name": "Friday",
+		"value": 0
+	},
+	{
+		"name": "Saturday",
+		"value": 0.0717
+	},
+	{
+		"name": "0:00 am",
+		"value": 0.0717
+	},
+	{
+		"name": "1:00 am",
+		"value": 0.0478
+	},
+	{
+		"name": "2:00 am",
+		"value": 0.0159
+	},
+	{
+		"name": "3:00 am",
+		"value": 0.0359
+	},
+	{
+		"name": "4:00 am",
+		"value": 0.0319
+	},
+	{
+		"name": "5:00 am",
+		"value": 0.012
+	},
+	{
+		"name": "6:00 am",
+		"value": 0
+	},
+	{
+		"name": "7:00 am",
+		"value": 0
+	},
+	{
+		"name": "8:00 am",
+		"value": 0
+	},
+	{
+		"name": "9:00 am",
+		"value": 0
+	},
+	{
+		"name": "10:00 am",
+		"value": 0.012
+	},
+	{
+		"name": "11:00 am",
+		"value": 0.0239
+	},
+	{
+		"name": "12:00 pm",
+		"value": 0.0279
+	},
+	{
+		"name": "1:00 pm",
+		"value": 0.0398
+	},
+	{
+		"name": "2:00 pm",
+		"value": 0.008
+	},
+	{
+		"name": "3:00 pm",
+		"value": 0.0398
+	},
+	{
+		"name": "4:00 pm",
+		"value": 0.2869
+	},
+	{
+		"name": "5:00 pm",
+		"value": 0.0438
+	},
+	{
+		"name": "6:00 pm",
+		"value": 0.0598
+	},
+	{
+		"name": "7:00 pm",
+		"value": 0.0239
+	},
+	{
+		"name": "8:00 pm",
+		"value": 0.0677
+	},
+	{
+		"name": "9:00 pm",
+		"value": 0.0558
+	},
+	{
+		"name": "10:00 pm",
+		"value": 0.0478
+	},
+	{
+		"name": "11:00 pm",
+		"value": 0.0478
+	}],
+	"preferences": [{
+		"name": "Purchasing Preferences",
+		"children": [{
+			"name": "Likely to be sensitive to ownership cost when buying automobiles",
+			"value": "No"
+		},
+		{
+			"name": "Likely to prefer safety when buying automobiles",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to prefer resale value when buying automobiles",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to prefer quality when buying clothes",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to prefer style when buying clothes",
+			"value": "No"
+		},
+		{
+			"name": "Likely to prefer comfort when buying clothes",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to be influenced by brand name when making product purchases",
+			"value": "50% chance"
+		},
+		{
+			"name": "Likely to be influenced by product utility when making product purchases",
+			"value": "No"
+		},
+		{
+			"name": "Likely to be influenced by online ads when making product purchases",
+			"value": "No"
+		},
+		{
+			"name": "Likely to be influenced by social media when making product purchases",
+			"value": "No"
+		},
+		{
+			"name": "Likely to be influenced by family when making product purchases",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to indulge in spur of the moment purchases",
+			"value": "No"
+		},
+		{
+			"name": "Likely to prefer using credit cards for shopping",
+			"value": "Yes"
+		}]
+	},
+	{
+		"name": "Health & Activity Preferences",
+		"children": [{
+			"name": "Likely to eat out frequently",
+			"value": "No"
+		},
+		{
+			"name": "Likely to eat fast food frequently",
+			"value": "No"
+		},
+		{
+			"name": "Likely to have a gym membership",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like adventurous sports",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like outdoor activities",
+			"value": "Yes"
+		}]
+	},
+	{
+		"name": "Environmental Concern Preferences",
+		"children": [{
+			"name": "Likely to be concerned about the environment",
+			"value": "50% chance"
+		}]
+	},
+	{
+		"name": "Entrepreneurship Preferences",
+		"children": [{
+			"name": "Likely to consider starting a business in next few years",
+			"value": "50% chance"
+		}]
+	},
+	{
+		"name": "Movie Preferences",
+		"children": [{
+			"name": "Likely to like romance movies",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like adventure movies",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like horror movies",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like musical movies",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like historical movies",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like science-fiction movies",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like war movies",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like drama movies",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like action movies",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like documentary movies",
+			"value": "Yes"
+		}]
+	},
+	{
+		"name": "Music Preferences",
+		"children": [{
+			"name": "Likely to like rap music",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like country music",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like R&B music",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to like hip hop music",
+			"value": "No"
+		},
+		{
+			"name": "Likely to attend live musical events",
+			"value": "No"
+		},
+		{
+			"name": "Likely to have experience playing music",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like Latin music",
+			"value": "No"
+		},
+		{
+			"name": "Likely to like rock music",
+			"value": "50% chance"
+		},
+		{
+			"name": "Likely to like classical music",
+			"value": "No"
+		}]
+	},
+	{
+		"name": "Reading Preferences",
+		"children": [{
+			"name": "Likely to read often",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to read for enjoyment",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to read for information",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to read entertainment magazines",
+			"value": "No"
+		},
+		{
+			"name": "Likely to read non-fiction books",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to do mandatory reading only",
+			"value": "No"
+		},
+		{
+			"name": "Likely to read for relaxation",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to read financial investment books",
+			"value": "No"
+		},
+		{
+			"name": "Likely to read autobiographical books",
+			"value": "No"
+		}]
+	},
+	{
+		"name": "Volunteering Preferences",
+		"children": [{
+			"name": "Likely to volunteer for social causes",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to have spent time volunteering",
+			"value": "Yes"
+		},
+		{
+			"name": "Likely to volunteer to learn about social causes",
+			"value": "Yes"
+		}]
+	}],
+	"word_count": 4246,
+	"warnings": [],
+	"process_language": "en",
 	"tree": {
 		"Openness": {
 			"traitName": "Openness",
 			"traitType": "facet",
-			"rawScore": 0.8823496000940985,
-			"score": "high",
-			"PCScore": "88%",
+			"rawScore": 0.6208812276400093,
+			"score": "medium-high",
+			"PCScore": "62%",
 			"children": {
 				"Adventurousness": {
 					"traitName": "Adventurousness",
 					"traitType": "facet",
-					"rawScore": 0.6613390870442846,
+					"rawScore": 0.6704619817557192,
 					"score": "medium-high",
-					"PCScore": "66%"
+					"PCScore": "67%"
 				},
 				"Artistic interests": {
 					"traitName": "Artistic interests",
 					"traitType": "facet",
-					"rawScore": 0.643665381797422,
+					"rawScore": 0.7287405295882133,
 					"score": "medium-high",
-					"PCScore": "64%"
+					"PCScore": "72%"
 				},
 				"Emotionality": {
 					"traitName": "Emotionality",
 					"traitType": "facet",
-					"rawScore": 0.518081971580137,
-					"score": "medium",
-					"PCScore": "51%"
+					"rawScore": 0.7971751398917551,
+					"score": "medium-high",
+					"PCScore": "79%"
 				},
 				"Imagination": {
 					"traitName": "Imagination",
 					"traitType": "facet",
-					"rawScore": 0.13757297463898638,
+					"rawScore": 0.03187739493145497,
 					"score": "low",
-					"PCScore": "13%"
+					"PCScore": "3%"
 				},
 				"Intellect": {
 					"traitName": "Intellect",
 					"traitType": "facet",
-					"rawScore": 0.9715401790205553,
-					"score": "high",
-					"PCScore": "97%"
+					"rawScore": 0.7130969539569152,
+					"score": "medium-high",
+					"PCScore": "71%"
 				},
-				"Liberalism": {
+				"Authority-challenging": {
 					"traitName": "Authority-challenging",
 					"traitType": "facet",
-					"rawScore": 0.5482968521092112,
-					"score": "medium",
-					"PCScore": "54%"
+					"rawScore": 0.2141000926166869,
+					"score": "medium-low",
+					"PCScore": "21%"
 				}
 			}
 		},
 		"Conscientiousness": {
 			"traitName": "Conscientiousness",
 			"traitType": "facet",
-			"rawScore": 0.8577319719089371,
+			"rawScore": 0.9957302904939459,
 			"score": "high",
-			"PCScore": "85%",
+			"PCScore": "99%",
 			"children": {
 				"Achievement striving": {
 					"traitName": "Achievement striving",
 					"traitType": "facet",
-					"rawScore": 0.9108934157188902,
+					"rawScore": 0.9633932014246922,
 					"score": "high",
-					"PCScore": "91%"
+					"PCScore": "96%"
 				},
 				"Cautiousness": {
 					"traitName": "Cautiousness",
 					"traitType": "facet",
-					"rawScore": 0.9261606392863015,
+					"rawScore": 0.9771873620702887,
 					"score": "high",
-					"PCScore": "92%"
+					"PCScore": "97%"
 				},
 				"Dutifulness": {
 					"traitName": "Dutifulness",
 					"traitType": "facet",
-					"rawScore": 0.9549217347873624,
+					"rawScore": 0.9936817505421791,
 					"score": "high",
-					"PCScore": "95%"
+					"PCScore": "99%"
 				},
 				"Orderliness": {
 					"traitName": "Orderliness",
 					"traitType": "facet",
-					"rawScore": 0.5963414696451156,
+					"rawScore": 0.5818870981283008,
 					"score": "medium",
-					"PCScore": "59%"
+					"PCScore": "58%"
 				},
 				"Self-discipline": {
 					"traitName": "Self-discipline",
 					"traitType": "facet",
-					"rawScore": 0.9312919779230632,
+					"rawScore": 0.9832971377823416,
 					"score": "high",
-					"PCScore": "93%"
+					"PCScore": "98%"
 				},
 				"Self-efficacy": {
 					"traitName": "Self-efficacy",
 					"traitType": "facet",
-					"rawScore": 0.9259224980386147,
+					"rawScore": 0.8765489744171755,
 					"score": "high",
-					"PCScore": "92%"
+					"PCScore": "87%"
 				}
 			}
 		},
 		"Extraversion": {
 			"traitName": "Extraversion",
 			"traitType": "facet",
-			"rawScore": 0.8667813570306737,
-			"score": "high",
-			"PCScore": "86%",
+			"rawScore": 0.7560646246720626,
+			"score": "medium-high",
+			"PCScore": "75%",
 			"children": {
 				"Activity level": {
 					"traitName": "Activity level",
 					"traitType": "facet",
-					"rawScore": 0.5040889868870355,
-					"score": "medium",
-					"PCScore": "50%"
+					"rawScore": 0.8961580457265041,
+					"score": "high",
+					"PCScore": "89%"
 				},
 				"Assertiveness": {
 					"traitName": "Assertiveness",
 					"traitType": "facet",
-					"rawScore": 0.9800134281389076,
+					"rawScore": 0.9831568886480229,
 					"score": "high",
 					"PCScore": "98%"
 				},
 				"Cheerfulness": {
 					"traitName": "Cheerfulness",
 					"traitType": "facet",
-					"rawScore": 0.38478342702822965,
-					"score": "medium-low",
-					"PCScore": "38%"
+					"rawScore": 0.9176276449280709,
+					"score": "high",
+					"PCScore": "91%"
 				},
 				"Excitement-seeking": {
 					"traitName": "Excitement-seeking",
 					"traitType": "facet",
-					"rawScore": 0.09804034133745021,
+					"rawScore": 0.052133158626035736,
 					"score": "low",
-					"PCScore": "9%"
+					"PCScore": "5%"
 				},
-				"Friendliness": {
+				"Outgoing": {
 					"traitName": "Outgoing",
 					"traitType": "facet",
-					"rawScore": 0.7931859057893691,
-					"score": "medium-high",
-					"PCScore": "79%"
+					"rawScore": 0.9279218785188992,
+					"score": "high",
+					"PCScore": "92%"
 				},
 				"Gregariousness": {
 					"traitName": "Gregariousness",
 					"traitType": "facet",
-					"rawScore": 0.273749353777557,
-					"score": "medium-low",
-					"PCScore": "27%"
+					"rawScore": 0.5534865569400704,
+					"score": "medium",
+					"PCScore": "55%"
 				}
 			}
 		},
 		"Agreeableness": {
 			"traitName": "Agreeableness",
 			"traitType": "facet",
-			"rawScore": 0.47349379156190136,
-			"score": "medium",
-			"PCScore": "47%",
+			"rawScore": 0.9260025948223496,
+			"score": "high",
+			"PCScore": "92%",
 			"children": {
 				"Altruism": {
 					"traitName": "Altruism",
 					"traitType": "facet",
-					"rawScore": 0.9565835680043941,
+					"rawScore": 0.9976542391248966,
 					"score": "high",
-					"PCScore": "95%"
+					"PCScore": "99%"
 				},
 				"Cooperation": {
 					"traitName": "Cooperation",
 					"traitType": "facet",
-					"rawScore": 0.5626015886983072,
-					"score": "medium",
-					"PCScore": "56%"
+					"rawScore": 0.8541065879398732,
+					"score": "high",
+					"PCScore": "85%"
 				},
 				"Modesty": {
 					"traitName": "Modesty",
 					"traitType": "facet",
-					"rawScore": 0.24814621534867187,
-					"score": "medium-low",
-					"PCScore": "24%"
+					"rawScore": 0.9266857605811676,
+					"score": "high",
+					"PCScore": "92%"
 				},
-				"Morality": {
+				"Uncompromising": {
 					"traitName": "Uncompromising",
 					"traitType": "facet",
-					"rawScore": 0.8632079063501064,
+					"rawScore": 0.9963509786019402,
 					"score": "high",
-					"PCScore": "86%"
+					"PCScore": "99%"
 				},
 				"Sympathy": {
 					"traitName": "Sympathy",
 					"traitType": "facet",
-					"rawScore": 0.9930882905592353,
+					"rawScore": 0.999537431296997,
 					"score": "high",
 					"PCScore": "99%"
 				},
 				"Trust": {
 					"traitName": "Trust",
 					"traitType": "facet",
-					"rawScore": 0.41148358593540796,
-					"score": "medium",
-					"PCScore": "41%"
+					"rawScore": 0.721771239266002,
+					"score": "medium-high",
+					"PCScore": "72%"
 				}
 			}
 		},
-		"Neuroticism": {
+		"Emotional range": {
 			"traitName": "Emotional range",
 			"traitType": "facet",
-			"rawScore": 0.9768661380014754,
+			"rawScore": 0.957146330023037,
 			"score": "high",
-			"PCScore": "97%",
+			"PCScore": "95%",
 			"children": {
-				"Anger": {
+				"Fiery": {
 					"traitName": "Fiery",
 					"traitType": "facet",
-					"rawScore": 0.11254058197049566,
+					"rawScore": 0.024004522549042562,
 					"score": "low",
-					"PCScore": "11%"
+					"PCScore": "2%"
 				},
-				"Anxiety": {
+				"Prone to worry": {
 					"traitName": "Prone to worry",
 					"traitType": "facet",
-					"rawScore": 0.05975138126215973,
-					"score": "low",
-					"PCScore": "5%"
-				},
-				"Depression": {
-					"traitName": "Melancholy",
-					"traitType": "facet",
-					"rawScore": 0.049876794632239985,
+					"rawScore": 0.04783232483995453,
 					"score": "low",
 					"PCScore": "4%"
+				},
+				"Melancholy": {
+					"traitName": "Melancholy",
+					"traitType": "facet",
+					"rawScore": 0.0316407905300089,
+					"score": "low",
+					"PCScore": "3%"
 				},
 				"Immoderation": {
 					"traitName": "Immoderation",
 					"traitType": "facet",
-					"rawScore": 0.18286688533037343,
+					"rawScore": 0.027411455770321114,
 					"score": "low",
-					"PCScore": "18%"
+					"PCScore": "2%"
 				},
 				"Self-consciousness": {
 					"traitName": "Self-consciousness",
 					"traitType": "facet",
-					"rawScore": 0.06114416990705246,
+					"rawScore": 0.037533450031899285,
 					"score": "low",
-					"PCScore": "6%"
+					"PCScore": "3%"
 				},
-				"Vulnerability": {
+				"Susceptible to stress": {
 					"traitName": "Susceptible to stress",
 					"traitType": "facet",
-					"rawScore": 0.010850521660451973,
+					"rawScore": 0.0613408204400846,
 					"score": "low",
-					"PCScore": "1%"
+					"PCScore": "6%"
 				}
 			}
 		},
 		"Needs": {
 			"traitName": "Needs",
 			"traitType": "needs",
-			"rawScore": 0.017557134888557313,
-			"score": "low",
-			"PCScore": "1%",
 			"children": {
 				"Challenge": {
 					"traitName": "Challenge",
-					"traitType": "facet",
-					"rawScore": 0.019703714635528113,
+					"traitType": "needs",
+					"rawScore": 0.11981159676318792,
 					"score": "low",
-					"PCScore": "1%"
+					"PCScore": "11%"
 				},
 				"Closeness": {
 					"traitName": "Closeness",
-					"traitType": "facet",
-					"rawScore": 0.0672960177454483,
-					"score": "low",
-					"PCScore": "6%"
+					"traitType": "needs",
+					"rawScore": 0.4736113536494656,
+					"score": "medium",
+					"PCScore": "47%"
 				},
 				"Curiosity": {
 					"traitName": "Curiosity",
-					"traitType": "facet",
-					"rawScore": 0.07757621900036521,
-					"score": "low",
-					"PCScore": "7%"
+					"traitType": "needs",
+					"rawScore": 0.21317760651604156,
+					"score": "medium-low",
+					"PCScore": "21%"
 				},
 				"Excitement": {
 					"traitName": "Excitement",
-					"traitType": "facet",
-					"rawScore": 0.030089487442551577,
+					"traitType": "needs",
+					"rawScore": 0.10131635769150343,
 					"score": "low",
-					"PCScore": "3%"
+					"PCScore": "10%"
 				},
 				"Harmony": {
 					"traitName": "Harmony",
-					"traitType": "facet",
-					"rawScore": 0.017627119125661617,
-					"score": "low",
-					"PCScore": "1%"
+					"traitType": "needs",
+					"rawScore": 0.37805107296456103,
+					"score": "medium-low",
+					"PCScore": "37%"
 				},
 				"Ideal": {
 					"traitName": "Ideal",
-					"traitType": "facet",
-					"rawScore": 0.06126999972096514,
+					"traitType": "needs",
+					"rawScore": 0.19403821710040497,
 					"score": "low",
-					"PCScore": "6%"
+					"PCScore": "19%"
 				},
 				"Liberty": {
 					"traitName": "Liberty",
-					"traitType": "facet",
-					"rawScore": 0.017557134888557313,
+					"traitType": "needs",
+					"rawScore": 0.08647308294935357,
 					"score": "low",
-					"PCScore": "1%"
+					"PCScore": "8%"
 				},
 				"Love": {
 					"traitName": "Love",
-					"traitType": "facet",
-					"rawScore": 0.02406569316866286,
+					"traitType": "needs",
+					"rawScore": 0.018834640740774122,
 					"score": "low",
-					"PCScore": "2%"
+					"PCScore": "1%"
 				},
 				"Practicality": {
 					"traitName": "Practicality",
-					"traitType": "facet",
-					"rawScore": 0.055295555285213516,
+					"traitType": "needs",
+					"rawScore": 0.021496860281293884,
 					"score": "low",
-					"PCScore": "5%"
+					"PCScore": "2%"
 				},
 				"Self-expression": {
 					"traitName": "Self-expression",
-					"traitType": "facet",
-					"rawScore": 0.06275833106421114,
+					"traitType": "needs",
+					"rawScore": 0.1926266205970153,
 					"score": "low",
-					"PCScore": "6%"
+					"PCScore": "19%"
 				},
 				"Stability": {
 					"traitName": "Stability",
-					"traitType": "facet",
-					"rawScore": 0.29595558670294364,
-					"score": "medium-low",
-					"PCScore": "29%"
+					"traitType": "needs",
+					"rawScore": 0.6223909088572614,
+					"score": "medium-high",
+					"PCScore": "62%"
 				},
 				"Structure": {
 					"traitName": "Structure",
-					"traitType": "facet",
-					"rawScore": 0.42846197420865884,
-					"score": "medium",
-					"PCScore": "42%"
+					"traitType": "needs",
+					"rawScore": 0.7234368043207438,
+					"score": "medium-high",
+					"PCScore": "72%"
 				}
 			}
 		},
 		"Values": {
 			"traitName": "Values",
 			"traitType": "values",
-			"rawScore": 0.006681075735010644,
-			"score": "low",
-			"PCScore": "0%",
 			"children": {
 				"Conservation": {
 					"traitName": "Conservation",
-					"traitType": "facet",
-					"rawScore": 0.2584042742649862,
-					"score": "medium-low",
-					"PCScore": "25%"
+					"traitType": "values",
+					"rawScore": 0.8867426273780631,
+					"score": "high",
+					"PCScore": "88%"
 				},
 				"Openness to change": {
 					"traitName": "Openness to change",
-					"traitType": "facet",
-					"rawScore": 0.013129088380967546,
-					"score": "low",
-					"PCScore": "1%"
-				},
-				"Hedonism": {
-					"traitName": "Hedonism",
-					"traitType": "facet",
-					"rawScore": 0.07177645931546728,
+					"traitType": "values",
+					"rawScore": 0.0777011228407522,
 					"score": "low",
 					"PCScore": "7%"
 				},
+				"Hedonism": {
+					"traitName": "Hedonism",
+					"traitType": "values",
+					"rawScore": 0.060073176987018084,
+					"score": "low",
+					"PCScore": "6%"
+				},
 				"Self-enhancement": {
 					"traitName": "Self-enhancement",
-					"traitType": "facet",
-					"rawScore": 0.006681075735010644,
+					"traitType": "values",
+					"rawScore": 0.005559500167422127,
 					"score": "low",
 					"PCScore": "0%"
 				},
 				"Self-transcendence": {
 					"traitName": "Self-transcendence",
-					"traitType": "facet",
-					"rawScore": 0.03247441602721801,
-					"score": "low",
-					"PCScore": "3%"
+					"traitType": "values",
+					"rawScore": 0.20218006833891178,
+					"score": "medium-low",
+					"PCScore": "20%"
 				}
 			}
-		},
-		"behavior": {
-			"day": "Thu.",
-			"time": "Midnight"
 		}
 	},
-	"warnings": [],
-	"summary": "<p class=\"base--p\">You are excitable, expressive and active.</p><p class=\"base--p\">You are empathetic: you feel what others feel and are compassionate towards them. You are calm under pressure: you handle unexpected events calmly and effectively. And you are assertive: you tend to speak up and take charge of situations, and you are comfortable leading groups.</p><p class=\"base--p\">Experiences that give a sense of organization hold some appeal to you.</p><p class=\"base--p\">You are relatively unconcerned with both achieving success and independence. You make decisions with little regard for how they show off your talents. And you welcome when others direct your activities for you.</p>",
-	"behaviors": {
-		"likely": [{
-			"name": "???",
-			"score": 0.8622566644698054,
-			"PCScore": "86.22%",
-			"tooltip": "???"
-		},
-		{
-			"name": "Use a coupon",
-			"score": 0.8177318003810268,
-			"PCScore": "81.77%",
-			"tooltip": "People who exhibit more **orderliness**, **self-discipline**, **cautiousness**, and **moderation** are likely to redeem coupons. [How did we get this?](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/applied.shtml#IBMcampaign)"
-		},
-		{
-			"name": "Buy eco-friendly",
-			"score": 0.7326690401671708,
-			"PCScore": "73.26%",
-			"tooltip": "People who exhibit more **agreeableness**, **extraversion**, and **conscientiousness** are more likely to purchase eco-friendly products. [How did we get this?](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/applied.shtml#otherEnvironment)"
-		}],
-		"unlikely": [{
-			"name": "Change careers",
-			"score": 0.23063603284256207,
-			"PCScore": "23.06%",
-			"tooltip": "People who exhibit more **conscientiousness**, **extraversion**, and **openness** than others are more likely to adapt to changes in career. [How did we get this?](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/applied.shtml#otherProfessional)"
-		},
-		{
-			"name": "Treat Yourself",
-			"score": 0.25048903795370436,
-			"PCScore": "25.04%",
-			"tooltip": "People who exhibit more **conscientiousness**, **conservation**, **self-enhancement**, and **agreeableness**; a need for **love** and the **ideal**; and value **hedonism** are likely to prefer luxury brands. [How did we get this?](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/applied.shtml#IBMbrand)"
-		},
-		{
-			"name": "Take financial risks",
-			"score": 0.38967236388959,
-			"PCScore": "38.96%",
-			"tooltip": "People with more **openness to experiences** than others are likely to make risky investments. Showing more **emotional range** reduces that likelihood. [How did we get this?](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/applied.shtml#otherRisk)"
-		}]
-	}
+	"summary": "You are particular, sentimental and social.<br><br>You are empathetic: you feel what others feel and are compassionate towards them. You are altruistic: you feel fulfilled when helping others, and will go out of your way to do so. And you are dutiful: you take rules and obligations seriously, even when they're inconvenient.<br><br>You are motivated to seek out experiences that provide a strong feeling of organization.<br><br>You are relatively unconcerned with both achieving success and taking pleasure in life. You make decisions with little regard for how they show off your talents. And you prefer activities with a purpose greater than just personal enjoyment."
 }

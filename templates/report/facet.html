@@ -77,7 +77,7 @@
 					</p>
 					<br>
 				
-					<div class="percent-bar-and-score" ng-show="traits.score">
+					<div class="percent-bar-and-score" ng-show="traits.traitType == 'facet'">
 						<div class="percent-bar-and-score--label output-big-5--trait-label output-big-5--trait-label_POSITIVE">
 							{{traits.traitName | translate}}
 							<i class="icon icon-down-arrow percent-bar-and-score--toggle-icon"></i>
@@ -122,7 +122,16 @@
 						<!--p>{{traits.general[getScore(traits.traitName)]}}</p-->
 						<p ng-bind-html="traits.general[getScore(traits.traitName)]"></p>
 					</details>
-				</div>			
+				</div>
+				
+				<br>
+				<div ng-if="perspective=='Relationship'">
+					If you're to buy gifts to enhance relationship, check out her/his <a href="/#/app/preferences">Preferences section</a> 
+				</div>
+				<div ng-if="perspective=='Approaching'">
+					Regardless what you're approaching her/him for, be sure to check her/his <a href="/#/app/preferences">Preferences section</a>,  If you're approaching to sell products, this section will directly help you; if you're approaching for other purposes, the section will help you to gain better understanding of her/him, or help you to decide what gifts have a better chance to impress her/him.
+				</div>				
+				
 				<br><br>
 						
 				<div><b>{{traits.traitName}}</b> {{'contains the following' | translate}} {{traits.children[0].traitType | translate}}s, {{'traitInstruction' | translate }}  <b style="color: {{getPerspectiveColor()}};">{{perspective | translate}}</b>.			
