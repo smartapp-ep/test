@@ -4,7 +4,7 @@
 	"image": "https://pbs.twimg.com/profile_images/796243884636512260/zHVoWqKV_normal.jpg",
 	"source": "twitter",
 	"date": "2016-12-02T02:43:31.947Z",
-	"$$hashKey": "object:80"	
+	"$$hashKey": "object:80"
 },
 {
 	"name": "Edwin Pun",
@@ -12,6 +12,19 @@
 	"image": "http://graph.facebook.com/10154894005144897/picture",
 	"source": "text",
 	"date": "2016-07-31T06:25:27.879Z",
-	"$$hashKey": "object:80"		
+	"$$hashKey": "object:80"
+},
+{
+	"name": "Donald J. Trump",
+	"file": "Donald J. Trump_twitter",
+	"image": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+	"source": "twitter",
+	"date": "2017-01-23T02:44:54.357Z"
+},
+{
+	"name": "Craig Broadbent",
+	"file": "Craig Broadbent_yammer",
+	"image": "https://mug0.assets-yammer.com/mugshot/images/48x48/5Z7j3CGvSVPqrSgbWQ0j5s77BnxD3Nnz",
+	"source": "yammer",
+	"date": "2017-05-24T10:50:01.557Z"
 }]
-

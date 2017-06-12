@@ -1,0 +1,17 @@
+[{
+	"name": "Hillary Clinton",
+	"file": "Hillary Clinton_twitter",
+	"image": "https://pbs.twimg.com/profile_images/796243884636512260/zHVoWqKV_normal.jpg",
+	"source": "twitter",
+	"date": "2016-12-02T02:43:31.947Z",
+	"$$hashKey": "object:80"	
+},
+{
+	"name": "Edwin Pun",
+	"file": "Edwin Pun_text",
+	"image": "http://graph.facebook.com/10154894005144897/picture",
+	"source": "text",
+	"date": "2016-07-31T06:25:27.879Z",
+	"$$hashKey": "object:80"		
+}]
+

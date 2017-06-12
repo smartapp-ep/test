@@ -22,7 +22,7 @@ var admobTest = true;
 
 //var defaultServer = 'pi360.herokuapp.com';
 var defaultServer = 'p360test.herokuapp.com';
-//var defaultServer = '192.168.1.12';
+//var defaultServer = 'localhost';
 //var defaultServer = '192.168.2.151';
 
 var appServer = 'http://app.personality360.xyz';

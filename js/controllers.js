@@ -260,7 +260,7 @@ angular.module('ipa.controllers', ['ipa.services', 'ipa.constants', 'ionic', 'io
 			store.set(newFile + 'piReports', piReports);
 			
 			piReports.forEach(function(itm) {
-				var fileUrl = url + '/' + itm.file.replace(' ', '__') + '.json';
+				var fileUrl = url + '/' + itm.file.replace(/ /g, '__') + '.json';
 				$http.get(fileUrl).then(function(res) {
 					var file = res.data;
 					store.set(newFile + itm.file, file);
