@@ -2521,7 +2521,7 @@ services.service('CreditSvc', function(ApiSvc, External, store, PaymentSvc) {
 			if (err) return cb(err);
 			//if no err then ok
 			//if (params.type == 'free') return Credits.acquire({param: param, claim: res}, processResponse.bind(null, cb), processError.bind(null, cb));
-			if (params.type == 'free') return Credits.acquire({param: param, claim: res}, processResponse.bind(null, cb), processError.bind(null, cb));
+			if (params.type == 'free') return Credits.acquire({param: param}, processResponse.bind(null, cb), processError.bind(null, cb));
 			
 			if (params.type == 'prom') {
 				if (External.svc[params.src]) {
@@ -3376,8 +3376,8 @@ services.service('Auths', function(External, jwtHelper, store, $q, $resource, $w
 services.service('PaymentSvc', function($timeout, init, AndroidIAB, IosIAB) {
 	
 	//var prodId = 'credits';
-	var prodId = 'testcredits01_bundle_3';
-	var sku = 'testcredits01_bundle_3';
+	var prodId = 'credits_bundle_3';
+	var sku = 'credits_bundle_3';
 	
 	var platform; 
 	//mock:
